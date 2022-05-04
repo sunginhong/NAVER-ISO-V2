@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name = "string_easeType">
+        <item>In-Out</item>
+        <item>Out</item>
+        <item>In</item>
+        <item>Bounce</item>
+    </string-array>
+</resources>

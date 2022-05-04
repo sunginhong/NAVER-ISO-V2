@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rectangle_bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginBottom="44dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="@dimen/category_scroll_margin"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/bottom_btn_0"
+                    android:layout_width="@dimen/category_btn_width"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="@dimen/category_btn_margin"
+                    android:background="@drawable/bottom_button_open"
+                    android:stateListAnimator="@null"
+                    android:text="@string/popup"
+                    android:textAppearance="@style/popup" />
+
+                <Button
+                    android:id="@+id/bottom_btn_1"
+                    android:layout_width="@dimen/category_btn_width"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="@dimen/category_btn_margin"
+                    android:background="@drawable/bottom_button_open"
+                    android:stateListAnimator="@null"
+                    android:text="@string/nudge"
+                    android:textAppearance="@style/nudge" />
+
+                <Button
+                    android:id="@+id/bottom_btn_2"
+                    android:layout_width="@dimen/category_btn_width"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="@dimen/category_btn_margin"
+                    android:background="@drawable/bottom_button_open"
+                    android:stateListAnimator="@null"
+                    android:text="@string/alarm"
+                    android:textAppearance="@style/alarm" />
+
+                <Button
+                    android:layout_width="@dimen/category_btn_width"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="@dimen/category_btn_margin"
+                    android:background="@drawable/bottom_button_closed"
+                    android:stateListAnimator="@null"
+                    android:text="@string/swipe"
+                    android:textAppearance="@style/noncase" />
+
+                <Button
+                    android:layout_width="@dimen/category_btn_width"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="@dimen/category_btn_margin"
+                    android:background="@drawable/bottom_button_closed"
+                    android:stateListAnimator="@null"
+                    android:text="@string/flicking"
+                    android:textAppearance="@style/noncase" />
+
+                <Button
+                    android:layout_width="@dimen/category_btn_width"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="@dimen/category_btn_margin"
+                    android:background="@drawable/bottom_button_closed"
+                    android:stateListAnimator="@null"
+                    android:text="@string/drag"
+                    android:textAppearance="@style/noncase" />
+
+                <Button
+                    android:layout_width="@dimen/category_btn_width"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="@dimen/category_btn_margin"
+                    android:background="@drawable/bottom_button_closed"
+                    android:stateListAnimator="@null"
+                    android:text="@string/tap"
+                    android:textAppearance="@style/noncase" />
+
+                <Button
+                    android:layout_width="@dimen/category_btn_width"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="@dimen/category_btn_margin"
+                    android:background="@drawable/bottom_button_closed"
+                    android:stateListAnimator="@null"
+                    android:text="@string/page_transition"
+                    android:textAppearance="@style/noncase" />
+
+                <Button
+                    android:layout_width="@dimen/category_btn_width"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="@dimen/category_btn_margin"
+                    android:background="@drawable/bottom_button_closed"
+                    android:stateListAnimator="@null"
+                    android:text="@string/object_transition"
+                    android:textAppearance="@style/noncase" />
+
+                <Button
+                    android:layout_width="@dimen/category_btn_width"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="@dimen/category_btn_margin"
+                    android:background="@drawable/bottom_button_closed"
+                    android:stateListAnimator="@null"
+                    android:text="@string/shape_transition"
+                    android:textAppearance="@style/noncase" />
+
+                <View
+                    android:layout_width="@dimen/category_scroll_margin"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

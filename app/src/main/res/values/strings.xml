@@ -1,3 +1,18 @@
 <resources>
-    <string name="app_name">NAVER-ISO-V2</string>
+    <string name="app_name">InteractionKit</string>
+    <string name="popup_anima">Popup Animation</string>
+    <string name="popup">Popup</string>
+    <string name="nudge">Nudge</string>
+    <string name="alarm">Alarm</string>
+    <string name="swipe">Swipe</string>
+    <string name="flicking">Flicking</string>
+    <string name="drag">Drag</string>
+    <string name="tap">Drag</string>
+    <string name="page_transition">Page Transition</string>
+    <string name="object_transition">Object Transition</string>
+    <string name="shape_transition">Shape Transition</string>
+    <string name="paly_in_mot">Play in Motion</string>
+    <string name="paly_out_mo">Play Out Motion</string>
+    <string name="in_motion">In Motion</string>
+    <string name="out_motion">Out Motion</string>
 </resources>
