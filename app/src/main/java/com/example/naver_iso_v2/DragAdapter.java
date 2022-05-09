@@ -11,7 +11,7 @@ import android.view.animation.Interpolator;
 
 import androidx.core.view.animation.PathInterpolatorCompat;
 
-public class DragAdapter implements View.OnTouchListener{
+public class DragAdapter implements View.OnTouchListener {
 
     Context mContext;
     public String firstY = "0";

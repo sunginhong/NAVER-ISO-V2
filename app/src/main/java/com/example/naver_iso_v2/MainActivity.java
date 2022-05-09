@@ -1,19 +1,16 @@
 package com.example.naver_iso_v2;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.viewpager.widget.ViewPager;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Context;
-import android.content.res.Resources;
 import android.os.Bundle;
-import android.os.Handler;
 import android.util.Log;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
-
-import com.google.android.material.tabs.TabLayout;
 
 public class MainActivity extends AppCompatActivity {
     public Context ctx;

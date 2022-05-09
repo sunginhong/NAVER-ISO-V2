@@ -8,6 +8,7 @@ import android.graphics.drawable.TransitionDrawable;
 import android.os.Build;
 import android.content.res.Resources;
 import android.os.Handler;
+import android.os.Vibrator;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -23,14 +24,16 @@ import java.util.List;
 public class Pannel_ListLayout_Top extends RelativeLayout {
 
     public Context ctx;
-    public Button button_playmotion;
+    public static Button button_playmotion;
     public static View container_btn_updown;
-    public TransitionDrawable button_playmotion_trans;
+    public static TransitionDrawable button_playmotion_trans;
+    public static Vibrator vibrator;
 
     public Pannel_ListLayout_Top(Context ctx){
         super(ctx);
         this.ctx = ctx;
         init();
+        vibrator = (Vibrator) this.ctx.getSystemService(Context.VIBRATOR_SERVICE);
     }
 
     public Pannel_ListLayout_Top(Context ctx, AttributeSet attrs) {
@@ -84,6 +87,7 @@ public class Pannel_ListLayout_Top extends RelativeLayout {
                     Vars_Def.play_btn_state = false;
                     Vars_Def.playMotionState = "In";
                 }
+                objectpPlayAnim(Vars_Def.play_btn_state);
             }
         });
 
@@ -104,4 +108,19 @@ public class Pannel_ListLayout_Top extends RelativeLayout {
             }
         });
     }
+
+    public static void playbtnReset(){
+        button_playmotion.setText("Play In Motion");
+        button_playmotion_trans.resetTransition();
+        button_playmotion.setTextColor(Color.parseColor("#ffffff"));
+        Vars_Def.play_btn_state = false;
+        Vars_Def.playMotionState = "In";
+    }
+
+    public void objectpPlayAnim(boolean state){
+        if (BottomTabBar.clickIdx == 0){ if (state){ Fragment_0_Popup.PlayAnim("Out"); } else { Fragment_0_Popup.PlayAnim("In"); } }
+        if (BottomTabBar.clickIdx == 1){ if (state){ Fragment_1_Nudge.PlayAnim("Out"); } else { Fragment_1_Nudge.PlayAnim("In"); } }
+        if (BottomTabBar.clickIdx == 2){ if (state){ Fragment_2_Alarm.PlayAnim("Out"); } else { Fragment_2_Alarm.PlayAnim("In"); } }
+    }
+
 }

@@ -22,7 +22,6 @@ public class GetNavigationBarHeight {
             DisplayMetrics metrics = new DisplayMetrics();
             ((Activity)context).getWindowManager().getDefaultDisplay().getMetrics(metrics);
             int usableHeight = metrics.heightPixels;
-//            ((Activity)context).getWindowManager().getDefaultDisplay().getRealMetrics(metrics);
             ((Activity)context).getWindowManager().getDefaultDisplay().getMetrics(metrics);
             int realHeight = metrics.heightPixels;
             realheight_F = realHeight;

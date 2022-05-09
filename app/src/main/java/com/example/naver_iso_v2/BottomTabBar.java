@@ -11,8 +11,12 @@ import android.widget.Button;
 import android.widget.RelativeLayout;
 
 import androidx.annotation.RequiresApi;
+import androidx.fragment.app.FragmentActivity;
+import androidx.fragment.app.FragmentTransaction;
+
 import java.util.ArrayList;
 import java.util.List;
+
 
 public class BottomTabBar extends RelativeLayout  implements View.OnClickListener {
 
@@ -22,6 +26,10 @@ public class BottomTabBar extends RelativeLayout  implements View.OnClickListene
 
     public static int clickIdx = 0;
 
+    private final int FRAGMENT0 = 0;
+    private final int FRAGMENT1 = 1;
+    private final int FRAGMENT2 = 2;
+
     public static Button bottom_btn_0;
     public static Button bottom_btn_1;
     public static Button bottom_btn_2;
@@ -29,6 +37,10 @@ public class BottomTabBar extends RelativeLayout  implements View.OnClickListene
     public static TransitionDrawable trans_bottom_btn_0;
     public static TransitionDrawable trans_bottom_btn_1;
     public static TransitionDrawable trans_bottom_btn_2;
+
+    public Fragment_0_Popup fragment0;
+    public Fragment_1_Nudge fragment1;
+    public Fragment_2_Alarm fragment2;
 
     public BottomTabBar(Context ctx){
         super(ctx);
@@ -85,6 +97,10 @@ public class BottomTabBar extends RelativeLayout  implements View.OnClickListene
         bottomTabBar_Trans_Array.add(trans_bottom_btn_1);
         bottomTabBar_Trans_Array.add(trans_bottom_btn_2);
 
+        fragment0 = new Fragment_0_Popup();
+        fragment1 = new Fragment_1_Nudge();
+        fragment2 = new Fragment_2_Alarm();
+
         bottomCase(0);
     }
 
@@ -100,7 +116,10 @@ public class BottomTabBar extends RelativeLayout  implements View.OnClickListene
                 bottomTabBar_Trans_Array.get(i).resetTransition();
             }
         }
-
+        Pannel_ListLayout_Top.playbtnReset();
+        if(idx == 0){ ((FragmentActivity)ctx).getSupportFragmentManager().beginTransaction().replace(R.id.rect_objectRL, fragment0).commit(); }
+        if(idx == 1){ ((FragmentActivity)ctx).getSupportFragmentManager().beginTransaction().replace(R.id.rect_objectRL, fragment1).commit(); }
+        if(idx == 2){ ((FragmentActivity)ctx).getSupportFragmentManager().beginTransaction().replace(R.id.rect_objectRL, fragment2).commit(); }
     }
 
     @Override

@@ -101,4 +101,39 @@ public class AnimRectObject {
         containAnim.start();
     }
 
+    public static void function_group1_selEase(String string){
+        if (string == Vars_Def.array_string_easeType[0]){
+            selEase_group1 = interpolator_easeInOut;
+        }
+        if (string == Vars_Def.array_string_easeType[1]){
+            selEase_group1 = interpolator_easeOut;
+        }
+        if (string == Vars_Def.array_string_easeType[2]){
+            selEase_group1 = interpolator_easeIn;
+        }
+        if (string == Vars_Def.array_string_easeType[3]){
+            selEase_group1 = interpolator_bounce;
+        }
+    }
+    public static void function_group2_selEase(String string){
+        if (string == Vars_Def.array_string_easeType[0]){
+            selEase_group2 = interpolator_easeInOut;
+        }
+        if (string == Vars_Def.array_string_easeType[1]){
+            selEase_group2 = interpolator_easeOut;
+        }
+        if (string == Vars_Def.array_string_easeType[2]){
+            selEase_group2 = interpolator_easeIn;
+        }
+        if (string == Vars_Def.array_string_easeType[3]){
+            selEase_group2 = interpolator_bounce;
+        }
+    }
+    public static void function_group1_vibrate(){
+
+    }
+
+    public static void function_group2_vibrate(){
+
+    }
 }

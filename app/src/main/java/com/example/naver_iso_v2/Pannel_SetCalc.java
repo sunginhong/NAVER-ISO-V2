@@ -34,7 +34,7 @@ public class Pannel_SetCalc {
 
                 Pannel_Layout.setContain();
             }
-        }, 100);
+        }, 300);
 
     }
 }
