@@ -116,6 +116,7 @@ public class BottomTabBar extends RelativeLayout  implements View.OnClickListene
                 bottomTabBar_Trans_Array.get(i).resetTransition();
             }
         }
+        categorySel(idx);
         Pannel_ListLayout_Top.playbtnReset();
         if(idx == 0){ ((FragmentActivity)ctx).getSupportFragmentManager().beginTransaction().replace(R.id.rect_objectRL, fragment0).commit(); }
         if(idx == 1){ ((FragmentActivity)ctx).getSupportFragmentManager().beginTransaction().replace(R.id.rect_objectRL, fragment1).commit(); }
@@ -133,6 +134,20 @@ public class BottomTabBar extends RelativeLayout  implements View.OnClickListene
                 break;
             case R.id.bottom_btn_2 :
                 bottomCase(2);
+                break;
+        }
+    }
+
+    public void categorySel(int nums){
+        switch(nums) {
+            case 0:
+                ResetState.defCaseState00();
+                break;
+            case 1:
+                ResetState.defCaseState01();
+                break;
+            case 2:
+                ResetState.defCaseState02();
                 break;
         }
     }

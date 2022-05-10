@@ -3,7 +3,9 @@ package com.example.naver_iso_v2;
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
 import android.content.Context;
+import android.os.Build;
 import android.os.Handler;
+import android.os.VibrationEffect;
 import android.view.View;
 import android.view.animation.Interpolator;
 
@@ -27,16 +29,16 @@ public class AnimRectObject {
         view_item2 = view2;
         selEase_group1 = interpolator_easeOut;
         selEase_group2 = interpolator_easeOut;
-        function_containAnim(view_item0, Float.parseFloat(0+"f"), Float.parseFloat(Vars_Def.group1_li2_state+"f"), Float.parseFloat(Vars_Def.group1_li3_state+"f"), 0, selEase_group1);
+        function_containAnim(view_item0, Float.parseFloat(0+"f"), Float.parseFloat(Vars_Def.inMotion_li2_state +"f"), Float.parseFloat(Vars_Def.inMotion_li3_state +"f"), 0, selEase_group1);
     }
 
     public static void function_CasePopupAnim(){
         if (Vars_Def.playMotionState == "Out"){
-            function_containAnim(view_item0, Float.parseFloat(Vars_Def.group1_li1_state+"f"), Float.parseFloat(Vars_Def.group1_li2_state+"f"), Float.parseFloat(Vars_Def.group1_li3_state+"f"), 0, selEase_group1);
+            function_containAnim(view_item0, Float.parseFloat(Vars_Def.inMotion_li1_state +"f"), Float.parseFloat(Vars_Def.inMotion_li2_state +"f"), Float.parseFloat(Vars_Def.inMotion_li3_state +"f"), 0, selEase_group1);
             new Handler().postDelayed(new Runnable() {
                 @Override
                 public void run() {
-                    function_containAnim(view_item0, Float.parseFloat(0+"f"), Float.parseFloat(1+"f"), Float.parseFloat(1+"f"), Vars_Def.group1_li0_state, selEase_group1);
+                    function_containAnim(view_item0, Float.parseFloat(0+"f"), Float.parseFloat(1+"f"), Float.parseFloat(1+"f"), Vars_Def.inMotion_li0_state, selEase_group1);
                 }
             }, 1);
         }
@@ -48,11 +50,11 @@ public class AnimRectObject {
 
     public static void function_CaseNudgeAnim(){
         if (Vars_Def.playMotionState == "Out"){
-            function_containAnim(view_item1, Float.parseFloat(Vars_Def.group1_li1_state+"f"), Float.parseFloat(Vars_Def.group1_li2_state+"f"), Float.parseFloat(Vars_Def.group1_li3_state+"f"), 0, selEase_group1);
+            function_containAnim(view_item1, Float.parseFloat(Vars_Def.inMotion_li1_state +"f"), Float.parseFloat(Vars_Def.inMotion_li2_state +"f"), Float.parseFloat(Vars_Def.inMotion_li3_state +"f"), 0, selEase_group1);
             new Handler().postDelayed(new Runnable() {
                 @Override
                 public void run() {
-                    function_containAnim(view_item1, Float.parseFloat(0+"f"), Float.parseFloat(1+"f"), Float.parseFloat(1+"f"), Vars_Def.group1_li0_state, selEase_group1);
+                    function_containAnim(view_item1, Float.parseFloat(0+"f"), Float.parseFloat(1+"f"), Float.parseFloat(1+"f"), Vars_Def.inMotion_li0_state, selEase_group1);
                 }
             }, 1);
         }
@@ -63,11 +65,11 @@ public class AnimRectObject {
 
     public static void function_CaseAlarmAnim(){
         if (Vars_Def.playMotionState == "Out"){
-            function_containAnim(view_item2, Float.parseFloat(Vars_Def.group1_li1_state+"f"), Float.parseFloat(Vars_Def.group1_li2_state+"f"), Float.parseFloat(Vars_Def.group1_li3_state+"f"), 0, selEase_group1);
+            function_containAnim(view_item2, Float.parseFloat(Vars_Def.inMotion_li1_state +"f"), Float.parseFloat(Vars_Def.inMotion_li2_state +"f"), Float.parseFloat(Vars_Def.inMotion_li3_state +"f"), 0, selEase_group1);
             new Handler().postDelayed(new Runnable() {
                 @Override
                 public void run() {
-                    function_containAnim(view_item2, Float.parseFloat(0+"f"), Float.parseFloat(1+"f"), Float.parseFloat(1+"f"), Vars_Def.group1_li0_state, selEase_group1);
+                    function_containAnim(view_item2, Float.parseFloat(0+"f"), Float.parseFloat(1+"f"), Float.parseFloat(1+"f"), Vars_Def.inMotion_li0_state, selEase_group1);
                 }
             }, 1);
         }
@@ -130,10 +132,58 @@ public class AnimRectObject {
         }
     }
     public static void function_group1_vibrate(){
-
+        Pannel_ListLayout_Top.vibrator.cancel();
+        if (Vars_Def.group1_li5_state  == "None"){
+            Pannel_ListLayout_Top.vibrator.cancel();
+        }
+        if (Vars_Def.group1_li5_state  == "Light"){
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                Pannel_ListLayout_Top.vibrator.vibrate(VibrationEffect.createOneShot(10, VibrationEffect.DEFAULT_AMPLITUDE));
+            } else {
+                Pannel_ListLayout_Top.vibrator.vibrate(10);
+            }
+        }
+        if (Vars_Def.group1_li5_state  == "Normal"){
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                Pannel_ListLayout_Top.vibrator.vibrate(VibrationEffect.createOneShot(20, VibrationEffect.DEFAULT_AMPLITUDE));
+            } else {
+                Pannel_ListLayout_Top.vibrator.vibrate(20);
+            }
+        }
+        if (Vars_Def.group1_li5_state  == "Strong"){
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                Pannel_ListLayout_Top.vibrator.vibrate(VibrationEffect.createOneShot(30, VibrationEffect.DEFAULT_AMPLITUDE));
+            } else {
+                Pannel_ListLayout_Top.vibrator.vibrate(30);
+            }
+        }
     }
 
     public static void function_group2_vibrate(){
-
+        Pannel_ListLayout_Top.vibrator.cancel();
+        if (Vars_Def.group2_li5_state  == "None"){
+            Pannel_ListLayout_Top.vibrator.cancel();
+        }
+        if (Vars_Def.group2_li5_state  == "Light"){
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                Pannel_ListLayout_Top.vibrator.vibrate(VibrationEffect.createOneShot(10, VibrationEffect.DEFAULT_AMPLITUDE));
+            } else {
+                Pannel_ListLayout_Top.vibrator.vibrate(10);
+            }
+        }
+        if (Vars_Def.group2_li5_state  == "Normal"){
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                Pannel_ListLayout_Top.vibrator.vibrate(VibrationEffect.createOneShot(20, VibrationEffect.DEFAULT_AMPLITUDE));
+            } else {
+                Pannel_ListLayout_Top.vibrator.vibrate(20);
+            }
+        }
+        if (Vars_Def.group2_li5_state  == "Strong"){
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                Pannel_ListLayout_Top.vibrator.vibrate(VibrationEffect.createOneShot(30, VibrationEffect.DEFAULT_AMPLITUDE));
+            } else {
+                Pannel_ListLayout_Top.vibrator.vibrate(30);
+            }
+        }
     }
 }

@@ -50,10 +50,10 @@ public class Vars_Def {
     public static String defCaseState02_group1_li4_state_def = "";
     public static String defCaseState02_group1_li5_state_def = "None";
 
-    public static int group1_li0_state = defCaseState00_group1_li0_state_def;
-    public static int group1_li1_state = defCaseState00_group1_li1_state_def;
-    public static double group1_li2_state = defCaseState00_group1_li2_state_def;
-    public static double group1_li3_state = defCaseState00_group1_li3_state_def;
+    public static int inMotion_li0_state = defCaseState00_group1_li0_state_def;
+    public static int inMotion_li1_state = defCaseState00_group1_li1_state_def;
+    public static double inMotion_li2_state = defCaseState00_group1_li2_state_def;
+    public static double inMotion_li3_state = defCaseState00_group1_li3_state_def;
     public static String group1_li4_state = defCaseState00_group1_li4_state_def;
     public static String group1_li5_state = defCaseState00_group1_li5_state_def;
 

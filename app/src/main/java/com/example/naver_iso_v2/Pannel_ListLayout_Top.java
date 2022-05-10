@@ -8,6 +8,7 @@ import android.graphics.drawable.TransitionDrawable;
 import android.os.Build;
 import android.content.res.Resources;
 import android.os.Handler;
+import android.os.VibrationEffect;
 import android.os.Vibrator;
 import android.util.AttributeSet;
 import android.util.Log;
@@ -15,6 +16,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 import androidx.annotation.RequiresApi;
 
@@ -24,6 +26,7 @@ import java.util.List;
 public class Pannel_ListLayout_Top extends RelativeLayout {
 
     public Context ctx;
+    public static TextView anim_title;
     public static Button button_playmotion;
     public static View container_btn_updown;
     public static TransitionDrawable button_playmotion_trans;
@@ -33,7 +36,6 @@ public class Pannel_ListLayout_Top extends RelativeLayout {
         super(ctx);
         this.ctx = ctx;
         init();
-        vibrator = (Vibrator) this.ctx.getSystemService(Context.VIBRATOR_SERVICE);
     }
 
     public Pannel_ListLayout_Top(Context ctx, AttributeSet attrs) {
@@ -60,7 +62,8 @@ public class Pannel_ListLayout_Top extends RelativeLayout {
         LayoutInflater li = (LayoutInflater) getContext().getSystemService(infService);
         View v = li.inflate(R.layout.pannel_layout_top, this, false);
         addView(v);
-
+        vibrator = (Vibrator) this.ctx.getSystemService(Context.VIBRATOR_SERVICE);
+        anim_title = (TextView) findViewById(R.id.anim_title);
         container_btn_updown = (View) findViewById(R.id.container_btn_updown);
 
         button_playmotion = findViewById(R.id.button_playmotion);
