@@ -85,6 +85,7 @@ public class DragAdapter implements View.OnTouchListener {
         Pannel_Layout.container.invalidate();
         return true;
     }
+
     public static void function_containAnim(View view, float n, int duration, Interpolator interpolator){
         ObjectAnimator containAnim = ObjectAnimator.ofFloat(view, "translationY", n);
         containAnim.setInterpolator(interpolator);
