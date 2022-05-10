@@ -41,7 +41,7 @@ public class Fragment_2_Alarm extends Fragment {
         }
         if (state == "In"){
             AnimRectObject.function_group2_vibrate();
-            AnimRectObject.function_containAnim(anim_object_alarm, Float.parseFloat(Vars_Def.group2_li1_state+"f"), Float.parseFloat(Vars_Def.group2_li2_state+"f"), Float.parseFloat(Vars_Def.group2_li3_state+"f"), Vars_Def.group2_li0_state, AnimRectObject.selEase_group2);
+            AnimRectObject.function_containAnim(anim_object_alarm, Float.parseFloat(Vars_Def.outMotion_li1_state +"f"), Float.parseFloat(Vars_Def.outMotion_li2_state +"f"), Float.parseFloat(Vars_Def.outMotion_li3_state +"f"), Vars_Def.outMotion_li0_state, AnimRectObject.selEase_group2);
         }
     }
 

@@ -43,7 +43,7 @@ public class AnimRectObject {
             }, 1);
         }
         if (Vars_Def.playMotionState == "In"){
-            function_containAnim(view_item0, Float.parseFloat(Vars_Def.group2_li1_state+"f"), Float.parseFloat(Vars_Def.group2_li2_state+"f"), Float.parseFloat(Vars_Def.group2_li3_state+"f"), Vars_Def.group2_li0_state, selEase_group2);
+            function_containAnim(view_item0, Float.parseFloat(Vars_Def.outMotion_li1_state +"f"), Float.parseFloat(Vars_Def.outMotion_li2_state +"f"), Float.parseFloat(Vars_Def.outMotion_li3_state +"f"), Vars_Def.outMotion_li0_state, selEase_group2);
         }
     }
 
@@ -59,7 +59,7 @@ public class AnimRectObject {
             }, 1);
         }
         if (Vars_Def.playMotionState == "In"){
-            function_containAnim(view_item1, Float.parseFloat(Vars_Def.group2_li1_state+"f"), Float.parseFloat(Vars_Def.group2_li2_state+"f"), Float.parseFloat(Vars_Def.group2_li3_state+"f"), Vars_Def.group2_li0_state, selEase_group2);
+            function_containAnim(view_item1, Float.parseFloat(Vars_Def.outMotion_li1_state +"f"), Float.parseFloat(Vars_Def.outMotion_li2_state +"f"), Float.parseFloat(Vars_Def.outMotion_li3_state +"f"), Vars_Def.outMotion_li0_state, selEase_group2);
         }
     }
 
@@ -74,7 +74,7 @@ public class AnimRectObject {
             }, 1);
         }
         if (Vars_Def.playMotionState == "In"){
-            function_containAnim(view_item2, Float.parseFloat(Vars_Def.group2_li1_state+"f"), Float.parseFloat(Vars_Def.group2_li2_state+"f"), Float.parseFloat(Vars_Def.group2_li3_state+"f"), Vars_Def.group2_li0_state, selEase_group2);
+            function_containAnim(view_item2, Float.parseFloat(Vars_Def.outMotion_li1_state +"f"), Float.parseFloat(Vars_Def.outMotion_li2_state +"f"), Float.parseFloat(Vars_Def.outMotion_li3_state +"f"), Vars_Def.outMotion_li0_state, selEase_group2);
         }
     }
     public static void function_CasePopupReset(){
@@ -133,24 +133,24 @@ public class AnimRectObject {
     }
     public static void function_group1_vibrate(){
         Pannel_ListLayout_Top.vibrator.cancel();
-        if (Vars_Def.group1_li5_state  == "None"){
+        if (Vars_Def.inMotion_li5_state  == "None"){
             Pannel_ListLayout_Top.vibrator.cancel();
         }
-        if (Vars_Def.group1_li5_state  == "Light"){
+        if (Vars_Def.inMotion_li5_state  == "Light"){
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
                 Pannel_ListLayout_Top.vibrator.vibrate(VibrationEffect.createOneShot(10, VibrationEffect.DEFAULT_AMPLITUDE));
             } else {
                 Pannel_ListLayout_Top.vibrator.vibrate(10);
             }
         }
-        if (Vars_Def.group1_li5_state  == "Normal"){
+        if (Vars_Def.inMotion_li5_state  == "Normal"){
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
                 Pannel_ListLayout_Top.vibrator.vibrate(VibrationEffect.createOneShot(20, VibrationEffect.DEFAULT_AMPLITUDE));
             } else {
                 Pannel_ListLayout_Top.vibrator.vibrate(20);
             }
         }
-        if (Vars_Def.group1_li5_state  == "Strong"){
+        if (Vars_Def.inMotion_li5_state  == "Strong"){
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
                 Pannel_ListLayout_Top.vibrator.vibrate(VibrationEffect.createOneShot(30, VibrationEffect.DEFAULT_AMPLITUDE));
             } else {
@@ -161,24 +161,24 @@ public class AnimRectObject {
 
     public static void function_group2_vibrate(){
         Pannel_ListLayout_Top.vibrator.cancel();
-        if (Vars_Def.group2_li5_state  == "None"){
+        if (Vars_Def.outMotion_li5_state == "None"){
             Pannel_ListLayout_Top.vibrator.cancel();
         }
-        if (Vars_Def.group2_li5_state  == "Light"){
+        if (Vars_Def.outMotion_li5_state == "Light"){
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
                 Pannel_ListLayout_Top.vibrator.vibrate(VibrationEffect.createOneShot(10, VibrationEffect.DEFAULT_AMPLITUDE));
             } else {
                 Pannel_ListLayout_Top.vibrator.vibrate(10);
             }
         }
-        if (Vars_Def.group2_li5_state  == "Normal"){
+        if (Vars_Def.outMotion_li5_state == "Normal"){
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
                 Pannel_ListLayout_Top.vibrator.vibrate(VibrationEffect.createOneShot(20, VibrationEffect.DEFAULT_AMPLITUDE));
             } else {
                 Pannel_ListLayout_Top.vibrator.vibrate(20);
             }
         }
-        if (Vars_Def.group2_li5_state  == "Strong"){
+        if (Vars_Def.outMotion_li5_state == "Strong"){
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
                 Pannel_ListLayout_Top.vibrator.vibrate(VibrationEffect.createOneShot(30, VibrationEffect.DEFAULT_AMPLITUDE));
             } else {

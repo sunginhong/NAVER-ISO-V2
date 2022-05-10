@@ -16,16 +16,16 @@ public class ResetState {
         Vars_Def.inMotion_li1_state = Vars_Def.defCaseState00_group1_li1_state_def;
         Vars_Def.inMotion_li2_state = Vars_Def.defCaseState00_group1_li2_state_def;
         Vars_Def.inMotion_li3_state = Vars_Def.defCaseState00_group1_li3_state_def;
-        Vars_Def.group1_li4_state = Vars_Def.defCaseState00_group1_li4_state_def;
-        Vars_Def.group1_li5_state = Vars_Def.defCaseState00_group1_li5_state_def;
+        Vars_Def.inMotion_li4_state = Vars_Def.defCaseState00_group1_li4_state_def;
+        Vars_Def.inMotion_li5_state = Vars_Def.defCaseState00_group1_li5_state_def;
 
         Vars_Def.defCaseState00_group2_li4_state_def = Vars_Def.array_string_easeType[1];
-        Vars_Def.group2_li0_state = Vars_Def.defCaseState00_group1_li0_state_def;
-        Vars_Def.group2_li1_state = Vars_Def.defCaseState00_group1_li1_state_def;
-        Vars_Def.group2_li2_state = Vars_Def.defCaseState00_group1_li2_state_def;
-        Vars_Def.group2_li3_state = Vars_Def.defCaseState00_group1_li3_state_def;
-        Vars_Def.group2_li4_state = Vars_Def.defCaseState00_group1_li4_state_def;
-        Vars_Def.group2_li5_state = Vars_Def.defCaseState00_group1_li5_state_def;
+        Vars_Def.outMotion_li0_state = Vars_Def.defCaseState00_group1_li0_state_def;
+        Vars_Def.outMotion_li1_state = Vars_Def.defCaseState00_group1_li1_state_def;
+        Vars_Def.outMotion_li2_state = Vars_Def.defCaseState00_group1_li2_state_def;
+        Vars_Def.outMotion_li3_state = Vars_Def.defCaseState00_group1_li3_state_def;
+        Vars_Def.outMotion_li4_state = Vars_Def.defCaseState00_group1_li4_state_def;
+        Vars_Def.inMotion_li5_state = Vars_Def.defCaseState00_group1_li5_state_def;
 
         Pannel_ListLayout_InMotion.in_motion_li0_btncase1_text.setTextColor(Color.parseColor("#000000"));
         Pannel_ListLayout_InMotion.in_motion_li0_btncase1_radio_trans.startTransition(0);
@@ -48,7 +48,7 @@ public class ResetState {
         Pannel_ListLayout_OutMotion.out_motion_li2_btncase1_radio_trans.startTransition(0);
         Pannel_ListLayout_OutMotion.out_motion_li3_btncase0_text.setTextColor(Color.parseColor("#000000"));
         Pannel_ListLayout_OutMotion.out_motion_li3_btncase0_radio_trans.startTransition(0);
-        Pannel_ListLayout_OutMotion.out_motion_li4_btncase1_textView.setTextColor(Color.parseColor("#000000"));
+        Pannel_ListLayout_OutMotion.out_motion_li4_btncase1_text.setTextColor(Color.parseColor("#000000"));
         Pannel_ListLayout_OutMotion.out_motion_li4_btncase1_radio_trans.startTransition(0);
         Pannel_ListLayout_OutMotion.out_motion_li5_btncase0_text.setTextColor(Color.parseColor("#000000"));
         Pannel_ListLayout_OutMotion.out_motion_li5_btncase0_radio_trans.startTransition(0);
@@ -63,16 +63,16 @@ public class ResetState {
         Vars_Def.inMotion_li1_state = Vars_Def.defCaseState01_group1_li1_state_def;
         Vars_Def.inMotion_li2_state = Vars_Def.defCaseState01_group1_li2_state_def;
         Vars_Def.inMotion_li3_state = Vars_Def.defCaseState01_group1_li3_state_def;
-        Vars_Def.group1_li4_state = Vars_Def.defCaseState01_group1_li4_state_def;
-        Vars_Def.group1_li5_state = Vars_Def.defCaseState01_group1_li5_state_def;
+        Vars_Def.inMotion_li4_state = Vars_Def.defCaseState01_group1_li4_state_def;
+        Vars_Def.inMotion_li5_state = Vars_Def.defCaseState01_group1_li5_state_def;
 
         Vars_Def.defCaseState01_group2_li4_state_def = Vars_Def.array_string_easeType[1];
-        Vars_Def.group2_li0_state = Vars_Def.defCaseState01_group1_li0_state_def;
-        Vars_Def.group2_li1_state = Vars_Def.defCaseState01_group1_li1_state_def;
-        Vars_Def.group2_li2_state = Vars_Def.defCaseState01_group1_li2_state_def;
-        Vars_Def.group2_li3_state = Vars_Def.defCaseState01_group1_li3_state_def;
-        Vars_Def.group2_li4_state = Vars_Def.defCaseState01_group1_li4_state_def;
-        Vars_Def.group2_li5_state = Vars_Def.defCaseState01_group1_li5_state_def;
+        Vars_Def.outMotion_li0_state = Vars_Def.defCaseState01_group1_li0_state_def;
+        Vars_Def.outMotion_li1_state = Vars_Def.defCaseState01_group1_li1_state_def;
+        Vars_Def.outMotion_li2_state = Vars_Def.defCaseState01_group1_li2_state_def;
+        Vars_Def.outMotion_li3_state = Vars_Def.defCaseState01_group1_li3_state_def;
+        Vars_Def.outMotion_li4_state = Vars_Def.defCaseState01_group1_li4_state_def;
+        Vars_Def.inMotion_li5_state = Vars_Def.defCaseState01_group1_li5_state_def;
 
         Pannel_ListLayout_InMotion.in_motion_li0_btncase1_text.setTextColor(Color.parseColor("#000000"));
         Pannel_ListLayout_InMotion.in_motion_li0_btncase1_radio_trans.startTransition(0);
@@ -95,7 +95,7 @@ public class ResetState {
         Pannel_ListLayout_OutMotion.out_motion_li2_btncase3_radio_trans.startTransition(0);
         Pannel_ListLayout_OutMotion.out_motion_li3_btncase0_text.setTextColor(Color.parseColor("#000000"));
         Pannel_ListLayout_OutMotion.out_motion_li3_btncase0_radio_trans.startTransition(0);
-        Pannel_ListLayout_OutMotion.out_motion_li4_btncase1_textView.setTextColor(Color.parseColor("#000000"));
+        Pannel_ListLayout_OutMotion.out_motion_li4_btncase1_text.setTextColor(Color.parseColor("#000000"));
         Pannel_ListLayout_OutMotion.out_motion_li4_btncase1_radio_trans.startTransition(0);
         Pannel_ListLayout_OutMotion.out_motion_li5_btncase0_text.setTextColor(Color.parseColor("#000000"));
         Pannel_ListLayout_OutMotion.out_motion_li5_btncase0_radio_trans.startTransition(0);
@@ -110,16 +110,16 @@ public class ResetState {
         Vars_Def.inMotion_li1_state = Vars_Def.defCaseState02_group1_li1_state_def;
         Vars_Def.inMotion_li2_state = Vars_Def.defCaseState02_group1_li2_state_def;
         Vars_Def.inMotion_li3_state = Vars_Def.defCaseState02_group1_li3_state_def;
-        Vars_Def.group1_li4_state = Vars_Def.defCaseState02_group1_li4_state_def;
-        Vars_Def.group1_li5_state = Vars_Def.defCaseState02_group1_li5_state_def;
+        Vars_Def.inMotion_li4_state = Vars_Def.defCaseState02_group1_li4_state_def;
+        Vars_Def.inMotion_li5_state = Vars_Def.defCaseState02_group1_li5_state_def;
 
         Vars_Def.defCaseState02_group2_li4_state_def = Vars_Def.array_string_easeType[1];
-        Vars_Def.group2_li0_state = Vars_Def.defCaseState02_group1_li0_state_def;
-        Vars_Def.group2_li1_state = Vars_Def.defCaseState02_group1_li1_state_def;
-        Vars_Def.group2_li2_state = Vars_Def.defCaseState02_group1_li2_state_def;
-        Vars_Def.group2_li3_state = Vars_Def.defCaseState02_group1_li3_state_def;
-        Vars_Def.group2_li4_state = Vars_Def.defCaseState02_group1_li4_state_def;
-        Vars_Def.group2_li5_state = Vars_Def.defCaseState02_group1_li5_state_def;
+        Vars_Def.outMotion_li0_state = Vars_Def.defCaseState02_group1_li0_state_def;
+        Vars_Def.outMotion_li1_state = Vars_Def.defCaseState02_group1_li1_state_def;
+        Vars_Def.outMotion_li2_state = Vars_Def.defCaseState02_group1_li2_state_def;
+        Vars_Def.outMotion_li3_state = Vars_Def.defCaseState02_group1_li3_state_def;
+        Vars_Def.outMotion_li4_state = Vars_Def.defCaseState02_group1_li4_state_def;
+        Vars_Def.inMotion_li5_state = Vars_Def.defCaseState02_group1_li5_state_def;
 
         Pannel_ListLayout_InMotion.in_motion_li0_btncase1_text.setTextColor(Color.parseColor("#000000"));
         Pannel_ListLayout_InMotion.in_motion_li0_btncase1_radio_trans.startTransition(0);
@@ -142,7 +142,7 @@ public class ResetState {
         Pannel_ListLayout_OutMotion.out_motion_li2_btncase3_radio_trans.startTransition(0);
         Pannel_ListLayout_OutMotion.out_motion_li3_btncase0_text.setTextColor(Color.parseColor("#000000"));
         Pannel_ListLayout_OutMotion.out_motion_li3_btncase0_radio_trans.startTransition(0);
-        Pannel_ListLayout_OutMotion.out_motion_li4_btncase1_textView.setTextColor(Color.parseColor("#000000"));
+        Pannel_ListLayout_OutMotion.out_motion_li4_btncase1_text.setTextColor(Color.parseColor("#000000"));
         Pannel_ListLayout_OutMotion.out_motion_li4_btncase1_radio_trans.startTransition(0);
         Pannel_ListLayout_OutMotion.out_motion_li5_btncase0_text.setTextColor(Color.parseColor("#000000"));
         Pannel_ListLayout_OutMotion.out_motion_li5_btncase0_radio_trans.startTransition(0);
@@ -238,13 +238,13 @@ public class ResetState {
         Pannel_ListLayout_OutMotion.out_motion_li3_btncase3_text.setTextColor(Color.parseColor("#BDC0BD"));
         Pannel_ListLayout_OutMotion.out_motion_li3_btncase3_radio_trans.resetTransition();
 
-        Pannel_ListLayout_OutMotion.out_motion_li4_btncase0_textView.setTextColor(Color.parseColor("#BDC0BD"));
+        Pannel_ListLayout_OutMotion.out_motion_li4_btncase0_text.setTextColor(Color.parseColor("#BDC0BD"));
         Pannel_ListLayout_OutMotion.out_motion_li4_btncase0_radio_trans.resetTransition();
-        Pannel_ListLayout_OutMotion.out_motion_li4_btncase1_textView.setTextColor(Color.parseColor("#BDC0BD"));
+        Pannel_ListLayout_OutMotion.out_motion_li4_btncase1_text.setTextColor(Color.parseColor("#BDC0BD"));
         Pannel_ListLayout_OutMotion.out_motion_li4_btncase1_radio_trans.resetTransition();
-        Pannel_ListLayout_OutMotion.out_motion_li4_btncase2_textView.setTextColor(Color.parseColor("#BDC0BD"));
+        Pannel_ListLayout_OutMotion.out_motion_li4_btncase2_text.setTextColor(Color.parseColor("#BDC0BD"));
         Pannel_ListLayout_OutMotion.out_motion_li4_btncase2_radio_trans.resetTransition();
-        Pannel_ListLayout_OutMotion.out_motion_li4_btncase3_textView.setTextColor(Color.parseColor("#BDC0BD"));
+        Pannel_ListLayout_OutMotion.out_motion_li4_btncase3_text.setTextColor(Color.parseColor("#BDC0BD"));
         Pannel_ListLayout_OutMotion.out_motion_li4_btncase3_radio_trans.resetTransition();
 
         Pannel_ListLayout_OutMotion.out_motion_li5_btncase0_text.setTextColor(Color.parseColor("#BDC0BD"));

@@ -54,8 +54,8 @@ public class Vars_Def {
     public static int inMotion_li1_state = defCaseState00_group1_li1_state_def;
     public static double inMotion_li2_state = defCaseState00_group1_li2_state_def;
     public static double inMotion_li3_state = defCaseState00_group1_li3_state_def;
-    public static String group1_li4_state = defCaseState00_group1_li4_state_def;
-    public static String group1_li5_state = defCaseState00_group1_li5_state_def;
+    public static String inMotion_li4_state = defCaseState00_group1_li4_state_def;
+    public static String inMotion_li5_state = defCaseState00_group1_li5_state_def;
 
     public static int defCaseState00_group2_li0_state_def = 300;
     public static int defCaseState00_group2_li1_state_def = 0;
@@ -78,10 +78,10 @@ public class Vars_Def {
     public static String defCaseState02_group2_li4_state_def = "";
     public static String defCaseState02_group2_li5_state_def = "None";
 
-    public static int group2_li0_state = defCaseState00_group2_li0_state_def;
-    public static int group2_li1_state = defCaseState00_group2_li1_state_def;
-    public static double group2_li2_state = defCaseState00_group2_li2_state_def;
-    public static double group2_li3_state = defCaseState00_group2_li3_state_def;
-    public static String group2_li4_state = defCaseState00_group2_li4_state_def;
-    public static String group2_li5_state = defCaseState00_group2_li5_state_def;
+    public static int outMotion_li0_state = defCaseState00_group2_li0_state_def;
+    public static int outMotion_li1_state = defCaseState00_group2_li1_state_def;
+    public static double outMotion_li2_state = defCaseState00_group2_li2_state_def;
+    public static double outMotion_li3_state = defCaseState00_group2_li3_state_def;
+    public static String outMotion_li4_state = defCaseState00_group2_li4_state_def;
+    public static String outMotion_li5_state = defCaseState00_group2_li5_state_def;
 }

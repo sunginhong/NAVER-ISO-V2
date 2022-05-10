@@ -95,10 +95,10 @@ public class Pannel_ListLayout_OutMotion extends RelativeLayout implements View.
     public static TextView out_motion_li3_btncase1_text;
     public static TextView out_motion_li3_btncase2_text;
     public static TextView out_motion_li3_btncase3_text;
-    public static TextView out_motion_li4_btncase0_textView;
-    public static TextView out_motion_li4_btncase1_textView;
-    public static TextView out_motion_li4_btncase2_textView;
-    public static TextView out_motion_li4_btncase3_textView;
+    public static TextView out_motion_li4_btncase0_text;
+    public static TextView out_motion_li4_btncase1_text;
+    public static TextView out_motion_li4_btncase2_text;
+    public static TextView out_motion_li4_btncase3_text;
     public static TextView out_motion_li5_btncase0_text;
     public static TextView out_motion_li5_btncase1_text;
     public static TextView out_motion_li5_btncase2_text;
@@ -136,8 +136,8 @@ public class Pannel_ListLayout_OutMotion extends RelativeLayout implements View.
         addView(v);
 
         Vars_Def.array_string_easeType = getResources().getStringArray(R.array.string_easeType);
-        Vars_Def.group1_li4_state = Vars_Def.array_string_easeType[0];
-        Vars_Def.group2_li4_state = Vars_Def.array_string_easeType[0];
+        Vars_Def.inMotion_li4_state = Vars_Def.array_string_easeType[0];
+        Vars_Def.outMotion_li4_state = Vars_Def.array_string_easeType[0];
 
         out_motion_li0_btncase0 = findViewById(R.id.out_motion_li0_btncase0);
         out_motion_li0_btncase1 = findViewById(R.id.out_motion_li0_btncase1);
@@ -222,20 +222,52 @@ public class Pannel_ListLayout_OutMotion extends RelativeLayout implements View.
         out_motion_li3_btncase1_text = findViewById(R.id.out_motion_li3_btncase1_text);
         out_motion_li3_btncase2_text = findViewById(R.id.out_motion_li3_btncase2_text);
         out_motion_li3_btncase3_text = findViewById(R.id.out_motion_li3_btncase3_text);
-        out_motion_li4_btncase0_textView = findViewById(R.id.out_motion_li4_btncase0_textView);
-        out_motion_li4_btncase1_textView = findViewById(R.id.out_motion_li4_btncase1_textView);
-        out_motion_li4_btncase2_textView = findViewById(R.id.out_motion_li4_btncase2_textView);
-        out_motion_li4_btncase3_textView = findViewById(R.id.out_motion_li4_btncase3_textView);
+        out_motion_li4_btncase0_text = findViewById(R.id.out_motion_li4_btncase0_textView);
+        out_motion_li4_btncase1_text = findViewById(R.id.out_motion_li4_btncase1_textView);
+        out_motion_li4_btncase2_text = findViewById(R.id.out_motion_li4_btncase2_textView);
+        out_motion_li4_btncase3_text = findViewById(R.id.out_motion_li4_btncase3_textView);
         out_motion_li5_btncase0_text = findViewById(R.id.out_motion_li5_btncase0_text);
         out_motion_li5_btncase1_text = findViewById(R.id.out_motion_li5_btncase1_text);
         out_motion_li5_btncase2_text = findViewById(R.id.out_motion_li5_btncase2_text);
         out_motion_li5_btncase3_text = findViewById(R.id.out_motion_li5_btncase3_text);
 
-        out_motion_li4_btncase0_textView.setText(Vars_Def.array_string_easeType[0]);
-        out_motion_li4_btncase1_textView.setText(Vars_Def.array_string_easeType[1]);
-        out_motion_li4_btncase2_textView.setText(Vars_Def.array_string_easeType[2]);
-        out_motion_li4_btncase3_textView.setText(Vars_Def.array_string_easeType[3]);
-        
+        out_motion_li4_btncase0_text.setText(Vars_Def.array_string_easeType[0]);
+        out_motion_li4_btncase1_text.setText(Vars_Def.array_string_easeType[1]);
+        out_motion_li4_btncase2_text.setText(Vars_Def.array_string_easeType[2]);
+        out_motion_li4_btncase3_text.setText(Vars_Def.array_string_easeType[3]);
+
+        ClickAdapter_OutMotion_Li0 clickAdapter_outMotion_Li0 = new ClickAdapter_OutMotion_Li0(ctx);
+        out_motion_li0_btncase0.setOnClickListener(clickAdapter_outMotion_Li0);
+        out_motion_li0_btncase1.setOnClickListener(clickAdapter_outMotion_Li0);
+        out_motion_li0_btncase2.setOnClickListener(clickAdapter_outMotion_Li0);
+
+        ClickAdapter_OutMotion_Li1 clickAdapter_outMotion_Li1 = new ClickAdapter_OutMotion_Li1(ctx);
+        out_motion_li1_btncase0.setOnClickListener(clickAdapter_outMotion_Li1);
+        out_motion_li1_btncase1.setOnClickListener(clickAdapter_outMotion_Li1);
+
+        ClickAdapter_OutMotion_Li2 clickAdapter_outMotion_Li2 = new ClickAdapter_OutMotion_Li2(ctx);
+        out_motion_li2_btncase0.setOnClickListener(clickAdapter_outMotion_Li2);
+        out_motion_li2_btncase1.setOnClickListener(clickAdapter_outMotion_Li2);
+        out_motion_li2_btncase2.setOnClickListener(clickAdapter_outMotion_Li2);
+        out_motion_li2_btncase3.setOnClickListener(clickAdapter_outMotion_Li2);
+
+        ClickAdapter_OutMotion_Li3 clickAdapter_outMotion_Li3 = new ClickAdapter_OutMotion_Li3(ctx);
+        out_motion_li3_btncase0.setOnClickListener(clickAdapter_outMotion_Li3);
+        out_motion_li3_btncase1.setOnClickListener(clickAdapter_outMotion_Li3);
+        out_motion_li3_btncase2.setOnClickListener(clickAdapter_outMotion_Li3);
+        out_motion_li3_btncase3.setOnClickListener(clickAdapter_outMotion_Li3);
+
+        ClickAdapter_OutMotion_Li4 clickAdapter_outMotion_Li4 = new ClickAdapter_OutMotion_Li4(ctx);
+        out_motion_li4_btncase0.setOnClickListener(clickAdapter_outMotion_Li4);
+        out_motion_li4_btncase1.setOnClickListener(clickAdapter_outMotion_Li4);
+        out_motion_li4_btncase2.setOnClickListener(clickAdapter_outMotion_Li4);
+        out_motion_li4_btncase3.setOnClickListener(clickAdapter_outMotion_Li4);
+
+        ClickAdapter_OutMotion_Li5 clickAdapter_outMotion_Li5 = new ClickAdapter_OutMotion_Li5(ctx);
+        out_motion_li5_btncase0.setOnClickListener(clickAdapter_outMotion_Li5);
+        out_motion_li5_btncase1.setOnClickListener(clickAdapter_outMotion_Li5);
+        out_motion_li5_btncase2.setOnClickListener(clickAdapter_outMotion_Li5);
+        out_motion_li5_btncase3.setOnClickListener(clickAdapter_outMotion_Li5);
     }
 
     @Override

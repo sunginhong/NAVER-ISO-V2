@@ -136,8 +136,8 @@ public class Pannel_ListLayout_InMotion extends RelativeLayout implements View.O
         addView(v);
 
         Vars_Def.array_string_easeType = getResources().getStringArray(R.array.string_easeType);
-        Vars_Def.group1_li4_state = Vars_Def.array_string_easeType[0];
-        Vars_Def.group2_li4_state = Vars_Def.array_string_easeType[0];
+        Vars_Def.inMotion_li4_state = Vars_Def.array_string_easeType[0];
+        Vars_Def.outMotion_li4_state = Vars_Def.array_string_easeType[0];
 
         in_motion_li0_btncase0 = findViewById(R.id.in_motion_li0_btncase0);
         in_motion_li0_btncase1 = findViewById(R.id.in_motion_li0_btncase1);
@@ -236,32 +236,39 @@ public class Pannel_ListLayout_InMotion extends RelativeLayout implements View.O
         in_motion_li4_btncase2_text.setText(Vars_Def.array_string_easeType[2]);
         in_motion_li4_btncase3_text.setText(Vars_Def.array_string_easeType[3]);
 
-        ClickAdapter_InMotion_Li0 clickAdapter_Group1_Li0 = new ClickAdapter_InMotion_Li0(ctx);
-        in_motion_li0_btncase0.setOnClickListener(clickAdapter_Group1_Li0);
-        in_motion_li0_btncase1.setOnClickListener(clickAdapter_Group1_Li0);
-        in_motion_li0_btncase2.setOnClickListener(clickAdapter_Group1_Li0);
+        ClickAdapter_InMotion_Li0 clickAdapter_inMotion_Li0 = new ClickAdapter_InMotion_Li0(ctx);
+        in_motion_li0_btncase0.setOnClickListener(clickAdapter_inMotion_Li0);
+        in_motion_li0_btncase1.setOnClickListener(clickAdapter_inMotion_Li0);
+        in_motion_li0_btncase2.setOnClickListener(clickAdapter_inMotion_Li0);
 
-        ClickAdapter_InMotion_Li1 clickAdapter_Group1_Li1 = new ClickAdapter_InMotion_Li1(ctx);
-        in_motion_li1_btncase0.setOnClickListener(clickAdapter_Group1_Li1);
-        in_motion_li1_btncase1.setOnClickListener(clickAdapter_Group1_Li1);
+        ClickAdapter_InMotion_Li1 clickAdapter_inMotion_Li1 = new ClickAdapter_InMotion_Li1(ctx);
+        in_motion_li1_btncase0.setOnClickListener(clickAdapter_inMotion_Li1);
+        in_motion_li1_btncase1.setOnClickListener(clickAdapter_inMotion_Li1);
 
-        ClickAdapter_InMotion_Li2 clickAdapter_Group1_Li2 = new ClickAdapter_InMotion_Li2(ctx);
-        in_motion_li2_btncase0.setOnClickListener(clickAdapter_Group1_Li2);
-        in_motion_li2_btncase1.setOnClickListener(clickAdapter_Group1_Li2);
-        in_motion_li2_btncase2.setOnClickListener(clickAdapter_Group1_Li2);
-        in_motion_li2_btncase3.setOnClickListener(clickAdapter_Group1_Li2);
+        ClickAdapter_InMotion_Li2 clickAdapter_inMotion_Li2 = new ClickAdapter_InMotion_Li2(ctx);
+        in_motion_li2_btncase0.setOnClickListener(clickAdapter_inMotion_Li2);
+        in_motion_li2_btncase1.setOnClickListener(clickAdapter_inMotion_Li2);
+        in_motion_li2_btncase2.setOnClickListener(clickAdapter_inMotion_Li2);
+        in_motion_li2_btncase3.setOnClickListener(clickAdapter_inMotion_Li2);
 
-        ClickAdapter_InMotion_Li3 clickAdapter_Group1_Li3 = new ClickAdapter_InMotion_Li3(ctx);
-        in_motion_li3_btncase0.setOnClickListener(clickAdapter_Group1_Li3);
-        in_motion_li3_btncase1.setOnClickListener(clickAdapter_Group1_Li3);
-        in_motion_li3_btncase2.setOnClickListener(clickAdapter_Group1_Li3);
-        in_motion_li3_btncase3.setOnClickListener(clickAdapter_Group1_Li3);
+        ClickAdapter_InMotion_Li3 clickAdapter_inMotion_Li3 = new ClickAdapter_InMotion_Li3(ctx);
+        in_motion_li3_btncase0.setOnClickListener(clickAdapter_inMotion_Li3);
+        in_motion_li3_btncase1.setOnClickListener(clickAdapter_inMotion_Li3);
+        in_motion_li3_btncase2.setOnClickListener(clickAdapter_inMotion_Li3);
+        in_motion_li3_btncase3.setOnClickListener(clickAdapter_inMotion_Li3);
 
-        ClickAdapter_InMotion_Li4 clickAdapter_Group1_Li4 = new ClickAdapter_InMotion_Li4(ctx);
-        in_motion_li4_btncase0.setOnClickListener(clickAdapter_Group1_Li4);
-        in_motion_li4_btncase1.setOnClickListener(clickAdapter_Group1_Li4);
-        in_motion_li4_btncase2.setOnClickListener(clickAdapter_Group1_Li4);
-        in_motion_li4_btncase3.setOnClickListener(clickAdapter_Group1_Li4);
+        ClickAdapter_InMotion_Li4 clickAdapter_inMotion_Li4 = new ClickAdapter_InMotion_Li4(ctx);
+        in_motion_li4_btncase0.setOnClickListener(clickAdapter_inMotion_Li4);
+        in_motion_li4_btncase1.setOnClickListener(clickAdapter_inMotion_Li4);
+        in_motion_li4_btncase2.setOnClickListener(clickAdapter_inMotion_Li4);
+        in_motion_li4_btncase3.setOnClickListener(clickAdapter_inMotion_Li4);
+
+        ClickAdapter_InMotion_Li5 clickAdapter_inMotion_Li5 = new ClickAdapter_InMotion_Li5(ctx);
+        in_motion_li5_btncase0.setOnClickListener(clickAdapter_inMotion_Li5);
+        in_motion_li5_btncase1.setOnClickListener(clickAdapter_inMotion_Li5);
+        in_motion_li5_btncase2.setOnClickListener(clickAdapter_inMotion_Li5);
+        in_motion_li5_btncase3.setOnClickListener(clickAdapter_inMotion_Li5);
+
     }
 
     @Override
