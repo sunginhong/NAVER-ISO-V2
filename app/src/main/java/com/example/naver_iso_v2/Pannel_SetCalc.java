@@ -33,7 +33,7 @@ public class Pannel_SetCalc {
                 MainActivity.params_copy.height = Vars_Def.heightMax;
                 MainActivity.rect_objectFL_Copy.setLayoutParams(MainActivity.params_copy);
                 Vars_Def.screenWidth = Resources.getSystem().getDisplayMetrics().widthPixels;
-                MainActivity.pannel_result.setX(Vars_Def.screenWidth);
+//                MainActivity.pannel_result.setX(Vars_Def.screenWidth);
 
                 Pannel_Layout.setContain();
             }

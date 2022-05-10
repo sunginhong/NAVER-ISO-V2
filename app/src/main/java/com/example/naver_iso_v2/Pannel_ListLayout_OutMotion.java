@@ -6,6 +6,7 @@ import android.os.Build;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -15,6 +16,8 @@ import androidx.annotation.RequiresApi;
 public class Pannel_ListLayout_OutMotion extends RelativeLayout implements View.OnClickListener {
 
     public Context ctx;
+
+    public static View code_review2;
 
     public static LinearLayout out_motion_li0_btncase0;
     public static LinearLayout out_motion_li0_btncase1;
@@ -134,6 +137,8 @@ public class Pannel_ListLayout_OutMotion extends RelativeLayout implements View.
         LayoutInflater li = (LayoutInflater) getContext().getSystemService(infService);
         View v = li.inflate(R.layout.pannel_layout_out_motion, this, false);
         addView(v);
+
+        code_review2 = findViewById(R.id.code_review2);
 
         Vars_Def.array_string_easeType = getResources().getStringArray(R.array.string_easeType);
         Vars_Def.inMotion_li4_state = Vars_Def.array_string_easeType[0];
@@ -268,6 +273,17 @@ public class Pannel_ListLayout_OutMotion extends RelativeLayout implements View.
         out_motion_li5_btncase1.setOnClickListener(clickAdapter_outMotion_Li5);
         out_motion_li5_btncase2.setOnClickListener(clickAdapter_outMotion_Li5);
         out_motion_li5_btncase3.setOnClickListener(clickAdapter_outMotion_Li5);
+
+        code_review2.setOnClickListener(new Button.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (!Vars_Def.codePage){
+                    MainActivity.pannel_result.setX(0);
+                    Utils_Anim.TransAnim(MainActivity.pannel_result, Vars_Def.screenWidth, 0, 0, 0, 400);
+                    Vars_Def.codePage = true;
+                }
+            }
+        });
     }
 
     @Override

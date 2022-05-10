@@ -18,6 +18,7 @@ import androidx.annotation.RequiresApi;
 public class Pannel_Result extends RelativeLayout {
 
     public Context ctx;
+    public View rect_code_back;
 
     public Pannel_Result(Context ctx) {
         super(ctx);
@@ -49,5 +50,23 @@ public class Pannel_Result extends RelativeLayout {
         LayoutInflater li = (LayoutInflater) getContext().getSystemService(infService);
         View v = li.inflate(R.layout.pannel_code_result, this, false);
         addView(v);
+
+        rect_code_back = findViewById(R.id.rect_code_back);
+
+        rect_code_back.setOnClickListener(new Button.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (Vars_Def.codePage){
+                    Utils_Anim.TransAnim(MainActivity.pannel_result, 0, Vars_Def.screenWidth, 0, 0, 500);
+                    new Handler().postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            MainActivity.pannel_result.setX(Vars_Def.screenWidth);
+                            Vars_Def.codePage = false;
+                        }
+                    }, 500);
+                }
+            }
+        });
     }
 }
