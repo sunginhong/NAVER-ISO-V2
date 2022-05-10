@@ -17,6 +17,8 @@ public class Pannel_SetCalc {
         MainActivity.layout_container_top_group.measure(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
         Vars_Def.container_top_group_height = MainActivity.layout_container_top_group.getMeasuredHeight();
 
+        MainActivity.pannel_result.setX(Vars_Def.screenWidth);
+
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
@@ -31,6 +33,7 @@ public class Pannel_SetCalc {
                 MainActivity.params_copy.height = Vars_Def.heightMax;
                 MainActivity.rect_objectFL_Copy.setLayoutParams(MainActivity.params_copy);
                 Vars_Def.screenWidth = Resources.getSystem().getDisplayMetrics().widthPixels;
+                MainActivity.pannel_result.setX(Vars_Def.screenWidth);
 
                 Pannel_Layout.setContain();
             }

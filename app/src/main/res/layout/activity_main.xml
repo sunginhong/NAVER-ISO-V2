@@ -65,4 +65,9 @@
 
     </LinearLayout>
 
+    <com.example.naver_iso_v2.Pannel_Result
+        android:id="@+id/pannel_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
