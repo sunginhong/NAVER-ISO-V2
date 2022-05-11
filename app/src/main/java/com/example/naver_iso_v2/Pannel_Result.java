@@ -88,6 +88,7 @@ public class Pannel_Result extends RelativeLayout {
             @Override
             public void onClick(View view) {
                 if (Vars_Def.codePage){
+                    Utils_Anim.TransAlphaAnim(MainActivity.main_contain, -Vars_Def.screenWidth/2, 0, 0, 0, 0.5f, 1, 500);
                     Utils_Anim.TransAnim(MainActivity.pannel_result, 0, Vars_Def.screenWidth, 0, 0, 500);
                     new Handler().postDelayed(new Runnable() {
                         @Override

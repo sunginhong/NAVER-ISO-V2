@@ -280,6 +280,7 @@ public class Pannel_ListLayout_InMotion extends RelativeLayout implements View.O
             public void onClick(View view) {
                 if (!Vars_Def.codePage){
                     MainActivity.pannel_result.setX(0);
+                    Utils_Anim.TransAlphaAnim(MainActivity.main_contain, 0, -Vars_Def.screenWidth/2, 0, 0, 1, 0.5f, 500);
                     Utils_Anim.TransAnim(MainActivity.pannel_result, Vars_Def.screenWidth, 0, 0, 0, 400);
                     Vars_Def.codePage = true;
                 }
