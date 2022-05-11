@@ -19,6 +19,20 @@ public class Pannel_Result extends RelativeLayout {
 
     public Context ctx;
     public View rect_code_back;
+    public static View rect_codeObject_case0;
+    public static View rect_codeObject_case1;
+    public static View rect_codeObject_case2;
+    public static TextView rect_code_anim_title;
+    public static TextView inMotion_result_0;
+    public static TextView inMotion_result_1;
+    public static TextView inMotion_result_2;
+    public static TextView inMotion_result_3;
+    public static TextView inMotion_result_4;
+    public static TextView outMotion_result_0;
+    public static TextView outMotion_result_1;
+    public static TextView outMotion_result_2;
+    public static TextView outMotion_result_3;
+    public static TextView outMotion_result_4;
 
     public Pannel_Result(Context ctx) {
         super(ctx);
@@ -52,6 +66,23 @@ public class Pannel_Result extends RelativeLayout {
         addView(v);
 
         rect_code_back = findViewById(R.id.rect_code_back);
+        rect_codeObject_case0 = findViewById(R.id.rect_codeObject_case0);
+        rect_codeObject_case1 = findViewById(R.id.rect_codeObject_case1);
+        rect_codeObject_case2 = findViewById(R.id.rect_codeObject_case2);
+        rect_code_anim_title = findViewById(R.id.rect_code_anim_title);
+        inMotion_result_0 = findViewById(R.id.inMotion_result_0);
+        inMotion_result_1 = findViewById(R.id.inMotion_result_1);
+        inMotion_result_2 = findViewById(R.id.inMotion_result_2);
+        inMotion_result_3 = findViewById(R.id.inMotion_result_3);
+        inMotion_result_4 = findViewById(R.id.inMotion_result_4);
+        outMotion_result_0 = findViewById(R.id.outMotion_result_0);
+        outMotion_result_1 = findViewById(R.id.outMotion_result_1);
+        outMotion_result_2 = findViewById(R.id.outMotion_result_2);
+        outMotion_result_3 = findViewById(R.id.outMotion_result_3);
+        outMotion_result_4 = findViewById(R.id.outMotion_result_4);
+
+        Pannel_Result.inMotion_result_4.setText("ease" + Vars_Def.array_string_easeType[1] + " - cubic-bezier(0.65, 0, 0.35, 1)");
+        Pannel_Result.outMotion_result_4.setText("ease" + Vars_Def.array_string_easeType[1] + " - cubic-bezier(0.65, 0, 0.35, 1)");
 
         rect_code_back.setOnClickListener(new Button.OnClickListener() {
             @Override

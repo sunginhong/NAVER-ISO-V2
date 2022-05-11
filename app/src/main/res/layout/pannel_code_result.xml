@@ -38,7 +38,7 @@
                         android:layout_gravity="center">
 
                         <View
-                            android:id="@+id/rect_code_anim_object_case0"
+                            android:id="@+id/rect_codeObject_case0"
                             android:layout_width="107dp"
                             android:layout_height="102dp"
                             android:layout_centerInParent="true"
@@ -47,7 +47,7 @@
                             android:background="@drawable/popup" />
 
                         <View
-                            android:id="@+id/rect_code_anim_object_case1"
+                            android:id="@+id/rect_codeObject_case1"
                             android:layout_width="105dp"
                             android:layout_height="31dp"
                             android:layout_centerInParent="true"
@@ -56,11 +56,10 @@
                             android:background="@drawable/nudge" />
 
                         <View
-                            android:id="@+id/rect_code_anim_object_case2"
+                            android:id="@+id/rect_codeObject_case2"
                             android:layout_width="121dp"
                             android:layout_height="31.5dp"
                             android:layout_centerInParent="true"
-                            android:layout_centerHorizontal="false"
                             android:layout_gravity="center"
                             android:background="@drawable/alarm" />
 
@@ -167,7 +166,7 @@
                                             android:orientation="horizontal">
 
                                             <TextView
-                                                android:id="@+id/group1_result_1"
+                                                android:id="@+id/inMotion_result_0"
                                                 android:layout_width="wrap_content"
                                                 android:layout_height="wrap_content"
                                                 android:layout_gravity="left"
@@ -200,7 +199,7 @@
                                             android:orientation="horizontal">
 
                                             <TextView
-                                                android:id="@+id/group1_result_2"
+                                                android:id="@+id/inMotion_result_1"
                                                 android:layout_width="wrap_content"
                                                 android:layout_height="wrap_content"
                                                 android:layout_gravity="left"
@@ -231,7 +230,7 @@
                                             android:orientation="horizontal">
 
                                             <TextView
-                                                android:id="@+id/group1_result_3"
+                                                android:id="@+id/inMotion_result_2"
                                                 android:layout_width="wrap_content"
                                                 android:layout_height="wrap_content"
                                                 android:layout_gravity="left"
@@ -269,7 +268,7 @@
                                             android:orientation="horizontal">
 
                                             <TextView
-                                                android:id="@+id/group1_result_4"
+                                                android:id="@+id/inMotion_result_3"
                                                 android:layout_width="wrap_content"
                                                 android:layout_height="wrap_content"
                                                 android:layout_gravity="left"
@@ -307,7 +306,7 @@
                                             android:orientation="horizontal">
 
                                             <TextView
-                                                android:id="@+id/group1_result_5"
+                                                android:id="@+id/inMotion_result_4"
                                                 android:layout_width="wrap_content"
                                                 android:layout_height="wrap_content"
                                                 android:layout_gravity="left"
@@ -386,7 +385,7 @@
                                             android:orientation="horizontal">
 
                                             <TextView
-                                                android:id="@+id/group2_result_1"
+                                                android:id="@+id/outMotion_result_0"
                                                 android:layout_width="wrap_content"
                                                 android:layout_height="wrap_content"
                                                 android:layout_gravity="left"
@@ -418,7 +417,7 @@
                                             android:orientation="horizontal">
 
                                             <TextView
-                                                android:id="@+id/group2_result_2"
+                                                android:id="@+id/outMotion_result_1"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_gravity="left"
@@ -456,7 +455,7 @@
                                                 android:textAppearance="@style/set_category_title" />
 
                                             <TextView
-                                                android:id="@+id/group2_result_3"
+                                                android:id="@+id/outMotion_result_2"
                                                 android:layout_width="wrap_content"
                                                 android:layout_height="wrap_content"
                                                 android:layout_gravity="left"
@@ -494,7 +493,7 @@
                                                 android:textAppearance="@style/set_category_title" />
 
                                             <TextView
-                                                android:id="@+id/group2_result_4"
+                                                android:id="@+id/outMotion_result_3"
                                                 android:layout_width="wrap_content"
                                                 android:layout_height="wrap_content"
                                                 android:layout_gravity="left"
@@ -525,7 +524,7 @@
                                             android:orientation="horizontal">
 
                                             <TextView
-                                                android:id="@+id/group2_result_5"
+                                                android:id="@+id/outMotion_result_4"
                                                 android:layout_width="wrap_content"
                                                 android:layout_height="wrap_content"
                                                 android:layout_gravity="left"

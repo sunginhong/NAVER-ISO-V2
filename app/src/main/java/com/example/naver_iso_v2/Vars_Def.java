@@ -29,59 +29,59 @@ public class Vars_Def {
     public static String playMotionState = "";
     public static String[] array_string_easeType;
 
-    public static int defCaseState00_group1_li0_state_def = 300;
-    public static int defCaseState00_group1_li1_state_def = 0;
-    public static double defCaseState00_group1_li2_state_def = 0.0;
-    public static double defCaseState00_group1_li3_state_def = 0.0;
-    public static String defCaseState00_group1_li4_state_def = "";
-    public static String defCaseState00_group1_li5_state_def = "None";
+    public static int defCaseState00_inMotion_li0_state_def = 300;
+    public static int defCaseState00_inMotion_li1_state_def = 0;
+    public static double defCaseState00_inMotion_li2_state_def = 0.0;
+    public static double defCaseState00_inMotion_li3_state_def = 0.0;
+    public static String defCaseState00_inMotion_li4_state_def = "";
+    public static String defCaseState00_inMotion_li5_state_def = "None";
 
-    public static int defCaseState01_group1_li0_state_def = 300;
-    public static int defCaseState01_group1_li1_state_def = Utils_Calc.dpToPx(bottomPosY);
-    public static double defCaseState01_group1_li2_state_def = 1;
-    public static double defCaseState01_group1_li3_state_def = 0.0;
-    public static String defCaseState01_group1_li4_state_def = "";
-    public static String defCaseState01_group1_li5_state_def = "None";
+    public static int defCaseState01_inMotion_li0_state_def = 300;
+    public static int defCaseState01_inMotion_li1_state_def = Utils_Calc.dpToPx(bottomPosY);
+    public static double defCaseState01_inMotion_li2_state_def = 1;
+    public static double defCaseState01_inMotion_li3_state_def = 0.0;
+    public static String defCaseState01_inMotion_li4_state_def = "";
+    public static String defCaseState01_inMotion_li5_state_def = "None";
 
-    public static int defCaseState02_group1_li0_state_def = 200;
-    public static int defCaseState02_group1_li1_state_def = Utils_Calc.dpToPx(bottomPosY);
-    public static double defCaseState02_group1_li2_state_def = 1;
-    public static double defCaseState02_group1_li3_state_def = 0.0;
-    public static String defCaseState02_group1_li4_state_def = "";
-    public static String defCaseState02_group1_li5_state_def = "None";
+    public static int defCaseState02_inMotion_li0_state_def = 200;
+    public static int defCaseState02_inMotion_li1_state_def = Utils_Calc.dpToPx(bottomPosY);
+    public static double defCaseState02_inMotion_li2_state_def = 1;
+    public static double defCaseState02_inMotion_li3_state_def = 0.0;
+    public static String defCaseState02_inMotion_li4_state_def = "";
+    public static String defCaseState02_inMotion_li5_state_def = "None";
 
-    public static int inMotion_li0_state = defCaseState00_group1_li0_state_def;
-    public static int inMotion_li1_state = defCaseState00_group1_li1_state_def;
-    public static double inMotion_li2_state = defCaseState00_group1_li2_state_def;
-    public static double inMotion_li3_state = defCaseState00_group1_li3_state_def;
-    public static String inMotion_li4_state = defCaseState00_group1_li4_state_def;
-    public static String inMotion_li5_state = defCaseState00_group1_li5_state_def;
+    public static int inMotion_li0_state = defCaseState00_inMotion_li0_state_def;
+    public static int inMotion_li1_state = defCaseState00_inMotion_li1_state_def;
+    public static double inMotion_li2_state = defCaseState00_inMotion_li2_state_def;
+    public static double inMotion_li3_state = defCaseState00_inMotion_li3_state_def;
+    public static String inMotion_li4_state = defCaseState00_inMotion_li4_state_def;
+    public static String inMotion_li5_state = defCaseState00_inMotion_li5_state_def;
 
-    public static int defCaseState00_group2_li0_state_def = 300;
-    public static int defCaseState00_group2_li1_state_def = 0;
-    public static double defCaseState00_group2_li2_state_def = 0.0;
-    public static double defCaseState00_group2_li3_state_def = 0.0;
-    public static String defCaseState00_group2_li4_state_def = "";
-    public static String defCaseState00_group2_li5_state_def = "None";
+    public static int defCaseState00_outMotion_li0_state_def = 300;
+    public static int defCaseState00_outMotion_li1_state_def = 0;
+    public static double defCaseState00_outMotion_li2_state_def = 0.0;
+    public static double defCaseState00_outMotion_li3_state_def = 0.0;
+    public static String defCaseState00_outMotion_li4_state_def = "";
+    public static String defCaseState00_outMotion_li5_state_def = "None";
 
-    public static int defCaseState01_group2_li0_state_def = 300;
-    public static int defCaseState01_group2_li1_state_def = Utils_Calc.dpToPx(bottomPosY);
-    public static double defCaseState01_group2_li2_state_def = 1;
-    public static double defCaseState01_group2_li3_state_def = 0.0;
-    public static String defCaseState01_group2_li4_state_def = "";
-    public static String defCaseState01_group2_li5_state_def = "None";
+    public static int defCaseState01_outMotion_li0_state_def = 300;
+    public static int defCaseState01_outMotion_li1_state_def = Utils_Calc.dpToPx(bottomPosY);
+    public static double defCaseState01_outMotion_li2_state_def = 1;
+    public static double defCaseState01_outMotion_li3_state_def = 0.0;
+    public static String defCaseState01_outMotion_li4_state_def = "";
+    public static String defCaseState01_outMotion_li5_state_def = "None";
 
-    public static int defCaseState02_group2_li0_state_def = 300;
-    public static int defCaseState02_group2_li1_state_def = Utils_Calc.dpToPx(bottomPosY);
-    public static double defCaseState02_group2_li2_state_def = 1;
-    public static double defCaseState02_group2_li3_state_def = 0.0;
-    public static String defCaseState02_group2_li4_state_def = "";
-    public static String defCaseState02_group2_li5_state_def = "None";
+    public static int defCaseState02_outMotion_li0_state_def = 300;
+    public static int defCaseState02_outMotion_li1_state_def = Utils_Calc.dpToPx(bottomPosY);
+    public static double defCaseState02_outMotion_li2_state_def = 1;
+    public static double defCaseState02_outMotion_li3_state_def = 0.0;
+    public static String defCaseState02_outMotion_li4_state_def = "";
+    public static String defCaseState02_outMotion_li5_state_def = "None";
 
-    public static int outMotion_li0_state = defCaseState00_group2_li0_state_def;
-    public static int outMotion_li1_state = defCaseState00_group2_li1_state_def;
-    public static double outMotion_li2_state = defCaseState00_group2_li2_state_def;
-    public static double outMotion_li3_state = defCaseState00_group2_li3_state_def;
-    public static String outMotion_li4_state = defCaseState00_group2_li4_state_def;
-    public static String outMotion_li5_state = defCaseState00_group2_li5_state_def;
+    public static int outMotion_li0_state = defCaseState00_outMotion_li0_state_def;
+    public static int outMotion_li1_state = defCaseState00_outMotion_li1_state_def;
+    public static double outMotion_li2_state = defCaseState00_outMotion_li2_state_def;
+    public static double outMotion_li3_state = defCaseState00_outMotion_li3_state_def;
+    public static String outMotion_li4_state = defCaseState00_outMotion_li4_state_def;
+    public static String outMotion_li5_state = defCaseState00_outMotion_li5_state_def;
 }

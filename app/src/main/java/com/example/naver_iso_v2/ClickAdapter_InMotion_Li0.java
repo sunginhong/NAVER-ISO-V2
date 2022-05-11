@@ -2,6 +2,7 @@ package com.example.naver_iso_v2;
 
 import android.content.Context;
 import android.graphics.Color;
+import android.util.Log;
 import android.view.View;
 
 public class ClickAdapter_InMotion_Li0 implements View.OnClickListener{
@@ -49,6 +50,6 @@ public class ClickAdapter_InMotion_Li0 implements View.OnClickListener{
                 Pannel_ListLayout_InMotion.in_motion_li0_btncase2_radio_trans.startTransition(100);
                 break;
         }
-//        MainActivity.group1_result_1.setText(""+duration+"");
+        Pannel_Result.inMotion_result_0.setText(""+duration+"");
     }
 }

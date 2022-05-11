@@ -18,7 +18,7 @@ public class ClickAdapter_InMotion_Li1 implements View.OnClickListener {
         switch(v.getId()){
             case R.id.in_motion_li1_btncase0:
                 Vars_Def.inMotion_li1_state = 0;
-//                MainActivity.group1_result_2.setText("위치 이동 없음");
+                Pannel_Result.inMotion_result_1.setText("위치 이동 없음");
                 Pannel_ListLayout_InMotion.in_motion_li1_btncase0_text.setTextColor(Color.parseColor("#000000"));
                 Pannel_ListLayout_InMotion.in_motion_li1_btncase1_text.setTextColor(Color.parseColor("#BDC0BD"));
                 Pannel_ListLayout_InMotion.in_motion_li1_btncase0_radio_trans.startTransition(100);
@@ -27,7 +27,7 @@ public class ClickAdapter_InMotion_Li1 implements View.OnClickListener {
 
             case R.id.in_motion_li1_btncase1:
                 Vars_Def.inMotion_li1_state = Utils_Calc.dpToPx(Vars_Def.bottomPosY);
-//                MainActivity.group1_result_2.setText("가이드 위치 + 30에서 → 가이드 위치까지 이동");
+                Pannel_Result.inMotion_result_1.setText("가이드 위치 + 30에서 → 가이드 위치까지 이동");
                 Pannel_ListLayout_InMotion.in_motion_li1_btncase0_text.setTextColor(Color.parseColor("#BDC0BD"));
                 Pannel_ListLayout_InMotion.in_motion_li1_btncase1_text.setTextColor(Color.parseColor("#000000"));
                 Pannel_ListLayout_InMotion.in_motion_li1_btncase0_radio_trans.resetTransition();

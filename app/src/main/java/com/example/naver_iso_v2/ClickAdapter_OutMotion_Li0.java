@@ -49,6 +49,6 @@ public class ClickAdapter_OutMotion_Li0 implements View.OnClickListener{
                 Pannel_ListLayout_OutMotion.out_motion_li0_btncase2_radio_trans.startTransition(100);
                 break;
         }
-//        MainActivity.group1_result_1.setText(""+duration+"");
+        Pannel_Result.outMotion_result_0.setText(""+duration+"");
     }
 }

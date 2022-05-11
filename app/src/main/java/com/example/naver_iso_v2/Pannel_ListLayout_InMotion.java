@@ -293,4 +293,5 @@ public class Pannel_ListLayout_InMotion extends RelativeLayout implements View.O
 
         }
     }
+
 }

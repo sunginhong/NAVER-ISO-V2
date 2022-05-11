@@ -10,6 +10,7 @@ public class ClickAdapter_InMotion_Li4 implements View.OnClickListener{
 
     Context mContext;
     private int idx = 1;
+    private String easeCase;
 
     public ClickAdapter_InMotion_Li4(Context context){
         mContext = context;
@@ -21,7 +22,7 @@ public class ClickAdapter_InMotion_Li4 implements View.OnClickListener{
             case R.id.in_motion_li4_btncase0:
                 idx = 0;
                 Vars_Def.inMotion_li4_state = Vars_Def.array_string_easeType[idx];
-//                Pannel_ListLayout_InMotion.result_in_ease.setText("cubic-bezier(0.32, 0, 0.67, 0)");
+                easeCase = " - cubic-bezier(0.32, 0, 0.67, 0)";
                 Pannel_ListLayout_InMotion.in_motion_li4_btncase0_text.setTextColor(Color.parseColor("#000000"));
                 Pannel_ListLayout_InMotion.in_motion_li4_btncase1_text.setTextColor(Color.parseColor("#BDC0BD"));
                 Pannel_ListLayout_InMotion.in_motion_li4_btncase2_text.setTextColor(Color.parseColor("#BDC0BD"));
@@ -35,7 +36,7 @@ public class ClickAdapter_InMotion_Li4 implements View.OnClickListener{
             case R.id.in_motion_li4_btncase1:
                 idx = 1;
                 Vars_Def.inMotion_li4_state = Vars_Def.array_string_easeType[idx];
-//                Pannel_ListLayout_InMotion.result_in_ease.setText("cubic-bezier(0.65, 0, 0.35, 1)");
+                easeCase = " - cubic-bezier(0.65, 0, 0.35, 1)";
                 Pannel_ListLayout_InMotion.in_motion_li4_btncase0_text.setTextColor(Color.parseColor("#BDC0BD"));
                 Pannel_ListLayout_InMotion.in_motion_li4_btncase1_text.setTextColor(Color.parseColor("#000000"));
                 Pannel_ListLayout_InMotion.in_motion_li4_btncase2_text.setTextColor(Color.parseColor("#BDC0BD"));
@@ -49,7 +50,7 @@ public class ClickAdapter_InMotion_Li4 implements View.OnClickListener{
             case R.id.in_motion_li4_btncase2:
                 idx = 2;
                 Vars_Def.inMotion_li4_state = Vars_Def.array_string_easeType[idx];
-//                Pannel_ListLayout_InMotion.result_in_ease.setText("cubic-bezier(0.33, 1, 0.68, 1)");
+                easeCase = " - cubic-bezier(0.33, 1, 0.68, 1)";
                 Pannel_ListLayout_InMotion.in_motion_li4_btncase0_text.setTextColor(Color.parseColor("#BDC0BD"));
                 Pannel_ListLayout_InMotion.in_motion_li4_btncase1_text.setTextColor(Color.parseColor("#BDC0BD"));
                 Pannel_ListLayout_InMotion.in_motion_li4_btncase2_text.setTextColor(Color.parseColor("#000000"));
@@ -63,7 +64,7 @@ public class ClickAdapter_InMotion_Li4 implements View.OnClickListener{
             case R.id.in_motion_li4_btncase3:
                 idx = 3;
                 Vars_Def.inMotion_li4_state = Vars_Def.array_string_easeType[idx];
-//                Pannel_ListLayout_InMotion.result_in_ease.setText("cubic-bezier(0.34, 1.56, 0.64, 1)");
+                easeCase = " - cubic-bezier(0.34, 1.56, 0.64, 1)";
                 Pannel_ListLayout_InMotion.in_motion_li4_btncase0_text.setTextColor(Color.parseColor("#BDC0BD"));
                 Pannel_ListLayout_InMotion.in_motion_li4_btncase1_text.setTextColor(Color.parseColor("#BDC0BD"));
                 Pannel_ListLayout_InMotion.in_motion_li4_btncase2_text.setTextColor(Color.parseColor("#BDC0BD"));
@@ -75,6 +76,6 @@ public class ClickAdapter_InMotion_Li4 implements View.OnClickListener{
                 break;
         }
         AnimRectObject.function_group1_selEase(Vars_Def.inMotion_li4_state);
-//        MainActivity.group1_result_5.setText("ease" + Vars.array_string_easeType[idx] + " - " + MainActivity.result_in_ease.getText());
+        Pannel_Result.inMotion_result_4.setText("ease" + Vars_Def.array_string_easeType[idx] + easeCase);
     }
 }
