@@ -102,6 +102,7 @@ public class BottomTabBar extends RelativeLayout  implements View.OnClickListene
         fragment2 = new Fragment_2_Alarm();
 
         bottomCase(0);
+
     }
 
     private void bottomCase(int idx){
