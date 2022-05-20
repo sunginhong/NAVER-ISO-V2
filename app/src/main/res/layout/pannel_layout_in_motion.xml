@@ -103,7 +103,7 @@
                                 android:text="0.2s"
                                 android:textAlignment="viewStart"
                                 android:maxLines="1"
-                                android:ellipsize="end"
+                                android:ellipsize="none"
                                 android:textAppearance="@style/set_category_subtitle" />
 
                         </LinearLayout>
@@ -134,7 +134,7 @@
                                 android:text="0.3s"
                                 android:textAlignment="viewStart"
                                 android:maxLines="1"
-                                android:ellipsize="end"
+                                android:ellipsize="none"
                                 android:textAppearance="@style/set_category_subtitle" />
 
                         </LinearLayout>
@@ -165,7 +165,7 @@
                                 android:text="0.4s"
                                 android:textAlignment="viewStart"
                                 android:maxLines="1"
-                                android:ellipsize="end"
+                                android:ellipsize="none"
                                 android:textAppearance="@style/set_category_subtitle" />
 
                         </LinearLayout>
@@ -220,7 +220,7 @@
                                 android:text="None"
                                 android:textAlignment="viewStart"
                                 android:maxLines="1"
-                                android:ellipsize="end"
+                                android:ellipsize="none"
                                 android:textAppearance="@style/set_category_subtitle" />
 
                         </LinearLayout>
@@ -252,7 +252,7 @@
                                 android:text="Bottom"
                                 android:textAlignment="viewStart"
                                 android:maxLines="1"
-                                android:ellipsize="end"
+                                android:ellipsize="none"
                                 android:textAppearance="@style/set_category_subtitle" />
 
                         </LinearLayout>
@@ -315,7 +315,7 @@
                                 android:text="0"
                                 android:textAlignment="viewStart"
                                 android:maxLines="1"
-                                android:ellipsize="end"
+                                android:ellipsize="none"
                                 android:textAppearance="@style/set_category_subtitle" />
 
                         </LinearLayout>
@@ -345,7 +345,7 @@
                                 android:layout_gravity="center|top"
                                 android:text="0.5"
                                 android:maxLines="1"
-                                android:ellipsize="end"
+                                android:ellipsize="none"
                                 android:textAppearance="@style/set_category_subtitle" />
 
                         </LinearLayout>
@@ -376,7 +376,7 @@
                                 android:text="0.7"
                                 android:textAlignment="viewStart"
                                 android:maxLines="1"
-                                android:ellipsize="end"
+                                android:ellipsize="none"
                                 android:textAppearance="@style/set_category_subtitle" />
 
                         </LinearLayout>
@@ -407,7 +407,7 @@
                                 android:text="1"
                                 android:textAlignment="viewStart"
                                 android:maxLines="1"
-                                android:ellipsize="end"
+                                android:ellipsize="none"
                                 android:textAppearance="@style/set_category_subtitle" />
 
                         </LinearLayout>
@@ -585,7 +585,7 @@
                                 android:layout_gravity="center|top"
                                 android:textAlignment="viewStart"
                                 android:maxLines="1"
-                                android:ellipsize="end"
+                                android:ellipsize="none"
                                 android:textAppearance="@style/set_category_subtitle" />
 
                         </LinearLayout>
@@ -615,7 +615,7 @@
                                 android:layout_gravity="center|top"
                                 android:textAlignment="viewStart"
                                 android:maxLines="1"
-                                android:ellipsize="end"
+                                android:ellipsize="none"
                                 android:textAppearance="@style/set_category_subtitle" />
 
                         </LinearLayout>
@@ -645,7 +645,7 @@
                                 android:layout_gravity="center|top"
                                 android:textAlignment="viewStart"
                                 android:maxLines="1"
-                                android:ellipsize="end"
+                                android:ellipsize="none"
                                 android:textAppearance="@style/set_category_subtitle" />
 
                         </LinearLayout>
@@ -675,7 +675,7 @@
                                 android:layout_gravity="center|top"
                                 android:textAlignment="viewStart"
                                 android:maxLines="1"
-                                android:ellipsize="end"
+                                android:ellipsize="none"
                                 android:textAppearance="@style/set_category_subtitle" />
 
                         </LinearLayout>
@@ -721,7 +721,7 @@
                                 android:text="None"
                                 android:textAlignment="viewStart"
                                 android:maxLines="1"
-                                android:ellipsize="end"
+                                android:ellipsize="none"
                                 android:textAppearance="@style/set_category_subtitle" />
 
                         </LinearLayout>
@@ -752,7 +752,7 @@
                                 android:text="Light"
                                 android:textAlignment="viewStart"
                                 android:maxLines="1"
-                                android:ellipsize="end"
+                                android:ellipsize="none"
                                 android:textAppearance="@style/set_category_subtitle" />
 
                         </LinearLayout>
@@ -773,7 +773,7 @@
                                 android:layout_marginTop="@dimen/square_btn_margin_top"
                                 android:layout_marginRight="@dimen/square_btn_margin_right"
                                 android:maxLines="1"
-                                android:ellipsize="end"
+                                android:ellipsize="none"
                                 android:background="@drawable/rect_button_radio"></com.example.naver_iso_v2.SquareButton>
 
                             <TextView
@@ -785,7 +785,7 @@
                                 android:text="Medium"
                                 android:textAlignment="viewStart"
                                 android:maxLines="1"
-                                android:ellipsize="end"
+                                android:ellipsize="none"
                                 android:textAppearance="@style/set_category_subtitle" />
 
                         </LinearLayout>
@@ -816,7 +816,7 @@
                                 android:text="Heavy"
                                 android:textAlignment="viewStart"
                                 android:maxLines="1"
-                                android:ellipsize="end"
+                                android:ellipsize="none"
                                 android:textAppearance="@style/set_category_subtitle" />
 
                         </LinearLayout>
