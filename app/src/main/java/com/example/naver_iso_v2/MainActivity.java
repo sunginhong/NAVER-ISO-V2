@@ -46,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
         pannel_result = findViewById(R.id.pannel_result);
 
         new Pannel_SetCalc(this);
+
     }
 
     @Override
