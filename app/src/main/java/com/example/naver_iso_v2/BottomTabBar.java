@@ -28,16 +28,21 @@ public class BottomTabBar extends RelativeLayout  implements View.OnClickListene
     public static Button bottom_btn_1;
     public static Button bottom_btn_2;
     public static Button bottom_btn_3;
+    public static Button bottom_btn_4;
+    public static Button bottom_btn_5;
 
     public static TransitionDrawable trans_bottom_btn_0;
     public static TransitionDrawable trans_bottom_btn_1;
     public static TransitionDrawable trans_bottom_btn_2;
     public static TransitionDrawable trans_bottom_btn_3;
+    public static TransitionDrawable trans_bottom_btn_4;
+    public static TransitionDrawable trans_bottom_btn_5;
 
     public Fragment_0_Popup fragment0;
     public Fragment_1_Nudge fragment1;
     public Fragment_2_Alarm fragment2;
     public Fragment_3_ViewPager fragment3;
+    public Fragment_5_Drag fragment5;
 
     public BottomTabBar(Context ctx){
         super(ctx);
@@ -78,31 +83,43 @@ public class BottomTabBar extends RelativeLayout  implements View.OnClickListene
         bottom_btn_1 = findViewById(R.id.bottom_btn_1);
         bottom_btn_2 = findViewById(R.id.bottom_btn_2);
         bottom_btn_3 = findViewById(R.id.bottom_btn_3);
+        bottom_btn_4 = findViewById(R.id.bottom_btn_4);
+        bottom_btn_5 = findViewById(R.id.bottom_btn_5);
 
         bottom_btn_0.setOnClickListener(this);
         bottom_btn_1.setOnClickListener(this);
         bottom_btn_2.setOnClickListener(this);
         bottom_btn_3.setOnClickListener(this);
+        bottom_btn_4.setOnClickListener(this);
+        bottom_btn_5.setOnClickListener(this);
 
         trans_bottom_btn_0 = (TransitionDrawable) bottom_btn_0.getBackground();
         trans_bottom_btn_1 = (TransitionDrawable) bottom_btn_1.getBackground();
         trans_bottom_btn_2 = (TransitionDrawable) bottom_btn_2.getBackground();
         trans_bottom_btn_3 = (TransitionDrawable) bottom_btn_3.getBackground();
+        trans_bottom_btn_4 = (TransitionDrawable) bottom_btn_4.getBackground();
+        trans_bottom_btn_5 = (TransitionDrawable) bottom_btn_5.getBackground();
 
         bottomTabBar_Array.add(bottom_btn_0);
         bottomTabBar_Array.add(bottom_btn_1);
         bottomTabBar_Array.add(bottom_btn_2);
         bottomTabBar_Array.add(bottom_btn_3);
+        bottomTabBar_Array.add(bottom_btn_4);
+        bottomTabBar_Array.add(bottom_btn_5);
 
         bottomTabBar_Trans_Array.add(trans_bottom_btn_0);
         bottomTabBar_Trans_Array.add(trans_bottom_btn_1);
         bottomTabBar_Trans_Array.add(trans_bottom_btn_2);
         bottomTabBar_Trans_Array.add(trans_bottom_btn_3);
+        bottomTabBar_Trans_Array.add(trans_bottom_btn_4);
+        bottomTabBar_Trans_Array.add(trans_bottom_btn_5);
 
         fragment0 = new Fragment_0_Popup();
         fragment1 = new Fragment_1_Nudge();
         fragment2 = new Fragment_2_Alarm();
         fragment3 = new Fragment_3_ViewPager();
+
+        fragment5 = new Fragment_5_Drag();
 
         bottomCase(0);
 
@@ -126,6 +143,8 @@ public class BottomTabBar extends RelativeLayout  implements View.OnClickListene
         if(idx == 1){ ((FragmentActivity)ctx).getSupportFragmentManager().beginTransaction().replace(R.id.rect_objectRL, fragment1).commit(); }
         if(idx == 2){ ((FragmentActivity)ctx).getSupportFragmentManager().beginTransaction().replace(R.id.rect_objectRL, fragment2).commit(); }
         if(idx == 3){ ((FragmentActivity)ctx).getSupportFragmentManager().beginTransaction().replace(R.id.rect_objectRL, fragment3).commit(); }
+
+        if(idx == 5){ ((FragmentActivity)ctx).getSupportFragmentManager().beginTransaction().replace(R.id.rect_objectRL, fragment5).commit(); }
     }
 
     @Override
@@ -142,6 +161,9 @@ public class BottomTabBar extends RelativeLayout  implements View.OnClickListene
                 break;
             case R.id.bottom_btn_3 :
                 bottomCase(3);
+                break;
+            case R.id.bottom_btn_5 :
+                bottomCase(5);
                 break;
         }
     }

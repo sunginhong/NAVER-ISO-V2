@@ -18,7 +18,7 @@ public class Fragment_2_Alarm extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_2_alarm, container, false);
+        View view = inflater.inflate(R.layout.fragment_2alarm, container, false);
         anim_object_alarm = view.findViewById(R.id.anim_object_alarm);
         AnimRectObject.function_containAnim(anim_object_alarm, Float.parseFloat(Vars_Def.inMotion_li1_state +"f"), Float.parseFloat(Vars_Def.inMotion_li2_state +"f"), Float.parseFloat(Vars_Def.inMotion_li3_state +"f"), 0, AnimRectObject.selEase_group1);
         return view;

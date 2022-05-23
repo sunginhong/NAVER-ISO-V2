@@ -69,6 +69,7 @@
                     android:textAppearance="@style/noncase" />
 
                 <Button
+                    android:id="@+id/bottom_btn_4"
                     android:layout_width="@dimen/category_btn_width"
                     android:layout_height="match_parent"
                     android:layout_alignParentLeft="true"
@@ -79,11 +80,12 @@
                     android:textAppearance="@style/noncase" />
 
                 <Button
+                    android:id="@+id/bottom_btn_5"
                     android:layout_width="@dimen/category_btn_width"
                     android:layout_height="match_parent"
                     android:layout_alignParentLeft="true"
                     android:layout_marginRight="@dimen/category_btn_margin"
-                    android:background="@drawable/bottom_button_closed"
+                    android:background="@drawable/bottom_button_open"
                     android:stateListAnimator="@null"
                     android:text="@string/drag"
                     android:textAppearance="@style/noncase" />
