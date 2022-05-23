@@ -33,7 +33,7 @@
                 android:layout_centerInParent="true"
                 android:background="#00BB86FC"
                 android:clipChildren="false"
-                android:paddingTop="5dp">
+                android:paddingTop="0dp">
             </RelativeLayout>
 
         </FrameLayout>

@@ -4,7 +4,6 @@ import android.content.Context;
 import android.graphics.drawable.TransitionDrawable;
 import android.os.Build;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
@@ -12,7 +11,6 @@ import android.widget.RelativeLayout;
 
 import androidx.annotation.RequiresApi;
 import androidx.fragment.app.FragmentActivity;
-import androidx.fragment.app.FragmentTransaction;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,21 +24,20 @@ public class BottomTabBar extends RelativeLayout  implements View.OnClickListene
 
     public static int clickIdx = 0;
 
-    private final int FRAGMENT0 = 0;
-    private final int FRAGMENT1 = 1;
-    private final int FRAGMENT2 = 2;
-
     public static Button bottom_btn_0;
     public static Button bottom_btn_1;
     public static Button bottom_btn_2;
+    public static Button bottom_btn_3;
 
     public static TransitionDrawable trans_bottom_btn_0;
     public static TransitionDrawable trans_bottom_btn_1;
     public static TransitionDrawable trans_bottom_btn_2;
+    public static TransitionDrawable trans_bottom_btn_3;
 
     public Fragment_0_Popup fragment0;
     public Fragment_1_Nudge fragment1;
     public Fragment_2_Alarm fragment2;
+    public Fragment_3_ViewPager fragment3;
 
     public BottomTabBar(Context ctx){
         super(ctx);
@@ -80,26 +77,32 @@ public class BottomTabBar extends RelativeLayout  implements View.OnClickListene
         bottom_btn_0 = findViewById(R.id.bottom_btn_0);
         bottom_btn_1 = findViewById(R.id.bottom_btn_1);
         bottom_btn_2 = findViewById(R.id.bottom_btn_2);
+        bottom_btn_3 = findViewById(R.id.bottom_btn_3);
 
         bottom_btn_0.setOnClickListener(this);
         bottom_btn_1.setOnClickListener(this);
         bottom_btn_2.setOnClickListener(this);
+        bottom_btn_3.setOnClickListener(this);
 
         trans_bottom_btn_0 = (TransitionDrawable) bottom_btn_0.getBackground();
         trans_bottom_btn_1 = (TransitionDrawable) bottom_btn_1.getBackground();
         trans_bottom_btn_2 = (TransitionDrawable) bottom_btn_2.getBackground();
+        trans_bottom_btn_3 = (TransitionDrawable) bottom_btn_3.getBackground();
 
         bottomTabBar_Array.add(bottom_btn_0);
         bottomTabBar_Array.add(bottom_btn_1);
         bottomTabBar_Array.add(bottom_btn_2);
+        bottomTabBar_Array.add(bottom_btn_3);
 
         bottomTabBar_Trans_Array.add(trans_bottom_btn_0);
         bottomTabBar_Trans_Array.add(trans_bottom_btn_1);
         bottomTabBar_Trans_Array.add(trans_bottom_btn_2);
+        bottomTabBar_Trans_Array.add(trans_bottom_btn_3);
 
         fragment0 = new Fragment_0_Popup();
         fragment1 = new Fragment_1_Nudge();
         fragment2 = new Fragment_2_Alarm();
+        fragment3 = new Fragment_3_ViewPager();
 
         bottomCase(0);
 
@@ -122,6 +125,7 @@ public class BottomTabBar extends RelativeLayout  implements View.OnClickListene
         if(idx == 0){ ((FragmentActivity)ctx).getSupportFragmentManager().beginTransaction().replace(R.id.rect_objectRL, fragment0).commit(); }
         if(idx == 1){ ((FragmentActivity)ctx).getSupportFragmentManager().beginTransaction().replace(R.id.rect_objectRL, fragment1).commit(); }
         if(idx == 2){ ((FragmentActivity)ctx).getSupportFragmentManager().beginTransaction().replace(R.id.rect_objectRL, fragment2).commit(); }
+        if(idx == 3){ ((FragmentActivity)ctx).getSupportFragmentManager().beginTransaction().replace(R.id.rect_objectRL, fragment3).commit(); }
     }
 
     @Override
@@ -136,6 +140,9 @@ public class BottomTabBar extends RelativeLayout  implements View.OnClickListene
             case R.id.bottom_btn_2 :
                 bottomCase(2);
                 break;
+            case R.id.bottom_btn_3 :
+                bottomCase(3);
+                break;
         }
     }
 
@@ -149,6 +156,9 @@ public class BottomTabBar extends RelativeLayout  implements View.OnClickListene
                 break;
             case 2:
                 ResetState.defCaseState02();
+                break;
+            case 3:
+//                ResetState.defCaseState02();
                 break;
         }
     }

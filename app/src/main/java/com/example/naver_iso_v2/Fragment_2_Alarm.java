@@ -44,6 +44,4 @@ public class Fragment_2_Alarm extends Fragment {
             AnimRectObject.function_containAnim(anim_object_alarm, Float.parseFloat(Vars_Def.outMotion_li1_state +"f"), Float.parseFloat(Vars_Def.outMotion_li2_state +"f"), Float.parseFloat(Vars_Def.outMotion_li3_state +"f"), Vars_Def.outMotion_li0_state, AnimRectObject.selEase_group2);
         }
     }
-
-
 }
