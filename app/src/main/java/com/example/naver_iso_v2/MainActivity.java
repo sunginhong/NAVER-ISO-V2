@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Context;
+import android.graphics.Point;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
@@ -36,6 +37,9 @@ public class MainActivity extends AppCompatActivity {
 
         display = getWindowManager().getDefaultDisplay();
         Vars_Def.screenWidth = display.getWidth();
+        Point size = new Point();
+        display.getRealSize(size);
+//        Vars_Def.screenHeight = display.getHeight();
 
         main_contain = (RelativeLayout) findViewById(R.id.main_contain);
         root = (RelativeLayout)  findViewById(R.id.root);

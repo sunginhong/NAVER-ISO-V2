@@ -14,4 +14,8 @@
     <dimen name="ll_group_table_margin_top">9dp</dimen>
     <dimen name="ll_group_subtitle_margin_right">19dp</dimen>
     <dimen name="ll_group_subtitle_text_width">33dp</dimen>
+    <dimen name="viewpager_next_item_visible">26dp</dimen>
+    <dimen name="pageMargin">30dp</dimen>
+    <dimen name="offset">30dp</dimen>
+    <dimen name="pageMarginAndOffset">50dp</dimen>
 </resources>

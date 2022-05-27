@@ -6,8 +6,8 @@
 
     <View
         android:id="@+id/anim_object_drag"
-        android:layout_width="242dp"
-        android:layout_height="242dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:layout_centerInParent="true"
         android:layout_centerHorizontal="false"
         android:layout_gravity="center"

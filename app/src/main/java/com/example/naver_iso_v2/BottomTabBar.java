@@ -42,6 +42,7 @@ public class BottomTabBar extends RelativeLayout  implements View.OnClickListene
     public Fragment_1_Nudge fragment1;
     public Fragment_2_Alarm fragment2;
     public Fragment_3_ViewPager fragment3;
+    public Fragment_4_ViewPager fragment4;
     public Fragment_5_Drag fragment5;
 
     public BottomTabBar(Context ctx){
@@ -118,7 +119,7 @@ public class BottomTabBar extends RelativeLayout  implements View.OnClickListene
         fragment1 = new Fragment_1_Nudge();
         fragment2 = new Fragment_2_Alarm();
         fragment3 = new Fragment_3_ViewPager();
-
+        fragment4 = new Fragment_4_ViewPager();
         fragment5 = new Fragment_5_Drag();
 
         bottomCase(0);
@@ -143,7 +144,7 @@ public class BottomTabBar extends RelativeLayout  implements View.OnClickListene
         if(idx == 1){ ((FragmentActivity)ctx).getSupportFragmentManager().beginTransaction().replace(R.id.rect_objectRL, fragment1).commit(); }
         if(idx == 2){ ((FragmentActivity)ctx).getSupportFragmentManager().beginTransaction().replace(R.id.rect_objectRL, fragment2).commit(); }
         if(idx == 3){ ((FragmentActivity)ctx).getSupportFragmentManager().beginTransaction().replace(R.id.rect_objectRL, fragment3).commit(); }
-
+        if(idx == 4){ ((FragmentActivity)ctx).getSupportFragmentManager().beginTransaction().replace(R.id.rect_objectRL, fragment4).commit(); }
         if(idx == 5){ ((FragmentActivity)ctx).getSupportFragmentManager().beginTransaction().replace(R.id.rect_objectRL, fragment5).commit(); }
     }
 
@@ -161,6 +162,9 @@ public class BottomTabBar extends RelativeLayout  implements View.OnClickListene
                 break;
             case R.id.bottom_btn_3 :
                 bottomCase(3);
+                break;
+            case R.id.bottom_btn_4 :
+                bottomCase(4);
                 break;
             case R.id.bottom_btn_5 :
                 bottomCase(5);

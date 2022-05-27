@@ -6,6 +6,7 @@ public class Vars_Def {
     public static boolean container_bool = false;
     public static boolean codePage = false;
 
+    public static int screenWidth = 0;
     public static int screenHeight = 0;
 
     public static int posMinY = 0;
@@ -24,7 +25,6 @@ public class Vars_Def {
     public static int bottom_rectHeight = 0;
     public static int bottom_top_margin;
     public static int bottomPosY = 30;
-    public static int screenWidth = 0;
 
     public static String playMotionState = "";
     public static String[] array_string_easeType;

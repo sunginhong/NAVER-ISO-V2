@@ -5,6 +5,7 @@ import android.content.ClipDescription;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
+import android.view.Display;
 import android.view.DragEvent;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
@@ -17,7 +18,12 @@ public class Fragment_5_Drag extends Fragment implements View.OnTouchListener, V
 
     public View anim_object_drag;
     public String firstY = "0";
+    float oldX = 0;
+    float oldY = 0;
+    float curX = 0;
+    float curY = 0;
     float moveY = 0;
+    float crY = 0;
     boolean move = false;
 
     public Fragment_5_Drag() {
@@ -45,14 +51,15 @@ public class Fragment_5_Drag extends Fragment implements View.OnTouchListener, V
 
     @Override
     public boolean onTouch(View view, MotionEvent event) {
-        String curY = String.format("%.2f", event.getY());
+        String curXs = String.format("%.2f", event.getX());
+        String curYs = String.format("%.2f", event.getY());
 
         switch (event.getAction() & MotionEvent.ACTION_MASK) {
 
             case MotionEvent.ACTION_DOWN:
-                firstY = curY;
                 move = false;
-
+                oldX = event.getX();
+                oldY = event.getY();
                 break;
             case MotionEvent.ACTION_POINTER_DOWN:
 
@@ -62,15 +69,20 @@ public class Fragment_5_Drag extends Fragment implements View.OnTouchListener, V
                 break;
             case MotionEvent.ACTION_MOVE:
                 move = true;
-                moveY = view.getY() + (Float.parseFloat(curY) - Float.parseFloat(firstY));
+                curX = view.getX() + (Float.parseFloat(curXs) - view.getWidth()/2) - (oldX- view.getWidth()/2);
+                curY = view.getY() + (Float.parseFloat(curYs) - view.getHeight()/2) - (oldY- view.getHeight()/2);
                 if (move){
-//                    Log.d("SSSS", "SSSS"+moveY);
+                    view.setX(curX);
+                    view.setY(curY);
                 }
                 view.invalidate();
                 break;
             case MotionEvent.ACTION_UP:
                 if (move){
-
+//                    Log.d("ssss"+curY, "111"+curY+view.getHeight());
+                    if (curX < 0 || curX+view.getWidth() > Vars_Def.screenWidth || curY < 0 ){
+                        Log.d("ssss", "111");
+                    }
                 }
                 move = false;
                 break;
