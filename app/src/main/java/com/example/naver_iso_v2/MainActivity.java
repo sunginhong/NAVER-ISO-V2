@@ -15,6 +15,8 @@ import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
+import java.time.LocalDate;
+
 public class MainActivity extends AppCompatActivity {
     public Context ctx;
     public static RelativeLayout main_contain;
@@ -50,7 +52,12 @@ public class MainActivity extends AppCompatActivity {
         pannel_result = findViewById(R.id.pannel_result);
 
         new Pannel_SetCalc(this);
-
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                DragAdapter.rectCalcHeight = Vars_Def.heightMax;
+            }
+        }, 500);
     }
 
     @Override

@@ -1,5 +1,7 @@
 package com.example.naver_iso_v2;
 
+import android.animation.AnimatorSet;
+import android.animation.ObjectAnimator;
 import android.content.ClipData;
 import android.content.ClipDescription;
 import android.os.Bundle;
@@ -11,6 +13,7 @@ import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.DecelerateInterpolator;
 
 import androidx.fragment.app.Fragment;
 
@@ -53,6 +56,8 @@ public class Fragment_5_Drag extends Fragment implements View.OnTouchListener, V
     public boolean onTouch(View view, MotionEvent event) {
         String curXs = String.format("%.2f", event.getX());
         String curYs = String.format("%.2f", event.getY());
+        int viewHeight = view.getHeight();
+        int viewWidth = view.getWidth();
 
         switch (event.getAction() & MotionEvent.ACTION_MASK) {
 
@@ -79,10 +84,23 @@ public class Fragment_5_Drag extends Fragment implements View.OnTouchListener, V
                 break;
             case MotionEvent.ACTION_UP:
                 if (move){
-//                    Log.d("ssss"+curY, "111"+curY+view.getHeight());
-                    if (curX < 0 || curX+view.getWidth() > Vars_Def.screenWidth || curY < 0 ){
-                        Log.d("ssss", "111");
+                    ObjectAnimator objectAnimator1 = ObjectAnimator.ofFloat(anim_object_drag, "translationX", 0);
+                    ObjectAnimator objectAnimator2 = ObjectAnimator.ofFloat(anim_object_drag, "translationY", 0);
+                    AnimatorSet viewAnimatorSet = new AnimatorSet();
+                    viewAnimatorSet.playTogether(objectAnimator1, objectAnimator2);
+                    viewAnimatorSet.setDuration(600);
+                    viewAnimatorSet.setInterpolator(new DecelerateInterpolator((float) 1.5));
+                    viewAnimatorSet.start();
+                    if (Vars_Def.container_bool != true){
+                        if (curX < 0 || curX+viewWidth > Vars_Def.screenWidth || curY < 0 || (curY+viewHeight) > Vars_Def.heightMax ){
+
+                        }
+                    } else {
+                        if (curX < 0 || curX+viewWidth > Vars_Def.screenWidth || curY < 0 || (curY+(viewHeight/1)) > Vars_Def.heightMin ){
+
+                        }
                     }
+
                 }
                 move = false;
                 break;
