@@ -33,6 +33,7 @@ public class Fragment_3_ViewPager extends Fragment {
         viewPager.setAdapter(new PagerAdapter(getChildFragmentManager()));
         viewPager.setCurrentItem(0);
         viewPager.setSaveEnabled(false);
+        viewPager.setPageTransformer(true, new Fragment_3_ViewPager_TransformPage());
         init();
         return view;
     }
