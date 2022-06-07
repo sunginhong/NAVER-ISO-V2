@@ -1,6 +1,7 @@
 package com.example.naver_iso_v2;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,6 +19,9 @@ public class Fragment_3_ViewPager extends Fragment {
     private Fragment_3_ViewPager_Frag3 fragment3;
     Fragment currentFragment = new Fragment();
     private ViewPager viewPager;
+    public int currentPage = 0;
+    public int lastPosition = 0;
+    static public String scrollDirection = "RIGHT";
 
     public Fragment_3_ViewPager() {
         init();
@@ -34,6 +38,44 @@ public class Fragment_3_ViewPager extends Fragment {
         viewPager.setCurrentItem(0);
         viewPager.setSaveEnabled(false);
         viewPager.setPageTransformer(true, new Fragment_3_ViewPager_TransformPage());
+        viewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+            @Override
+            public void onPageSelected(int position) {
+                currentPage = position;
+            }
+            @Override
+            public void onPageScrollStateChanged(int state) {
+                System.out.println(currentPage);
+                if (currentPage == 0){
+                    scrollDirection = "RIGHT";
+                }
+                if (currentPage == MAX_PAGE-1){
+                    scrollDirection = "LEFT";
+                }
+            }
+            @Override
+            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+                if (lastPosition > position) {
+                    scrollDirection = "LEFT";
+                }else if (lastPosition < position) {
+                    scrollDirection = "RIGHT";
+                }
+//                if (lastPosition <= positionOffset) {
+//                    scrollDirection = "RIGHT";
+//                }
+//                else{
+//                    scrollDirection = "LEFT";
+//                }
+                //                if (lastPosition <= positionOffset) {
+//                    scrollDirection = "RIGHT";
+//                }
+//                else{
+//                    scrollDirection = "LEFT";
+//                }
+                lastPosition = position;
+//                lastPosition = positionOffset;
+            }
+        });
         init();
         return view;
     }
@@ -109,4 +151,5 @@ public class Fragment_3_ViewPager extends Fragment {
             return MAX_PAGE;
         }
     }
+
 }
