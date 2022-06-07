@@ -13,7 +13,7 @@ public class Fragment_3_ViewPager_TransformPage implements ViewPager.PageTransfo
         final int pageWidth = page.getWidth();
         final RelativeLayout img_contain = (RelativeLayout) page.findViewById(R.id.img_contain);
         String transCase = "POSX";
-        int posXcase = 1;
+        int posXcase = 0;
 
         if (transCase == "POSX") {
             page.setAlpha(1);
