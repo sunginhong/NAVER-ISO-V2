@@ -1,11 +1,14 @@
 package com.example.naver_iso_v2;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 
+import androidx.core.view.MotionEventCompat;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentStatePagerAdapter;
@@ -20,13 +23,16 @@ public class Fragment_3_ViewPager extends Fragment {
     Fragment currentFragment = new Fragment();
     private ViewPager viewPager;
     public int currentPage = 0;
-    public int lastPosition = 0;
+    public float currentPosition = 0;
+    public float lastPosition = 0;
     static public String scrollDirection = "RIGHT";
+    static boolean swipeBool = false;
 
     public Fragment_3_ViewPager() {
         init();
     }
 
+    @SuppressLint("ClickableViewAccessibility")
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_3viewpager, container, false);
@@ -38,6 +44,14 @@ public class Fragment_3_ViewPager extends Fragment {
         viewPager.setCurrentItem(0);
         viewPager.setSaveEnabled(false);
         viewPager.setPageTransformer(true, new Fragment_3_ViewPager_TransformPage());
+        viewPager.setOnTouchListener(new ViewPager.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                Log.v(null, "TOUCH EVENT"); // handle your fragment number here
+                return false;
+            }
+        });
+
         viewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
             public void onPageSelected(int position) {
@@ -45,35 +59,38 @@ public class Fragment_3_ViewPager extends Fragment {
             }
             @Override
             public void onPageScrollStateChanged(int state) {
-                System.out.println(currentPage);
+//                System.out.println(currentPage);
                 if (currentPage == 0){
                     scrollDirection = "RIGHT";
                 }
                 if (currentPage == MAX_PAGE-1){
-                    scrollDirection = "LEFT";
+//                    scrollDirection = "LEFT";
                 }
             }
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
-                if (lastPosition > position) {
-                    scrollDirection = "LEFT";
-                }else if (lastPosition < position) {
-                    scrollDirection = "RIGHT";
-                }
-//                if (lastPosition <= positionOffset) {
+//                if (lastPosition > position) {
+//                    scrollDirection = "LEFT";
+//                }else if (lastPosition < position) {
 //                    scrollDirection = "RIGHT";
 //                }
-//                else{
-//                    scrollDirection = "LEFT";
-//                }
+//                Log.d(""+lastPosition, "  "+positionOffset);
+                currentPosition = positionOffset;
+                if (swipeBool){
+                    if (lastPosition <= positionOffset) {
+                        scrollDirection = "RIGHT";
+                    } else{
+                        scrollDirection = "LEFT";
+                    }
+                }
                 //                if (lastPosition <= positionOffset) {
 //                    scrollDirection = "RIGHT";
 //                }
 //                else{
 //                    scrollDirection = "LEFT";
 //                }
-                lastPosition = position;
-//                lastPosition = positionOffset;
+//                lastPosition = position;
+                lastPosition = positionOffset;
             }
         });
         init();
