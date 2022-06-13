@@ -6,6 +6,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.Point;
 import android.os.Bundle;
+import android.os.Handler;
+import android.util.Log;
 import android.view.Display;
 import android.view.View;
 import android.view.ViewGroup;
@@ -47,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long l) {
                 String selectedItem = (String) view.findViewById(R.id.textView_title).getTag().toString();
+
                 switch(position){
                     case 1:
 //                        Intent intent1 = new Intent(getApplicationContext(), Activity_Haptic.class);

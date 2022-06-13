@@ -16,23 +16,31 @@
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp">
 
-        <androidx.recyclerview.widget.RecyclerView
-            xmlns:android="http://schemas.android.com/apk/res/android"
-            android:id="@+id/recyclerView"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:overScrollMode="never"
-            android:nestedScrollingEnabled="false"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
 
-           <com.example.naver_iso_v2.Haptic_Footer
-               android:layout_width="match_parent"
-               android:layout_height="match_parent"
-               android:layout_marginTop="30dp">
-           </com.example.naver_iso_v2.Haptic_Footer>
+            <androidx.recyclerview.widget.RecyclerView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:overScrollMode="never"
+                android:nestedScrollingEnabled="false"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+               <com.example.naver_iso_v2.Haptic_Footer
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_marginTop="30dp">
+               </com.example.naver_iso_v2.Haptic_Footer>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
 
         </LinearLayout>
 

@@ -13,6 +13,7 @@
         <entry key="app/src/main/res/drawable/category_button_nor.xml" value="0.139" />
         <entry key="app/src/main/res/drawable/category_button_open.xml" value="0.139" />
         <entry key="app/src/main/res/drawable/category_button_sel.xml" value="0.139" />
+        <entry key="app/src/main/res/drawable/ddd.xml" value="0.2485" />
         <entry key="app/src/main/res/drawable/ic_launcher.xml" value="0.267" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.302" />
         <entry key="app/src/main/res/drawable/line_21.xml" value="0.139" />
@@ -22,6 +23,7 @@
         <entry key="app/src/main/res/drawable/rect_button_radio.xml" value="0.139" />
         <entry key="app/src/main/res/drawable/rect_container.xml" value="0.139" />
         <entry key="app/src/main/res/drawable/rect_haptic_footer.xml" value="0.148" />
+        <entry key="app/src/main/res/drawable/rect_haptic_list_footer.xml" value="0.148" />
         <entry key="app/src/main/res/drawable/rect_haptic_list_row.xml" value="0.148" />
         <entry key="app/src/main/res/drawable/rect_main_list_footer.xml" value="0.148" />
         <entry key="app/src/main/res/drawable/rect_main_list_row.xml" value="0.148" />

@@ -13,13 +13,13 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 
 public class Haptic_ParentRecyclerAdapter extends RecyclerView.Adapter<Haptic_ParentRecyclerAdapter.MyViewHolder> {
-    ArrayList<String> arrayList;
-    Context context;
+    ArrayList<String> titleArryList;
+    Context ctx;
+    int parentPosition;
 
-
-    public Haptic_ParentRecyclerAdapter(ArrayList<String> arrayList, Context context) {
-        this.arrayList = arrayList;
-        this.context = context;
+    public Haptic_ParentRecyclerAdapter(ArrayList<String> arrayList, Context ctx) {
+        this.titleArryList = arrayList;
+        this.ctx = ctx;
     }
 
     @NonNull
@@ -32,46 +32,48 @@ public class Haptic_ParentRecyclerAdapter extends RecyclerView.Adapter<Haptic_Pa
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
-        holder.ItemName.setText(arrayList.get(position));
+        holder.ItemName.setText(titleArryList.get(position));
+
         if (position == 0){
-            holder.section_summary.setText("Selection 햅틱은 UI 요소의 값이 변경될때 사용합니다.");
+            holder.section_summary.setText("Vibrator 옵션은 Android O(API 26) 미만의 버전에서 제공되는 옵션으로 duration을 지정해 주면 진동이 발생됩니다.");
         }
         if (position == 1){
-            holder.section_summary.setText("Impact 햅틱은 UI의 물리적 충돌을 나타낼때 사용합니다.");
+            holder.section_summary.setText("VibrationEffect 옵션은 Android O(API 26) 이상 버전에서 제공되는 옵션으로 미리 정의되어 있는 값을 지정해 주면 진동이 발생됩니다.");
         }
         if (position == 2){
-            holder.section_summary.setText("Notification 햅틱은 어떤 조치의 결과에 대한 피드백에 사용합니다.");
+            holder.section_summary.setText("HapticFeedbackConstants 옵션은 Android O(API 30) 이상 버전에서 제공되는 옵션으로 미리 정의되어 있는 값을 지정해 주면 진동이 발생됩니다.");
         }
-        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(context,LinearLayoutManager.VERTICAL,false);
+        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(ctx,LinearLayoutManager.VERTICAL,false);
         holder.hapticsRV.setLayoutManager(layoutManager);
         holder.hapticsRV.setHasFixedSize(true);
+        holder.hapticsRV.setTag(titleArryList.get(position));
         RecyclerDecoration_Height decoration_height = new RecyclerDecoration_Height(30);
         holder.hapticsRV.addItemDecoration(decoration_height);
-        ArrayList<String> daysArryList = new ArrayList<>();
-        daysArryList.clear();
+        ArrayList<String> subTitleArryList = new ArrayList<>();
+        subTitleArryList.clear();
 
-        if(arrayList.get(position).equals("Selection")){
-            String[] days = {"Selection"};
-            for(int i = 0;i< days.length;i++){
-                daysArryList.add(days[i]);
+        if(titleArryList.get(position).equals("vibrator")){
+            String[] titles = {"1","2", "3", "4", "5", "6", "7", "8", "9", "10"};
+            for(int i = 0;i< titles.length;i++){
+                subTitleArryList.add("vibrate Duration: " + titles[i] + "ms");
             }
         }
 
-        if(arrayList.get(position).equals("Impact")){
-            String[] days = {"Light", "Medium", "Heavy", "Rigid", "Soft"};
-            for(int i = 0;i< days.length;i++){
-                daysArryList.add(days[i]);
+        if(titleArryList.get(position).equals("VibrationEffect")){
+            String[] titles = {"EFFECT_CLICK", "EFFECT_DOUBLE_CLICK", "EFFECT_HEAVY_CLICK", "EFFECT_TICK"};
+            for(int i = 0;i< titles.length;i++){
+                subTitleArryList.add(titles[i]);
             }
         }
 
-        if(arrayList.get(position).equals("Notification")){
-            String[] days = {"Success", "Warning", "Error"};
-            for(int i = 0;i< days.length;i++){
-                daysArryList.add(days[i]);
+        if(titleArryList.get(position).equals("HapticFeedbackConstants")){
+            String[] titles = {"CLOCK_TICK", "CONFIRM", "CONTEXT_CLICK","FLAG_IGNORE_VIEW_SETTING", "GESTURE_END", "GESTURE_START", "KEYBOARD_PRESS", "KEYBOARD_TAP","LONG_PRESS", "REJECT", "TEXT_HANDLE_MOVE"};
+            for(int i = 0;i< titles.length;i++){
+                subTitleArryList.add(titles[i]);
             }
         }
 
-        Haptic_ChildRecyclerAdapter childRecyclerAdapter = new Haptic_ChildRecyclerAdapter(daysArryList);
+        Haptic_ChildRecyclerAdapter childRecyclerAdapter = new Haptic_ChildRecyclerAdapter(subTitleArryList, titleArryList, holder.hapticsRV);
         holder.hapticsRV.setAdapter(childRecyclerAdapter);
         childRecyclerAdapter.notifyDataSetChanged();
 
@@ -80,7 +82,7 @@ public class Haptic_ParentRecyclerAdapter extends RecyclerView.Adapter<Haptic_Pa
 
     @Override
     public int getItemCount() {
-        return arrayList.size();
+        return titleArryList.size();
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder{
@@ -94,7 +96,6 @@ public class Haptic_ParentRecyclerAdapter extends RecyclerView.Adapter<Haptic_Pa
             ItemName = itemView.findViewById(R.id.section_header);
             section_summary = itemView.findViewById(R.id.section_summary);
             hapticsRV = itemView.findViewById(R.id.hapticsRV);
-
         }
     }
 }

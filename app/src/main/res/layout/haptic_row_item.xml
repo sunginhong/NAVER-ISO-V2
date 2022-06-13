@@ -4,43 +4,66 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@drawable/rect_haptic_list_row"
+    android:background="?android:attr/selectableItemBackground"
     android:clipChildren="true">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/rect_haptic_list_row_nor"
         android:orientation="horizontal">
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_marginStart="15dp"
             android:layout_marginEnd="15dp">
 
-            <TextView
-                android:id="@+id/row_title"
-                android:layout_width="0dp"
+            <LinearLayout
+                android:id="@+id/row_titlell"
+                android:layout_width="wrap_content"
                 android:layout_height="70dp"
-                android:layout_weight="1"
-                android:textSize="20sp"
-                android:text="SAMPLE"
-                android:textStyle="bold"
-                android:layout_marginLeft="15dp"
-                android:gravity="center_vertical"
-                android:textColor="#cc222222"/>
+                android:layout_gravity="left">
+                <TextView
+                    android:id="@+id/row_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="17sp"
+                    android:text="SAMPLE"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:textColor="#cc222222"/>
+            </LinearLayout>
 
             <View
-                android:id="@+id/code_review1"
-                android:layout_width="44.37dp"
-                android:layout_height="16.5dp"
-                android:layout_gravity="center|right"
-                android:layout_marginTop="0.75dp"
-                android:background="@drawable/icn_codecopy" />
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:id="@+id/row_codell"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right">
+                <View
+                    android:id="@+id/row_code"
+                    android:layout_width="44.37dp"
+                    android:layout_height="16.5dp"
+                    android:layout_gravity="center|right"
+                    android:layout_marginTop="0.75dp"
+                    android:background="@drawable/icn_codecopy" />
+            </LinearLayout>
 
         </LinearLayout>
 
     </LinearLayout>
 
+    <LinearLayout
+        android:id="@+id/haptic_row_dimmed"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/rect_haptic_list_row_sel">
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

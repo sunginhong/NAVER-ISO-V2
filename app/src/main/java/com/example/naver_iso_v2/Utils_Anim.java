@@ -9,6 +9,7 @@ import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
 import android.view.animation.AnimationSet;
 import android.view.animation.DecelerateInterpolator;
+import android.view.animation.Interpolator;
 import android.view.animation.RotateAnimation;
 import android.view.animation.ScaleAnimation;
 import android.view.animation.TranslateAnimation;
@@ -146,5 +147,21 @@ public class Utils_Anim {
 
         result = toLow + (((value - fromLow) / (fromHigh - fromLow)) * (toHigh - toLow));
         view.setTranslationY(result);
+    }
+
+    public static void AlphaAnimCusEase(View view, float startAlpha, float endAlpha, int duration, Interpolator interpolator) {
+        Animation anim = new AlphaAnimation( startAlpha, endAlpha );
+        anim.setFillAfter(true);
+        anim.setInterpolator(interpolator);
+        anim.setDuration(duration);
+        view.startAnimation(anim);
+    }
+
+    public static void SclaeAnimCusEase(View view, float startScaleX, float endScaleX, float startScaleY,float endScaleY, float originX, float originY, int duration, Interpolator interpolator) {
+        ScaleAnimation anim = new ScaleAnimation( startScaleX, endScaleX, startScaleY, endScaleY, Animation.RELATIVE_TO_SELF, originX, Animation.RELATIVE_TO_SELF, originY  );
+        anim.setFillAfter(true);
+        anim.setInterpolator(interpolator);
+        anim.setDuration(duration);
+        view.startAnimation(anim);
     }
 }
