@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rect_haptic_list_footer"
+        android:orientation="vertical"
+
+        android:paddingLeft="15dp"
+        android:paddingTop="12.5dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="촉각이 느껴지는 햅틱을 사용하면 실제로 조작하는듯한 친숙함을 경험할 수 있게 합니다. 아래 사항을 참고해 보세요."
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="- 햅틱을 왜 적용했는지에 대한 명확한 인과관계를 세우세요. 이유가 없는 햅틱을 불필요하고 혼란스럽기만 합니다."
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="- 앱의 피드백을 보완하는 방식으로 사용하세요. 시각적, 청각적, 촉각적 피드백이 조화를 이룰 때 사용자 경험은 더 일관되고 자연스럽습니다."
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="- 햅틱을 일관되게 사용하세요. 긍정 피드백과 부정 피드백에 동일한 햅틱을 사용하면 안되요."
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="- 앱에 햅틱을 적용하여 테스트하고 사람마다 햅틱의 선호도와 민감도가 다르기 떄문에 다수의 사람에게 테스트가 필요합니다."
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

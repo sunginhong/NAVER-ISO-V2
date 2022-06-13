@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"
+    android:background="@drawable/rect_main_list_row">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/section_header"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textColor="#000"
+            android:text="Header"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:padding="4dp" />
+
+        <TextView
+            android:id="@+id/section_summary"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textColor="#000"
+            android:text="summary"
+            android:textSize="17sp"
+            android:layout_marginBottom="10dp"
+            android:padding="4dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/hapticsRV"
+            android:layout_margin="10dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
