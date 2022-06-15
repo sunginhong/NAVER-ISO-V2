@@ -52,10 +52,10 @@ public class Haptic_ParentRecyclerAdapter extends RecyclerView.Adapter<Haptic_Pa
         ArrayList<String> subTitleArryList = new ArrayList<>();
         subTitleArryList.clear();
 
-        if(titleArryList.get(position).equals("vibrator")){
+        if(titleArryList.get(position).equals("Vibrator")){
             String[] titles = {"1","2", "3", "4", "5", "6", "7", "8", "9", "10"};
             for(int i = 0;i< titles.length;i++){
-                subTitleArryList.add("vibrate Duration: " + titles[i] + "ms");
+                subTitleArryList.add("Vibrator Duration: " + titles[i] + "ms");
             }
         }
 
@@ -73,7 +73,7 @@ public class Haptic_ParentRecyclerAdapter extends RecyclerView.Adapter<Haptic_Pa
             }
         }
 
-        Haptic_ChildRecyclerAdapter childRecyclerAdapter = new Haptic_ChildRecyclerAdapter(subTitleArryList, titleArryList, holder.hapticsRV);
+        Haptic_ChildRecyclerAdapter childRecyclerAdapter = new Haptic_ChildRecyclerAdapter(ctx, subTitleArryList, titleArryList, holder.hapticsRV);
         holder.hapticsRV.setAdapter(childRecyclerAdapter);
         childRecyclerAdapter.notifyDataSetChanged();
 

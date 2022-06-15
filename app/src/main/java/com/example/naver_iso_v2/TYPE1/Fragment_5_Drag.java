@@ -1,4 +1,4 @@
-package com.example.naver_iso_v2;
+package com.example.naver_iso_v2.TYPE1;
 
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
@@ -16,6 +16,9 @@ import android.view.ViewGroup;
 import android.view.animation.DecelerateInterpolator;
 
 import androidx.fragment.app.Fragment;
+
+import com.example.naver_iso_v2.R;
+import com.example.naver_iso_v2.Vars_Def;
 
 public class Fragment_5_Drag extends Fragment implements View.OnTouchListener, View.OnLongClickListener {
 

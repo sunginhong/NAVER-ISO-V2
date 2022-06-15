@@ -1,4 +1,4 @@
-package com.example.naver_iso_v2;
+package com.example.naver_iso_v2.TYPE1;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
@@ -8,11 +8,12 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 
-import androidx.core.view.MotionEventCompat;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentStatePagerAdapter;
 import androidx.viewpager.widget.ViewPager;
+
+import com.example.naver_iso_v2.R;
 
 public class Fragment_3_ViewPager extends Fragment {
 

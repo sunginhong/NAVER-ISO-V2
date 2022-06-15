@@ -14,48 +14,54 @@
         android:orientation="horizontal">
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginStart="15dp"
-            android:layout_marginEnd="15dp">
+            android:orientation="horizontal">
 
-            <LinearLayout
-                android:id="@+id/row_titlell"
-                android:layout_width="wrap_content"
-                android:layout_height="70dp"
-                android:layout_gravity="left">
-                <TextView
-                    android:id="@+id/row_title"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:textSize="17sp"
-                    android:text="SAMPLE"
-                    android:textStyle="bold"
-                    android:layout_marginLeft="15dp"
-                    android:gravity="center_vertical"
-                    android:textColor="#cc222222"/>
-            </LinearLayout>
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
 
-            <View
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_weight="1" />
+                <TableRow
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
 
-            <LinearLayout
-                android:id="@+id/row_codell"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_gravity="right">
-                <View
-                    android:id="@+id/row_code"
-                    android:layout_width="44.37dp"
-                    android:layout_height="16.5dp"
-                    android:layout_gravity="center|right"
-                    android:layout_marginTop="0.75dp"
-                    android:background="@drawable/icn_codecopy" />
-            </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/row_titlell"
+                        android:layout_width="wrap_content"
+                        android:layout_height="70dp"
+                        android:layout_weight="1">
 
+                        <TextView
+                            android:id="@+id/row_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="17sp"
+                            android:text="SAMPLE"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="15dp"
+                            android:layout_gravity="center"
+                            android:gravity="center_vertical"
+                            android:textColor="#cc222222"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/row_codell"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        >
+                        <View
+                            android:id="@+id/row_code"
+                            android:layout_width="44.37dp"
+                            android:layout_height="16.5dp"
+                            android:layout_gravity="center|right"
+                            android:layout_marginTop="0.75dp"
+                            android:background="@drawable/icn_codecopy" />
+                    </LinearLayout>
+                </TableRow>
+            </TableLayout>
         </LinearLayout>
 
     </LinearLayout>

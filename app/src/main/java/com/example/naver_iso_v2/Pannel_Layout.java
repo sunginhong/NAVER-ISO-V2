@@ -57,7 +57,7 @@ public class Pannel_Layout extends RelativeLayout implements View.OnClickListene
         if (!Vars_Def.appStart){
             Vars_Def.appStart = true;
             container.setY(Vars_Def.posMinY);
-            MainActivity.rect_objectFL.setY(0);
+            Activity_Interactions.interaction_rect_objectFL.setY(0);
         }
     }
     @Override

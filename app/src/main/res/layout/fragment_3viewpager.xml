@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.example.naver_iso_v2.Fragment_3_ViewPager_Custom
+    <com.example.naver_iso_v2.TYPE1.Fragment_3_ViewPager_Custom
         android:id="@+id/view_pager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

@@ -36,8 +36,10 @@ public class Haptic_ChildRecyclerAdapter extends RecyclerView.Adapter<Haptic_Chi
     ArrayList<String> subTitleArryList;
     ArrayList<String> titleArryList;
     public static LinearLayout row_titlell;
+    private String Data;
 
-    public Haptic_ChildRecyclerAdapter(ArrayList<String> subTitleArryList, ArrayList<String> titleArryList, RecyclerView recyclerView) {
+    public Haptic_ChildRecyclerAdapter(Context ctx, ArrayList<String> subTitleArryList, ArrayList<String> titleArryList, RecyclerView recyclerView) {
+        this.ctx = ctx;
         this.recyclerView = recyclerView;
         this.subTitleArryList = subTitleArryList;
         this.titleArryList = titleArryList;
@@ -94,141 +96,7 @@ public class Haptic_ChildRecyclerAdapter extends RecyclerView.Adapter<Haptic_Chi
                                 Utils_Anim.AlphaAnimCusEase(haptic_row_dimmed, ALPHA_MIN, 0, 300, AnimRectObject.interpolator_easeOut);
                             }
                         }, 200);
-                        if ("vibrator".equals(tag)) {
-                            switch (pos){
-                                case 0:
-                                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
-                                       Haptic_Vibrate.case0_rows0();
-                                    }
-                                    break;
-                                case 1:
-                                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
-                                        Haptic_Vibrate.case0_rows1();
-                                    }
-                                    break;
-                                case 2:
-                                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
-                                       Haptic_Vibrate.case0_rows2();
-                                    }
-                                    break;
-                                case 3:
-                                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
-                                        Haptic_Vibrate.case0_rows3();
-                                    }
-                                    break;
-                                case 4:
-                                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
-                                        Haptic_Vibrate.case0_rows4();
-                                    }
-                                    break;
-                                case 5:
-                                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
-                                       Haptic_Vibrate.case0_rows5();
-                                    }
-                                    break;
-                                case 6:
-                                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
-                                        Haptic_Vibrate.case0_rows6();
-                                    }
-                                    break;
-                                case 7:
-                                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
-                                        Haptic_Vibrate.case0_rows7();
-                                    }
-                                    break;
-                                case 8:
-                                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
-                                        Haptic_Vibrate.case0_rows8();
-                                    }
-                                    break;
-                                case 9:
-                                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
-                                        Haptic_Vibrate.case0_rows9();
-                                    }
-                                    break;
-                            }
-                        } else if ("VibrationEffect".equals(tag)) {
-                            switch (pos){
-                                case 0:
-                                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
-                                        Haptic_Vibrate.case1_rows0();
-                                    }
-                                    break;
-                                case 1:
-                                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
-                                        Haptic_Vibrate.case1_rows1();
-                                    }
-                                    break;
-                                case 2:
-                                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
-                                        Haptic_Vibrate.case1_rows2();
-                                    }
-                                    break;
-                                case 3:
-                                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
-                                        Haptic_Vibrate.case1_rows3();
-                                    }
-                                    break;
-                            }
-                        } else if ("HapticFeedbackConstants".equals(tag)) {
-                            switch (pos){
-                                case 0:
-                                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
-                                        Haptic_Vibrate.case2_rows0();
-                                    }
-                                    break;
-                                case 1:
-                                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
-                                        Haptic_Vibrate.case2_rows1();
-                                    }
-                                    break;
-                                case 2:
-                                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
-                                        Haptic_Vibrate.case2_rows2();
-                                    }
-                                    break;
-                                case 3:
-                                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
-                                        Haptic_Vibrate.case2_rows3();
-                                    }
-                                    break;
-                                case 4:
-                                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
-                                        Haptic_Vibrate.case2_rows4();
-                                    }
-                                    break;
-                                case 5:
-                                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
-                                        Haptic_Vibrate.case2_rows5();
-                                    }
-                                    break;
-                                case 6:
-                                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
-                                        Haptic_Vibrate.case2_rows6();
-                                    }
-                                    break;
-                                case 7:
-                                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
-                                        Haptic_Vibrate.case2_rows7();
-                                    }
-                                    break;
-                                case 8:
-                                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
-                                        Haptic_Vibrate.case2_rows8();
-                                    }
-                                    break;
-                                case 9:
-                                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
-                                        Haptic_Vibrate.case2_rows9();
-                                    }
-                                    break;
-                                case 10:
-                                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
-                                        Haptic_Vibrate.case2_rows10();
-                                    }
-                                    break;
-                            }
-                        }
+                        HapticFunction.VibeSet(tag, pos);
                     }
                 }
             });
@@ -236,8 +104,19 @@ public class Haptic_ChildRecyclerAdapter extends RecyclerView.Adapter<Haptic_Chi
             row_codell.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    int pos = getAdapterPosition() ;
-                    Log.d("ssss", ""+pos);
+                    int pos = getAdapterPosition();
+                    ArrayList<String> ArrData = new ArrayList<>();
+                    ArrData.add((String) recyclerView.getTag());
+                    ArrData.add((String) row_title.getText());
+
+                    Object tag = recyclerView.getTag();
+                    HapticFunction.VibeSet(tag, pos);
+
+                    Intent intent = new Intent(ctx, Haptic_PopupActivity.class);
+//                    intent.putExtra("String",Data);
+                    intent.putStringArrayListExtra("ArrayList", ArrData);
+
+                    v.getContext().startActivity(intent);
                 }
             });
         }

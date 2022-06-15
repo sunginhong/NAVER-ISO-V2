@@ -1,4 +1,4 @@
-package com.example.naver_iso_v2;
+package com.example.naver_iso_v2.TYPE1;
 
 import android.os.Bundle;
 import android.os.Handler;
@@ -7,6 +7,10 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.fragment.app.Fragment;
+
+import com.example.naver_iso_v2.AnimRectObject;
+import com.example.naver_iso_v2.R;
+import com.example.naver_iso_v2.Vars_Def;
 
 public class Fragment_2_Alarm extends Fragment {
 

@@ -15,61 +15,81 @@ public class Haptic_Vibrate {
 
     @RequiresApi(api = Build.VERSION_CODES.Q)
     static public void case0_rows0 (){
-        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.R) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            Activity_Haptic.vibrator.vibrate(VibrationEffect.createOneShot(1, VibrationEffect.DEFAULT_AMPLITUDE));
+        } else {
             Activity_Haptic.vibrator.vibrate(1);
         }
     }
     @RequiresApi(api = Build.VERSION_CODES.Q)
     static public void case0_rows1 (){
-        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.R) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            Activity_Haptic.vibrator.vibrate(VibrationEffect.createOneShot(2, VibrationEffect.DEFAULT_AMPLITUDE));
+        } else {
             Activity_Haptic.vibrator.vibrate(2);
         }
     }
     @RequiresApi(api = Build.VERSION_CODES.Q)
     static public void case0_rows2 (){
-        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.R) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            Activity_Haptic.vibrator.vibrate(VibrationEffect.createOneShot(3, VibrationEffect.DEFAULT_AMPLITUDE));
+        } else {
             Activity_Haptic.vibrator.vibrate(3);
         }
     }
     @RequiresApi(api = Build.VERSION_CODES.Q)
     static public void case0_rows3 (){
-        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.R) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            Activity_Haptic.vibrator.vibrate(VibrationEffect.createOneShot(4, VibrationEffect.DEFAULT_AMPLITUDE));
+        } else {
             Activity_Haptic.vibrator.vibrate(4);
         }
     }
     @RequiresApi(api = Build.VERSION_CODES.Q)
     static public void case0_rows4 (){
-        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.R) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            Activity_Haptic.vibrator.vibrate(VibrationEffect.createOneShot(5, VibrationEffect.DEFAULT_AMPLITUDE));
+        } else {
             Activity_Haptic.vibrator.vibrate(5);
         }
     }
     @RequiresApi(api = Build.VERSION_CODES.Q)
     static public void case0_rows5(){
-        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.R) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            Activity_Haptic.vibrator.vibrate(VibrationEffect.createOneShot(6, VibrationEffect.DEFAULT_AMPLITUDE));
+        } else {
             Activity_Haptic.vibrator.vibrate(6);
         }
     }
     @RequiresApi(api = Build.VERSION_CODES.Q)
     static public void case0_rows6 (){
-        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.R) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            Activity_Haptic.vibrator.vibrate(VibrationEffect.createOneShot(7, VibrationEffect.DEFAULT_AMPLITUDE));
+        } else {
             Activity_Haptic.vibrator.vibrate(7);
         }
     }
     @RequiresApi(api = Build.VERSION_CODES.Q)
     static public void case0_rows7 (){
-        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.R) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            Activity_Haptic.vibrator.vibrate(VibrationEffect.createOneShot(8, VibrationEffect.DEFAULT_AMPLITUDE));
+        } else {
             Activity_Haptic.vibrator.vibrate(8);
         }
     }
     @RequiresApi(api = Build.VERSION_CODES.Q)
     static public void case0_rows8 (){
-        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.R) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            Activity_Haptic.vibrator.vibrate(VibrationEffect.createOneShot(9, VibrationEffect.DEFAULT_AMPLITUDE));
+        } else {
             Activity_Haptic.vibrator.vibrate(9);
         }
     }
     @RequiresApi(api = Build.VERSION_CODES.Q)
     static public void case0_rows9 (){
-        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.R) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            Activity_Haptic.vibrator.vibrate(VibrationEffect.createOneShot(10, VibrationEffect.DEFAULT_AMPLITUDE));
+        } else {
             Activity_Haptic.vibrator.vibrate(10);
         }
     }

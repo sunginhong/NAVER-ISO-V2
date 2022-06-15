@@ -10,7 +10,7 @@ public class GetNavigationBarHeight {
     private static Context mContext;
     private int realheight_F = 0;
 
-    public GetNavigationBarHeight(MainActivity mainActivity) {
+    public GetNavigationBarHeight(Activity mainActivity) {
         GetNavigationBarHeight(mainActivity);
         Vars_Def.screenHeight = realheight_F;
     }

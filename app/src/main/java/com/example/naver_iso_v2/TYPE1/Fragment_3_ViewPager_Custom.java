@@ -1,4 +1,4 @@
-package com.example.naver_iso_v2;
+package com.example.naver_iso_v2.TYPE1;
 
 import android.content.Context;
 import android.util.AttributeSet;

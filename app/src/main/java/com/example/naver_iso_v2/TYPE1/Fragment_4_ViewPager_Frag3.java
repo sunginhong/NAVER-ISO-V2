@@ -1,4 +1,4 @@
-package com.example.naver_iso_v2;
+package com.example.naver_iso_v2.TYPE1;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -8,6 +8,8 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+
+import com.example.naver_iso_v2.R;
 
 public class Fragment_4_ViewPager_Frag3 extends Fragment {
     public Fragment_4_ViewPager_Frag3() {

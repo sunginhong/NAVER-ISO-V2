@@ -1,17 +1,11 @@
 package com.example.naver_iso_v2;
 
-import static android.provider.Settings.System.getString;
-
 import android.content.Context;
 import android.graphics.Color;
 import android.graphics.drawable.TransitionDrawable;
 import android.os.Build;
-import android.content.res.Resources;
-import android.os.Handler;
-import android.os.VibrationEffect;
 import android.os.Vibrator;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
@@ -20,8 +14,9 @@ import android.widget.TextView;
 
 import androidx.annotation.RequiresApi;
 
-import java.util.ArrayList;
-import java.util.List;
+import com.example.naver_iso_v2.TYPE1.Fragment_0_Popup;
+import com.example.naver_iso_v2.TYPE1.Fragment_1_Nudge;
+import com.example.naver_iso_v2.TYPE1.Fragment_2_Alarm;
 
 public class Pannel_ListLayout_Top extends RelativeLayout {
 
@@ -99,12 +94,12 @@ public class Pannel_ListLayout_Top extends RelativeLayout {
             public void onClick(View view) {
                 if (!Vars_Def.container_bool){
                     DragAdapter.function_containAnim(Pannel_Layout.container, Vars_Def.posMaxY, 400, AnimRectObject.interpolator_easeOut);
-                    DragAdapter.function_rectObjAnim(MainActivity.rect_objectFL_Copy, Vars_Def.heightMax, Vars_Def.heightMin, 400, AnimRectObject.interpolator_easeOut);
+                    DragAdapter.function_rectObjAnim(Activity_Interactions.interaction_rect_objectFL_contain, Vars_Def.heightMax, Vars_Def.heightMin, 400, AnimRectObject.interpolator_easeOut);
                     Vars_Def.container_bool = true;
                     container_btn_updown.setRotation(-180);
                 } else {
                     DragAdapter.function_containAnim(Pannel_Layout.container, Vars_Def.posMinY, 400, AnimRectObject.interpolator_easeOut);
-                    DragAdapter.function_rectObjAnim(MainActivity.rect_objectFL_Copy, Vars_Def.heightMin, Vars_Def.heightMax, 400, AnimRectObject.interpolator_easeOut);
+                    DragAdapter.function_rectObjAnim(Activity_Interactions.interaction_rect_objectFL_contain, Vars_Def.heightMin, Vars_Def.heightMax, 400, AnimRectObject.interpolator_easeOut);
                     Vars_Def.container_bool = false;
                     container_btn_updown.setRotation(0);
                 }
@@ -126,4 +121,10 @@ public class Pannel_ListLayout_Top extends RelativeLayout {
         if (BottomTabBar.clickIdx == 2){ if (state){ Fragment_2_Alarm.PlayAnim("Out"); } else { Fragment_2_Alarm.PlayAnim("In"); } }
     }
 
+    public static void pannelReset(){
+        DragAdapter.function_containAnim(Pannel_Layout.container, Vars_Def.posMinY, 400, AnimRectObject.interpolator_easeOut);
+        DragAdapter.function_rectObjAnim(Activity_Interactions.interaction_rect_objectFL_contain, Vars_Def.heightMin, Vars_Def.heightMax, 400, AnimRectObject.interpolator_easeOut);
+        Vars_Def.container_bool = false;
+        container_btn_updown.setRotation(0);
+    }
 }

@@ -1,12 +1,12 @@
-package com.example.naver_iso_v2;
+package com.example.naver_iso_v2.TYPE1;
 
 import android.util.Log;
-import android.view.MotionEvent;
 import android.view.View;
-import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
 import androidx.viewpager.widget.ViewPager;
+
+import com.example.naver_iso_v2.R;
 
 public class Fragment_3_ViewPager_TransformPage implements ViewPager.PageTransformer {
 

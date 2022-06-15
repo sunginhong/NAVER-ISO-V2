@@ -13,7 +13,6 @@
         android:theme="@style/Theme.Design.NoActionBar">
         <activity
             android:name=".MainActivity"
-            android:screenOrientation="portrait"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,6 +20,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Activity_Interactions"/>
         <activity android:name=".Activity_Haptic"/>
+        <activity android:name=".Haptic_PopupActivity" android:theme="@android:style/Theme.Dialog" />
     </application>
 </manifest>

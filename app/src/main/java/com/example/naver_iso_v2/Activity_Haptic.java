@@ -28,7 +28,7 @@ public class Activity_Haptic extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this, RecyclerView.VERTICAL, false)) ;
 
         ArrayList<String> categoryList = new ArrayList<String>();
-        categoryList.add("vibrator");
+        categoryList.add("Vibrator");
         categoryList.add("VibrationEffect");
         categoryList.add("HapticFeedbackConstants");
 
@@ -37,4 +37,8 @@ public class Activity_Haptic extends AppCompatActivity {
         recyclerView.addItemDecoration(decoration_height);
     }
 
+    @Override
+    public void onBackPressed() {
+        finish();
+    }
 }
