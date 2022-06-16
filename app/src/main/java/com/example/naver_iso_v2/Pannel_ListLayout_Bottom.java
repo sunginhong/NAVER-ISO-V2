@@ -71,5 +71,4 @@ public class Pannel_ListLayout_Bottom extends RelativeLayout {
             }, 100);
         }
     }
-
 }
