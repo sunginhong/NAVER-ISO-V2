@@ -20,8 +20,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Activity_Interactions"/>
-        <activity android:name=".Activity_Haptic"/>
+        <activity android:name=".Activity_Interactions"  android:parentActivityName=".MainActivity"/>
+        <activity android:name=".Activity_Haptic" android:parentActivityName=".MainActivity"/>
         <activity android:name=".Haptic_PopupActivity" android:theme="@android:style/Theme.Dialog" />
     </application>
 </manifest>

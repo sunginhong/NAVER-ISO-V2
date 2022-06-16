@@ -20,6 +20,7 @@ public class AnimRectObject {
     public static Interpolator interpolator_easeOut = PathInterpolatorCompat.create(0.33f, 1f, 0.68f, 1f);
     public static Interpolator interpolator_easeIn = PathInterpolatorCompat.create(0.32f, 0f, 0.67f, 0f);
     public static Interpolator interpolator_bounce = PathInterpolatorCompat.create(0.34f, 1.56f, 0.64f, 1f);
+    public static Interpolator interpolator_bounce2 = PathInterpolatorCompat.create(0.34f, 1.46f, 0.54f, 1f);
     public static Interpolator selEase_group1;
     public static Interpolator selEase_group2;
 

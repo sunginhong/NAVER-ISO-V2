@@ -28,7 +28,7 @@
         <item name="android:letterSpacing">-0.04</item>
         <item name="android:textColor">#BDC0BD</item>
     </style>
-    <style name="paly_in_mot">
+    <style name="play_in_mot">
         <item name="android:textSize">15sp</item>
         <item name="android:letterSpacing">-0.03</item>
         <item name="android:textColor">#FFFFFF</item>

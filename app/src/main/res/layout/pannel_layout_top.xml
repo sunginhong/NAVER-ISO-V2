@@ -51,7 +51,12 @@
             android:layout_height="47dp"
             android:background="@drawable/rect_button_playmotion"
             android:stateListAnimator="@null"
-            android:textAppearance="@style/paly_in_mot" />
+            android:textAppearance="@style/play_in_mot" />
+
+        <com.example.naver_iso_v2.Pannel_ListLayout_Bottom
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"/>
 
     </LinearLayout>
 

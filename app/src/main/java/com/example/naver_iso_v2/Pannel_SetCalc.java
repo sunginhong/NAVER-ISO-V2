@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.res.Resources;
 import android.os.Handler;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 
 public class Pannel_SetCalc {
     protected Context context;
@@ -29,9 +30,9 @@ public class Pannel_SetCalc {
                 Vars_Def.heightMax = Vars_Def.screenHeight -  Vars_Def.bottom_rectHeight - (Vars_Def.container_top_group_height+Vars_Def.container_top_marginTop+Vars_Def.shadowHeight)-Vars_Def.shadowHeight+Utils_Calc.dpToPx(22);
                 Vars_Def.posMinY_drag = Activity_Interactions.root.getHeight()-(Vars_Def.container_top_group_height+Vars_Def.container_top_marginTop+Vars_Def.shadowHeight)-Vars_Def.shadowHeight;
 
-                Activity_Interactions.params_copy.height = Vars_Def.heightMax;
+                Activity_Interactions.params_copy.height = Vars_Def.heightMax - Activity_Interactions.frag_header_height;
                 Activity_Interactions.interaction_rect_objectFL_contain.setLayoutParams(Activity_Interactions.params_copy);
-//                Activity_Interactions.interaction_rect_objectFL.
+//                Activity_Interactions.interaction_rect_objectFL.setLayoutParams(new LinearLayout.LayoutParams(Activity_Interactions.params_copy.width, Vars_Def.heightMax));
                 Vars_Def.screenWidth = Resources.getSystem().getDisplayMetrics().widthPixels;
 
                 Pannel_Layout.setContain();

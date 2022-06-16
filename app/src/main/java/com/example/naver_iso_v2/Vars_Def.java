@@ -3,6 +3,7 @@ package com.example.naver_iso_v2;
 public class Vars_Def {
     public static boolean appStart = false;
     public static boolean play_btn_state = false;
+    public static boolean photo_changeBtn_state = false;
     public static boolean container_bool = false;
     public static boolean codePage = false;
 
@@ -31,7 +32,7 @@ public class Vars_Def {
 
     public static int defCaseState00_inMotion_li0_state_def = 300;
     public static int defCaseState00_inMotion_li1_state_def = 0;
-    public static double defCaseState00_inMotion_li2_state_def = 0.0;
+    public static double defCaseState00_inMotion_li2_state_def = 0.5;
     public static double defCaseState00_inMotion_li3_state_def = 0.0;
     public static String defCaseState00_inMotion_li4_state_def = "";
     public static String defCaseState00_inMotion_li5_state_def = "None";
@@ -59,7 +60,7 @@ public class Vars_Def {
 
     public static int defCaseState00_outMotion_li0_state_def = 300;
     public static int defCaseState00_outMotion_li1_state_def = 0;
-    public static double defCaseState00_outMotion_li2_state_def = 0.0;
+    public static double defCaseState00_outMotion_li2_state_def = 0.5;
     public static double defCaseState00_outMotion_li3_state_def = 0.0;
     public static String defCaseState00_outMotion_li4_state_def = "";
     public static String defCaseState00_outMotion_li5_state_def = "None";
