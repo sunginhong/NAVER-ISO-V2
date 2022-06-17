@@ -16,6 +16,7 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -36,6 +37,7 @@ public class Activity_Interactions extends AppCompatActivity {
     public static View interaction_dimmed;
     public static int frag_header_height;
 
+    public static Activity activity;
     private Display display;
     private static final int PICK_IMAGE = 100;
     public static Uri imageUri;
@@ -52,6 +54,7 @@ public class Activity_Interactions extends AppCompatActivity {
         ctx = this.getApplicationContext();
         new GetNavigationBarHeight(this);
 
+        openGallery();
         fragment0 = new Fragment_0_Popup_v2();
 
         display = getWindowManager().getDefaultDisplay();
@@ -59,13 +62,17 @@ public class Activity_Interactions extends AppCompatActivity {
         Point size = new Point();
         display.getRealSize(size);
 
+        activity = this;
+
+        Fragment_Header fragment_Header = new Fragment_Header(ctx, 0);
+
         if (!appStart){
             appStart = true;
             getSupportFragmentManager().beginTransaction().replace(R.id.interaction_rect_objectRL, fragment0).commitAllowingStateLoss();
         }
 
         Vars_Def.screenHeight = display.getHeight();
-        openGallery();
+
         main_contain = (RelativeLayout) findViewById(R.id.interaction_main_contain);
         root = (RelativeLayout)  findViewById(R.id.interaction_root);
         LinearLayout interaction_rect_contain = findViewById(R.id.interaction_rect_contain);
@@ -102,7 +109,7 @@ public class Activity_Interactions extends AppCompatActivity {
     @Override
     public void onResume() {
         if (Vars_Def.container_bool) {
-            DragAdapter.function_containAnim(Pannel_Layout.container, Vars_Def.posMinY, 600, AnimRectObject.interpolator_bounce2);
+            DragAdapter.function_containAnim(Pannel_Layout.container, Vars_Def.posMinY, 000, AnimRectObject.interpolator_bounce2);
         } else {
             DragAdapter.function_containAnim(Pannel_Layout.container, Vars_Def.posMinY, 000, AnimRectObject.interpolator_bounce2);
         }
@@ -136,6 +143,25 @@ public class Activity_Interactions extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        finish();
+        if (!Vars_Def.container_bool){
+            activity.finish();
+        } else {
+            Vars_Def.container_bool = false;
+            DragAdapter.AlphaAnimCusEase(Activity_Interactions.interaction_dimmed, 0, 400, AnimRectObject.interpolator_easeOut);
+            DragAdapter.function_containAnim(Pannel_Layout.container, Vars_Def.posMinY, 400, AnimRectObject.interpolator_bounce2);
+        }
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        activity = null;
+    }
+
+    public static void actFin(){
+        if (!Vars_Def.container_bool){
+            activity.finish();
+            Vars_Def.container_bool = false;
+        }
     }
 }

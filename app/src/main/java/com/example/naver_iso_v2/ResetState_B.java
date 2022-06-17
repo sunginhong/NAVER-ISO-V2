@@ -2,11 +2,10 @@ package com.example.naver_iso_v2;
 
 import android.graphics.Color;
 import android.os.Handler;
-import android.util.Log;
 import android.view.View;
 
-public class ResetState {
-    public ResetState(View view){
+public class ResetState_B {
+    public ResetState_B(View view){
 
     }
 
@@ -59,7 +58,7 @@ public class ResetState {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-
+                Pannel_Result.rect_code_anim_title.setText("Popup Animation");
                 resetState(0);
             }
         }, 1);
@@ -115,7 +114,7 @@ public class ResetState {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-
+                Pannel_Result.rect_code_anim_title.setText("Nudge Animation");
                 resetState(1);
             }
         }, 1);
@@ -171,7 +170,7 @@ public class ResetState {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-
+                Pannel_Result.rect_code_anim_title.setText("Alarm Animation");
                 resetState(2);
             }
         }, 1);
@@ -289,6 +288,7 @@ public class ResetState {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
+                Pannel_Result.rect_code_anim_title.setText("Popup Animation");
                 resetState(0);
             }
         }, 1);
@@ -298,14 +298,56 @@ public class ResetState {
     public static void resetState(int nums){
         switch(nums) {
             case 0:
+                Pannel_Result.rect_codeObject_case0.setAlpha(1);
+                Pannel_Result.rect_codeObject_case1.setAlpha(0);
+                Pannel_Result.rect_codeObject_case2.setAlpha(0);
 
+                Pannel_Result.inMotion_result_0.setText(""+0.3+"");
+                Pannel_Result.inMotion_result_1.setText("위치 이동 없음");
+                Pannel_Result.inMotion_result_2.setText("0.5");
+                Pannel_Result.inMotion_result_3.setText("0");
+                Pannel_Result.inMotion_result_4.setText("ease" + Vars_Def.array_string_easeType[1] + " - cubic-bezier(0.65, 0, 0.35, 1)");
+
+                Pannel_Result.outMotion_result_0.setText(""+0.2+"");
+                Pannel_Result.outMotion_result_1.setText("위치 이동 없음");
+                Pannel_Result.outMotion_result_2.setText("0.5");
+                Pannel_Result.outMotion_result_3.setText("0");
+                Pannel_Result.outMotion_result_4.setText("ease" + Vars_Def.array_string_easeType[1] + " - cubic-bezier(0.65, 0, 0.35, 1)");
                 break;
 
             case 1:
+                Pannel_Result.rect_codeObject_case0.setAlpha(0);
+                Pannel_Result.rect_codeObject_case1.setAlpha(1);
+                Pannel_Result.rect_codeObject_case2.setAlpha(0);
 
+                Pannel_Result.inMotion_result_0.setText(""+0.3+"");
+                Pannel_Result.inMotion_result_1.setText("가이드 위치 + 30에서 → 가이드 위치까지 이동");
+                Pannel_Result.inMotion_result_2.setText("1");
+                Pannel_Result.inMotion_result_3.setText("0");
+                Pannel_Result.inMotion_result_4.setText("ease" + Vars_Def.array_string_easeType[1] + " - cubic-bezier(0.65, 0, 0.35, 1)");
+
+                Pannel_Result.outMotion_result_0.setText(""+0.2+"");
+                Pannel_Result.outMotion_result_1.setText("가이드 위치 + 30에서 → 가이드 위치까지 이동");
+                Pannel_Result.outMotion_result_2.setText("1");
+                Pannel_Result.outMotion_result_3.setText("0");
+                Pannel_Result.outMotion_result_4.setText("ease" + Vars_Def.array_string_easeType[1] + " - cubic-bezier(0.65, 0, 0.35, 1)");
                 break;
             case 2:
+                Pannel_Result.rect_codeObject_case0.setAlpha(0);
+                Pannel_Result.rect_codeObject_case1.setAlpha(0);
+                Pannel_Result.rect_codeObject_case2.setAlpha(1);
 
+                Pannel_Result.inMotion_result_0.setText(""+0.3+"");
+                Pannel_Result.inMotion_result_1.setText("가이드 위치 + 30에서 → 가이드 위치까지 이동");
+                Pannel_Result.inMotion_result_2.setText("1");
+                Pannel_Result.inMotion_result_3.setText("0");
+                Pannel_Result.inMotion_result_4.setText("ease" + Vars_Def.array_string_easeType[1] + " - cubic-bezier(0.65, 0, 0.35, 1)");
+
+                Pannel_Result.outMotion_result_0.setText(""+0.2+"");
+                Pannel_Result.outMotion_result_1.setText("가이드 위치 + 30에서 → 가이드 위치까지 이동");
+                Pannel_Result.outMotion_result_2.setText("1");
+                Pannel_Result.outMotion_result_3.setText("0");
+                Pannel_Result.outMotion_result_4.setText("ease" + Vars_Def.array_string_easeType[1] + " - cubic-bezier(0.65, 0, 0.35, 1)");
                 break;
         }
     }

@@ -5,7 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#fff">
 
-    <com.example.naver_iso_v2.Main_ListFragment
+    <com.example.naver_iso_v2.Main_ListFragment_Menu
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 

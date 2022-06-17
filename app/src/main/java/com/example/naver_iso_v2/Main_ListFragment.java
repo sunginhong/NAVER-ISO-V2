@@ -54,8 +54,8 @@ public class Main_ListFragment extends FrameLayout {
         final View header = li.inflate(R.layout.main_listview_header, null, false);
 
         mainListItem = new ArrayList<>();
-        mainListItem.add(new Main_List_Item("Interactions.", "https://play-lh.googleusercontent.com/CvrAspBClfv1bbHdxw0gj5XBHenMECqVpT-0sdIX7aqnGj6CxqDKwHNLKPIzToRj7g", "디자인 컴포넌트의 인터랙션을 확인 할 수 있어요"));
-        mainListItem.add(new Main_List_Item("Haptics", "https://play-lh.googleusercontent.com/CvrAspBClfv1bbHdxw0gj5XBHenMECqVpT-0sdIX7aqnGj6CxqDKwHNLKPIzToRj7g", "여러가지 햅택을 느껴볼 수 있어요"));
+        mainListItem.add(new Main_List_Item("Interactions", "https://cdn-icons.flaticon.com/png/512/5279/premium/5279347.png?token=exp=1655446326~hmac=09f46ad1200b6418b9f5166c7c5a80e7", "디자인 컴포넌트의 인터랙션을 확인 할 수 있어요"));
+        mainListItem.add(new Main_List_Item("Haptics", "https://cdn-icons.flaticon.com/png/512/2837/premium/2837854.png?token=exp=1655446258~hmac=3f6398a9d68cb4bc1e8a048e5d3201a0", "여러가지 햅택을 느껴볼 수 있어요"));
 
         mainListView = (ListView) findViewById(R.id.main_listView_custom);
         customAdapter = new Main_List_CustomAdapter(getContext(),mainListItem);

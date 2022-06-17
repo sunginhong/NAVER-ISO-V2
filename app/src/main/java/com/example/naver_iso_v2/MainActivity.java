@@ -22,6 +22,7 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
     public static Context ctx;
+    private Display display;
     public static RelativeLayout main_contain;
     public static RelativeLayout root;
     public static ViewGroup.LayoutParams params_copy;
@@ -30,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
     public static RelativeLayout bottom_rect;
     public static LinearLayout layout_container_top_group;
     public static Pannel_Result pannel_result;
-    private Display display;
+    private final int sub = 1001;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,15 +53,12 @@ public class MainActivity extends AppCompatActivity {
 
                 switch(position){
                     case 1:
-//                        Intent intent1 = new Intent(getApplicationContext(), Activity_Haptic.class);
-//                        startActivity(intent1);
-//                        startActivityForResult(a,b)
-                        Intent intent1 = new Intent(getApplicationContext(), Activity_Interactions.class);
-                        startActivity(intent1);
+                        Intent intent1 = new Intent(getApplicationContext(), Activity_InteractionsMenu.class);
+                        startActivityForResult(intent1, sub);
                         break;
                     case 2:
                         Intent intent2 = new Intent(getApplicationContext(), Activity_Haptic.class);
-                        startActivity(intent2);
+                        startActivityForResult(intent2, sub);
                         break;
                 }
             }
