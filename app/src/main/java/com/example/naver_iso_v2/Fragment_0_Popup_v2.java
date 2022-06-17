@@ -35,6 +35,7 @@ public class Fragment_0_Popup_v2 extends Fragment {
         AnimRectObject.function_containAnim(popup_v2_imageView, Float.parseFloat(Vars_Def.inMotion_li1_state +"f"), Float.parseFloat(Vars_Def.inMotion_li2_state +"f"), Float.parseFloat(Vars_Def.inMotion_li3_state +"f"), 0, AnimRectObject.selEase_group1);
         return view;
     }
+
     private void init() {
 
     }

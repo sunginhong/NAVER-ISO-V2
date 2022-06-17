@@ -7,20 +7,16 @@ import android.graphics.Point;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
-import android.provider.MediaStore;
+import android.util.Log;
 import android.view.Display;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.FrameLayout;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.fragment.app.FragmentActivity;
 
 import com.bumptech.glide.Glide;
 
@@ -54,8 +50,11 @@ public class Activity_Interactions extends AppCompatActivity {
         ctx = this.getApplicationContext();
         new GetNavigationBarHeight(this);
 
+        Intent intent = getIntent();
+        String Pos = intent.getStringExtra("Pos");
+        selFragment(Integer.parseInt(Pos));
+
         openGallery();
-        fragment0 = new Fragment_0_Popup_v2();
 
         display = getWindowManager().getDefaultDisplay();
         Vars_Def.screenWidth = display.getWidth();
@@ -64,11 +63,9 @@ public class Activity_Interactions extends AppCompatActivity {
 
         activity = this;
 
-        Fragment_Header fragment_Header = new Fragment_Header(ctx, 0);
-
         if (!appStart){
             appStart = true;
-            getSupportFragmentManager().beginTransaction().replace(R.id.interaction_rect_objectRL, fragment0).commitAllowingStateLoss();
+            Fragment_Header fragment_Header = new Fragment_Header(ctx, 0);
         }
 
         Vars_Def.screenHeight = display.getHeight();
@@ -162,6 +159,21 @@ public class Activity_Interactions extends AppCompatActivity {
         if (!Vars_Def.container_bool){
             activity.finish();
             Vars_Def.container_bool = false;
+        }
+    }
+
+    public void selFragment(int Pos){
+        switch(Pos){
+            case 0:
+                fragment0 = new Fragment_0_Popup_v2();
+                getSupportFragmentManager().beginTransaction().replace(R.id.interaction_rect_objectRL, fragment0).commitAllowingStateLoss();
+                break;
+            case 2:
+
+                break;
+            case 3:
+
+                break;
         }
     }
 }

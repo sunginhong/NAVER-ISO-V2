@@ -35,6 +35,7 @@ public class Activity_InteractionsMenu extends AppCompatActivity {
                 switch(position){
                     case 1:
                         Intent intent1 = new Intent(getApplicationContext(), Activity_Interactions.class);
+                        intent1.putExtra("Pos", "0");
                         startActivityForResult(intent1, sub);
                         break;
                     case 2:
