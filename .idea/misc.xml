@@ -32,7 +32,7 @@
         <entry key="app/src/main/res/drawable/rect_main_list_row.xml" value="0.148" />
         <entry key="app/src/main/res/drawable/rect_radiogroup.xml" value="0.139" />
         <entry key="app/src/main/res/drawable/rectangle_bg.xml" value="0.139" />
-        <entry key="app/src/main/res/layout/activity_haptic.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/activity_haptic.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_interaction.xml" value="0.16995947315096252" />
         <entry key="app/src/main/res/layout/activity_interaction_menu.xml" value="0.171875" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.165" />

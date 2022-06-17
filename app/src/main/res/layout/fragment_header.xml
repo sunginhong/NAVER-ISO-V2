@@ -25,7 +25,7 @@
                     android:background="@drawable/chevron_black"
                     android:layout_marginLeft="18dp"
                     android:layout_marginRight="18dp"
-                    android:layout_marginTop="12dp"/>
+                    android:layout_gravity="center"/>
 
             </FrameLayout>
 
