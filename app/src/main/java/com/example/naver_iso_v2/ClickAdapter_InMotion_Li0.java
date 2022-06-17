@@ -50,6 +50,6 @@ public class ClickAdapter_InMotion_Li0 implements View.OnClickListener{
                 Pannel_ListLayout_InMotion.in_motion_li0_btncase2_radio_trans.startTransition(100);
                 break;
         }
-        Pannel_Result.inMotion_result_0.setText(""+duration+"");
+//        Pannel_Result.inMotion_result_0.setText(""+duration+"");
     }
 }

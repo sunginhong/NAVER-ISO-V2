@@ -74,6 +74,6 @@ public class ClickAdapter_OutMotion_Li4 implements View.OnClickListener{
                 break;
         }
         AnimRectObject.function_group2_selEase(Vars_Def.outMotion_li4_state);
-        Pannel_Result.outMotion_result_4.setText("ease" + Vars_Def.array_string_easeType[idx] + easeCase);
+//        Pannel_Result.outMotion_result_4.setText("ease" + Vars_Def.array_string_easeType[idx] + easeCase);
     }
 }

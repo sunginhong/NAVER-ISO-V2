@@ -4,776 +4,776 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-    <LinearLayout
-        android:id="@+id/transgroup_first_ll"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/rect_radiogroup"
-                android:orientation="vertical"
-                android:paddingLeft="15dp"
-                android:paddingTop="12.5dp"
-                android:paddingRight="15dp"
-                android:paddingBottom="16dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="9.5dp"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="67dp"
-                        android:layout_height="18dp"
-                        android:text="@string/in_motion"
-                        android:textAppearance="@style/in_motion"
-                        android:textStyle="bold" />
-
-                    <View
-                        android:layout_width="0dp"
-                        android:layout_height="0dp"
-                        android:layout_weight="1" />
-
-                    <View
-                        android:id="@+id/code_review1"
-                        android:layout_width="44.37dp"
-                        android:layout_height="16.5dp"
-                        android:layout_gravity="center|right"
-                        android:layout_marginTop="0.75dp"
-                        android:background="@drawable/icn_codecopy" />
-
-                </LinearLayout>
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_marginBottom="10dp"
-                    android:background="#BDC0BD" />
-
-                <TableLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="8dp">
-
-                    <TableRow
-                        android:layout_width="0dp"
-                        android:layout_weight="1">
-
-                        <TextView
-                            android:id="@+id/in_motion_li0_title"
-                            android:layout_width="0dp"
-                            android:layout_weight="1"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="left|center_vertical"
-                            android:text="Duration"
-                            android:textAppearance="@style/set_category_title" />
-
-                        <LinearLayout
-                            android:id="@+id/in_motion_li0_btncase0"
-                            android:layout_width="0dp"
-                            android:layout_weight="1"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="left|center_vertical"
-                            android:orientation="horizontal">
-
-                            <com.example.naver_iso_v2.SquareButton
-                                android:id="@+id/in_motion_li0_btncase0_radio"
-                                android:layout_width="0px"
-                                android:layout_height="@dimen/square_btn_height"
-                                android:layout_marginTop="@dimen/square_btn_margin_top"
-                                android:layout_marginRight="@dimen/square_btn_margin_right"
-                                android:layout_weight="1"
-                                android:background="@drawable/rect_button_radio"></com.example.naver_iso_v2.SquareButton>
-
-                            <TextView
-                                android:id="@+id/in_motion_li0_btncase0_text"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center|top"
-                                android:text="0.2s"
-                                android:textAlignment="center"
-                                android:textAppearance="@style/set_category_subtitle" />
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:id="@+id/in_motion_li0_btncase1"
-                            android:layout_width="0dp"
-                            android:layout_weight="1"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="left|center_vertical"
-                            android:orientation="horizontal">
-
-                            <com.example.naver_iso_v2.SquareButton
-                                android:id="@+id/in_motion_li0_btncase1_radio"
-                                android:layout_width="0px"
-                                android:layout_height="@dimen/square_btn_height"
-                                android:layout_marginTop="@dimen/square_btn_margin_top"
-                                android:layout_marginRight="@dimen/square_btn_margin_right"
-                                android:layout_weight="1"
-                                android:background="@drawable/rect_button_radio"></com.example.naver_iso_v2.SquareButton>
-
-                            <TextView
-                                android:id="@+id/in_motion_li0_btncase1_text"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center|top"
-                                android:text="0.3s"
-                                android:textAlignment="center"
-                                android:textAppearance="@style/set_category_subtitle" />
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:id="@+id/in_motion_li0_btncase2"
-                            android:layout_width="0dp"
-                            android:layout_weight="1"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="left|center_vertical"
-                            android:orientation="horizontal">
-
-                            <com.example.naver_iso_v2.SquareButton
-                                android:id="@+id/in_motion_li0_btncase2_radio"
-                                android:layout_width="0px"
-                                android:layout_height="@dimen/square_btn_height"
-                                android:layout_marginTop="@dimen/square_btn_margin_top"
-                                android:layout_marginRight="@dimen/square_btn_margin_right"
-                                android:layout_weight="1"
-                                android:background="@drawable/rect_button_radio"></com.example.naver_iso_v2.SquareButton>
-
-                            <TextView
-                                android:id="@+id/in_motion_li0_btncase2_text"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center|top"
-                                android:text="0.4s"
-                                android:textAlignment="center"
-                                android:textAppearance="@style/set_category_subtitle" />
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_weight="1"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="left|center_vertical"
-                            android:orientation="horizontal">
-                        </LinearLayout>
-
-                    </TableRow>
-
-                    <TableRow
-                        android:layout_width="0dp"
-                        android:layout_weight="1"
-                        android:layout_marginTop="@dimen/ll_group_table_margin_top">
-
-                        <TextView
-                            android:id="@+id/in_motion_li1_title"
-                            android:layout_width="0dp"
-                            android:layout_weight="1"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="left|center_vertical"
-                            android:text="Position"
-                            android:textAppearance="@style/set_category_title" />
-
-                        <LinearLayout
-                            android:id="@+id/in_motion_li1_btncase0"
-                            android:layout_width="0dp"
-                            android:layout_weight="1"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="left|center_vertical"
-                            android:orientation="horizontal">
-
-                            <com.example.naver_iso_v2.SquareButton
-                                android:id="@+id/in_motion_li1_btncase0_radio"
-                                android:layout_width="0px"
-                                android:layout_height="@dimen/square_btn_height"
-                                android:layout_marginTop="@dimen/square_btn_margin_top"
-                                android:layout_marginRight="@dimen/square_btn_margin_right"
-                                android:layout_weight="1"
-                                android:background="@drawable/rect_button_radio"></com.example.naver_iso_v2.SquareButton>
-
-                            <TextView
-                                android:id="@+id/in_motion_li1_btncase0_text"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center|top"
-                                android:text="None"
-                                android:textAlignment="center"
-                                android:textAppearance="@style/set_category_subtitle" />
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:id="@+id/in_motion_li1_btncase1"
-                            android:layout_width="0dp"
-                            android:layout_weight="1"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="left|center_vertical"
-                            android:layout_marginLeft="@dimen/ll_group_margin_left"
-                            android:orientation="horizontal">
-
-                            <com.example.naver_iso_v2.SquareButton
-                                android:id="@+id/in_motion_li1_btncase1_radio"
-                                android:layout_width="0px"
-                                android:layout_height="@dimen/square_btn_height"
-                                android:layout_marginTop="@dimen/square_btn_margin_top"
-                                android:layout_marginRight="@dimen/square_btn_margin_right"
-                                android:layout_weight="1"
-                                android:background="@drawable/rect_button_radio"></com.example.naver_iso_v2.SquareButton>
-
-                            <TextView
-                                android:id="@+id/in_motion_li1_btncase1_text"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center|top"
-                                android:text="Bottom"
-                                android:textAlignment="center"
-                                android:textAppearance="@style/set_category_subtitle" />
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_weight="1"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="left|center_vertical"
-                            android:orientation="horizontal">
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_weight="1"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="left|center_vertical"
-                            android:orientation="horizontal">
-                        </LinearLayout>
-
-                    </TableRow>
-
-                    <TableRow
-                        android:layout_width="0dp"
-                        android:layout_weight="1"
-                        android:layout_marginTop="@dimen/ll_group_table_margin_top">
-
-                        <TextView
-                            android:id="@+id/in_motion_li2_title"
-                            android:layout_width="0dp"
-                            android:layout_weight="1"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="left|center_vertical"
-                            android:text="Scale"
-                            android:textAppearance="@style/set_category_title" />
-
-                        <LinearLayout
-                            android:id="@+id/in_motion_li2_btncase0"
-                            android:layout_width="0dp"
-                            android:layout_weight="1"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="left|center_vertical"
-                            android:orientation="horizontal">
-
-                            <com.example.naver_iso_v2.SquareButton
-                                android:id="@+id/in_motion_li2_btncase0_radio"
-                                android:layout_width="0px"
-                                android:layout_height="@dimen/square_btn_height"
-                                android:layout_marginTop="@dimen/square_btn_margin_top"
-                                android:layout_marginRight="@dimen/square_btn_margin_right"
-                                android:layout_weight="1"
-                                android:background="@drawable/rect_button_radio"></com.example.naver_iso_v2.SquareButton>
-
-                            <TextView
-                                android:id="@+id/in_motion_li2_btncase0_text"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center|top"
-                                android:text="0"
-                                android:textAlignment="viewStart"
-                                android:textAppearance="@style/set_category_subtitle" />
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:id="@+id/in_motion_li2_btncase1"
-                            android:layout_width="0dp"
-                            android:layout_weight="1"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="left|center_vertical"
-                            android:orientation="horizontal">
-
-                            <com.example.naver_iso_v2.SquareButton
-                                android:id="@+id/in_motion_li2_btncase1_radio"
-                                android:layout_width="0px"
-                                android:layout_height="@dimen/square_btn_height"
-                                android:layout_marginTop="@dimen/square_btn_margin_top"
-                                android:layout_marginRight="@dimen/square_btn_margin_right"
-                                android:layout_weight="1"
-                                android:background="@drawable/rect_button_radio"></com.example.naver_iso_v2.SquareButton>
-
-                            <TextView
-                                android:id="@+id/in_motion_li2_btncase1_text"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center|top"
-                                android:text="0.5"
-                                android:textAlignment="viewStart"
-                                android:textAppearance="@style/set_category_subtitle" />
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:id="@+id/in_motion_li2_btncase2"
-                            android:layout_width="0dp"
-                            android:layout_weight="1"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="left|center_vertical"
-                            android:orientation="horizontal">
-
-                            <com.example.naver_iso_v2.SquareButton
-                                android:id="@+id/in_motion_li2_btncase2_radio"
-                                android:layout_width="0px"
-                                android:layout_height="@dimen/square_btn_height"
-                                android:layout_marginTop="@dimen/square_btn_margin_top"
-                                android:layout_marginRight="@dimen/square_btn_margin_right"
-                                android:layout_weight="1"
-                                android:background="@drawable/rect_button_radio"></com.example.naver_iso_v2.SquareButton>
-
-                            <TextView
-                                android:id="@+id/in_motion_li2_btncase2_text"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center|top"
-                                android:text="0.7"
-                                android:textAlignment="viewStart"
-                                android:textAppearance="@style/set_category_subtitle" />
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:id="@+id/in_motion_li2_btncase3"
-                            android:layout_width="0dp"
-                            android:layout_weight="1"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="left|center_vertical"
-                            android:orientation="horizontal">
-
-                            <com.example.naver_iso_v2.SquareButton
-                                android:id="@+id/in_motion_li2_btncase3_radio"
-                                android:layout_width="0px"
-                                android:layout_height="@dimen/square_btn_height"
-                                android:layout_marginTop="@dimen/square_btn_margin_top"
-                                android:layout_marginRight="@dimen/square_btn_margin_right"
-                                android:layout_weight="1"
-                                android:background="@drawable/rect_button_radio"></com.example.naver_iso_v2.SquareButton>
-
-                            <TextView
-                                android:id="@+id/in_motion_li2_btncase3_text"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center|top"
-                                android:text="1"
-                                android:textAlignment="viewStart"
-                                android:textAppearance="@style/set_category_subtitle" />
-
-                        </LinearLayout>
-
-                    </TableRow>
-
-                    <TableRow
-                        android:layout_width="0dp"
-                        android:layout_weight="1"
-                        android:layout_marginTop="@dimen/ll_group_table_margin_top">
-
-                        <TextView
-                            android:id="@+id/in_motion_li3_title"
-                            android:layout_width="0dp"
-                            android:layout_weight="1"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="left|center_vertical"
-                            android:text="Opacity"
-                            android:textAppearance="@style/set_category_title" />
-
-                        <LinearLayout
-                            android:id="@+id/in_motion_li3_btncase0"
-                            android:layout_width="0dp"
-                            android:layout_weight="1"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="left|center_vertical"
-                            android:orientation="horizontal">
-
-                            <com.example.naver_iso_v2.SquareButton
-                                android:id="@+id/in_motion_li3_btncase0_radio"
-                                android:layout_width="0px"
-                                android:layout_height="@dimen/square_btn_height"
-                                android:layout_marginTop="@dimen/square_btn_margin_top"
-                                android:layout_marginRight="@dimen/square_btn_margin_right"
-                                android:layout_weight="1"
-                                android:background="@drawable/rect_button_radio"></com.example.naver_iso_v2.SquareButton>
-
-                            <TextView
-                                android:id="@+id/in_motion_li3_btncase0_text"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center|top"
-                                android:text="0"
-                                android:textAlignment="viewStart"
-                                android:textAppearance="@style/set_category_subtitle" />
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:id="@+id/in_motion_li3_btncase1"
-                            android:layout_width="0dp"
-                            android:layout_weight="1"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="left|center_vertical"
-                            android:orientation="horizontal">
-
-                            <com.example.naver_iso_v2.SquareButton
-                                android:id="@+id/in_motion_li3_btncase1_radio"
-                                android:layout_width="0px"
-                                android:layout_height="@dimen/square_btn_height"
-                                android:layout_marginTop="@dimen/square_btn_margin_top"
-                                android:layout_marginRight="@dimen/square_btn_margin_right"
-                                android:layout_weight="1"
-                                android:background="@drawable/rect_button_radio"></com.example.naver_iso_v2.SquareButton>
-
-                            <TextView
-                                android:id="@+id/in_motion_li3_btncase1_text"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center|top"
-                                android:text="0.5"
-                                android:textAlignment="viewStart"
-                                android:textAppearance="@style/set_category_subtitle" />
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:id="@+id/in_motion_li3_btncase2"
-                            android:layout_width="0dp"
-                            android:layout_weight="1"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="left|center_vertical"
-                            android:orientation="horizontal">
-
-                            <com.example.naver_iso_v2.SquareButton
-                                android:id="@+id/in_motion_li3_btncase2_radio"
-                                android:layout_width="0px"
-                                android:layout_height="@dimen/square_btn_height"
-                                android:layout_marginTop="@dimen/square_btn_margin_top"
-                                android:layout_marginRight="@dimen/square_btn_margin_right"
-                                android:layout_weight="1"
-                                android:background="@drawable/rect_button_radio"></com.example.naver_iso_v2.SquareButton>
-
-                            <TextView
-                                android:id="@+id/in_motion_li3_btncase2_text"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center|top"
-                                android:text="0.7"
-                                android:textAlignment="viewStart"
-                                android:textAppearance="@style/set_category_subtitle" />
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:id="@+id/in_motion_li3_btncase3"
-                            android:layout_width="0dp"
-                            android:layout_weight="1"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="left|center_vertical"
-                            android:orientation="horizontal">
-
-                            <com.example.naver_iso_v2.SquareButton
-                                android:id="@+id/in_motion_li3_btncase3_radio"
-                                android:layout_width="0px"
-                                android:layout_height="@dimen/square_btn_height"
-                                android:layout_marginTop="@dimen/square_btn_margin_top"
-                                android:layout_marginRight="@dimen/square_btn_margin_right"
-                                android:layout_weight="1"
-                                android:background="@drawable/rect_button_radio"></com.example.naver_iso_v2.SquareButton>
-
-                            <TextView
-                                android:id="@+id/in_motion_li3_btncase3_text"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center|top"
-                                android:text="1"
-                                android:textAlignment="viewStart"
-                                android:textAppearance="@style/set_category_subtitle" />
-
-                        </LinearLayout>
-
-                    </TableRow>
-
-                    <TableRow
-                        android:layout_width="0dp"
-                        android:layout_weight="1"
-                        android:layout_marginTop="@dimen/ll_group_table_margin_top">
-
-                        <TextView
-                            android:id="@+id/in_motion_li4_title"
-                            android:layout_width="0dp"
-                            android:layout_weight="1"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="left|center_vertical"
-                            android:text="Curve"
-                            android:textAppearance="@style/set_category_title" />
-
-                        <LinearLayout
-                            android:id="@+id/in_motion_li4_btncase0"
-                            android:layout_width="0dp"
-                            android:layout_weight="1"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="left|center_vertical"
-                            android:orientation="horizontal">
-
-                            <com.example.naver_iso_v2.SquareButton
-                                android:id="@+id/in_motion_li4_btncase0_radio"
-                                android:layout_width="0px"
-                                android:layout_height="@dimen/square_btn_height"
-                                android:layout_marginTop="@dimen/square_btn_margin_top"
-                                android:layout_marginRight="@dimen/square_btn_margin_right"
-                                android:layout_weight="1"
-                                android:background="@drawable/rect_button_radio"></com.example.naver_iso_v2.SquareButton>
-
-                            <TextView
-                                android:id="@+id/in_motion_li4_btncase0_textView"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center|top"
-                                android:textAlignment="viewStart"
-                                android:textAppearance="@style/set_category_subtitle" />
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:id="@+id/in_motion_li4_btncase1"
-                            android:layout_width="0dp"
-                            android:layout_weight="1"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="left|center_vertical"
-                            android:orientation="horizontal">
-
-                            <com.example.naver_iso_v2.SquareButton
-                                android:id="@+id/in_motion_li4_btncase1_radio"
-                                android:layout_width="0px"
-                                android:layout_height="@dimen/square_btn_height"
-                                android:layout_marginTop="@dimen/square_btn_margin_top"
-                                android:layout_marginRight="@dimen/square_btn_margin_right"
-                                android:layout_weight="1"
-                                android:background="@drawable/rect_button_radio"></com.example.naver_iso_v2.SquareButton>
-
-                            <TextView
-                                android:id="@+id/in_motion_li4_btncase1_textView"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center|top"
-                                android:textAlignment="viewStart"
-                                android:textAppearance="@style/set_category_subtitle" />
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:id="@+id/in_motion_li4_btncase2"
-                            android:layout_width="0dp"
-                            android:layout_weight="1"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="left|center_vertical"
-                            android:orientation="horizontal">
-
-                            <com.example.naver_iso_v2.SquareButton
-                                android:id="@+id/in_motion_li4_btncase2_radio"
-                                android:layout_width="0px"
-                                android:layout_height="@dimen/square_btn_height"
-                                android:layout_marginTop="@dimen/square_btn_margin_top"
-                                android:layout_marginRight="@dimen/square_btn_margin_right"
-                                android:layout_weight="1"
-                                android:background="@drawable/rect_button_radio"></com.example.naver_iso_v2.SquareButton>
-
-                            <TextView
-                                android:id="@+id/in_motion_li4_btncase2_textView"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center|top"
-                                android:textAlignment="viewStart"
-                                android:textAppearance="@style/set_category_subtitle" />
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:id="@+id/in_motion_li4_btncase3"
-                            android:layout_width="0dp"
-                            android:layout_weight="1"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="left|center_vertical"
-                            android:orientation="horizontal">
-
-                            <com.example.naver_iso_v2.SquareButton
-                                android:id="@+id/in_motion_li4_btncase3_radio"
-                                android:layout_width="0px"
-                                android:layout_height="@dimen/square_btn_height"
-                                android:layout_marginTop="@dimen/square_btn_margin_top"
-                                android:layout_marginRight="@dimen/square_btn_margin_right"
-                                android:layout_weight="1"
-                                android:background="@drawable/rect_button_radio"></com.example.naver_iso_v2.SquareButton>
-
-                            <TextView
-                                android:id="@+id/in_motion_li4_btncase3_textView"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center|top"
-                                android:textAlignment="viewStart"
-                                android:textAppearance="@style/set_category_subtitle" />
-
-                        </LinearLayout>
-
-                    </TableRow>
-
-                    <TableRow
-                        android:layout_width="0dp"
-                        android:layout_weight="1"
-                        android:layout_marginTop="@dimen/ll_group_table_margin_top">
-
-                        <TextView
-                            android:id="@+id/in_motion_li5_title"
-                            android:layout_width="0dp"
-                            android:layout_weight="1"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="left|center_vertical"
-                            android:text="Haptic"
-                            android:textAppearance="@style/set_category_title" />
-
-                        <LinearLayout
-                            android:id="@+id/in_motion_li5_btncase0"
-                            android:layout_width="0dp"
-                            android:layout_weight="1"
-                            android:layout_height="wrap_content"
-                            android:orientation="horizontal">
-
-                            <com.example.naver_iso_v2.SquareButton
-                                android:id="@+id/in_motion_li5_btncase0_radio"
-                                android:layout_width="0px"
-                                android:layout_height="@dimen/square_btn_height"
-                                android:layout_marginTop="@dimen/square_btn_margin_top"
-                                android:layout_marginRight="@dimen/square_btn_margin_right"
-                                android:layout_weight="1"
-                                android:background="@drawable/rect_button_radio"></com.example.naver_iso_v2.SquareButton>
-
-                            <TextView
-                                android:id="@+id/in_motion_li5_btncase0_text"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center|top"
-                                android:text="None"
-                                android:textAlignment="center"
-                                android:textAppearance="@style/set_category_subtitle" />
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:id="@+id/in_motion_li5_btncase1"
-                            android:layout_width="0dp"
-                            android:layout_weight="1"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="left|center_vertical"
-                            android:orientation="horizontal">
-
-                            <com.example.naver_iso_v2.SquareButton
-                                android:id="@+id/in_motion_li5_btncase1_radio"
-                                android:layout_width="0px"
-                                android:layout_height="@dimen/square_btn_height"
-                                android:layout_marginTop="@dimen/square_btn_margin_top"
-                                android:layout_marginRight="@dimen/square_btn_margin_right"
-                                android:layout_weight="1"
-                                android:background="@drawable/rect_button_radio"></com.example.naver_iso_v2.SquareButton>
-
-                            <TextView
-                                android:id="@+id/in_motion_li5_btncase1_text"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center|top"
-                                android:text="Light"
-                                android:textAlignment="center"
-                                android:textAppearance="@style/set_category_subtitle" />
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:id="@+id/in_motion_li5_btncase2"
-                            android:layout_width="0dp"
-                            android:layout_weight="1"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="left|center_vertical"
-                            android:orientation="horizontal">
-
-                            <com.example.naver_iso_v2.SquareButton
-                                android:id="@+id/in_motion_li5_btncase2_radio"
-                                android:layout_width="0px"
-                                android:layout_height="@dimen/square_btn_height"
-                                android:layout_marginTop="@dimen/square_btn_margin_top"
-                                android:layout_marginRight="@dimen/square_btn_margin_right"
-                                android:layout_weight="1"
-                                android:background="@drawable/rect_button_radio"></com.example.naver_iso_v2.SquareButton>
-
-                            <TextView
-                                android:id="@+id/in_motion_li5_btncase2_text"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center|top"
-                                android:text="Medium"
-                                android:textAlignment="center"
-                                android:textAppearance="@style/set_category_subtitle" />
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:id="@+id/in_motion_li5_btncase3"
-                            android:layout_width="0dp"
-                            android:layout_weight="1"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="left|center_vertical"
-
-                            android:orientation="horizontal">
-
-                            <com.example.naver_iso_v2.SquareButton
-                                android:id="@+id/in_motion_li5_btncase3_radio"
-                                android:layout_width="0px"
-                                android:layout_height="@dimen/square_btn_height"
-                                android:layout_marginTop="@dimen/square_btn_margin_top"
-                                android:layout_marginRight="@dimen/square_btn_margin_right"
-                                android:layout_weight="1"
-                                android:background="@drawable/rect_button_radio"></com.example.naver_iso_v2.SquareButton>
-
-                            <TextView
-                                android:id="@+id/in_motion_li5_btncase3_text"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center|top"
-                                android:text="Heavy"
-                                android:textAlignment="center"
-                                android:textAppearance="@style/set_category_subtitle" />
-
-                        </LinearLayout>
-
-                    </TableRow>
-
-                </TableLayout>
-
-            </LinearLayout>
-
-        </LinearLayout>
-
-    </LinearLayout>
+<!--    <LinearLayout-->
+<!--        android:id="@+id/transgroup_first_ll"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="vertical">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="@drawable/rect_radiogroup"-->
+<!--                android:orientation="vertical"-->
+<!--                android:paddingLeft="15dp"-->
+<!--                android:paddingTop="12.5dp"-->
+<!--                android:paddingRight="15dp"-->
+<!--                android:paddingBottom="16dp">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginBottom="9.5dp"-->
+<!--                    android:orientation="horizontal">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="67dp"-->
+<!--                        android:layout_height="18dp"-->
+<!--                        android:text="@string/in_motion"-->
+<!--                        android:textAppearance="@style/in_motion"-->
+<!--                        android:textStyle="bold" />-->
+
+<!--                    <View-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="0dp"-->
+<!--                        android:layout_weight="1" />-->
+
+<!--                    <View-->
+<!--                        android:id="@+id/code_review1"-->
+<!--                        android:layout_width="44.37dp"-->
+<!--                        android:layout_height="16.5dp"-->
+<!--                        android:layout_gravity="center|right"-->
+<!--                        android:layout_marginTop="0.75dp"-->
+<!--                        android:background="@drawable/icn_codecopy" />-->
+
+<!--                </LinearLayout>-->
+
+<!--                <View-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="1dp"-->
+<!--                    android:layout_marginBottom="10dp"-->
+<!--                    android:background="#BDC0BD" />-->
+
+<!--                <TableLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_margin="8dp">-->
+
+<!--                    <TableRow-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_weight="1">-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/in_motion_li0_title"-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="left|center_vertical"-->
+<!--                            android:text="Duration"-->
+<!--                            android:textAppearance="@style/set_category_title" />-->
+
+<!--                        <LinearLayout-->
+<!--                            android:id="@+id/in_motion_li0_btncase0"-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="left|center_vertical"-->
+<!--                            android:orientation="horizontal">-->
+
+<!--                            <com.example.naver_iso_v2.SquareButton-->
+<!--                                android:id="@+id/in_motion_li0_btncase0_radio"-->
+<!--                                android:layout_width="0px"-->
+<!--                                android:layout_height="@dimen/square_btn_height"-->
+<!--                                android:layout_marginTop="@dimen/square_btn_margin_top"-->
+<!--                                android:layout_marginRight="@dimen/square_btn_margin_right"-->
+<!--                                android:layout_weight="1"-->
+<!--                                android:background="@drawable/rect_button_radio"></com.example.naver_iso_v2.SquareButton>-->
+
+<!--                            <TextView-->
+<!--                                android:id="@+id/in_motion_li0_btncase0_text"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_gravity="center|top"-->
+<!--                                android:text="0.2s"-->
+<!--                                android:textAlignment="center"-->
+<!--                                android:textAppearance="@style/set_category_subtitle" />-->
+
+<!--                        </LinearLayout>-->
+
+<!--                        <LinearLayout-->
+<!--                            android:id="@+id/in_motion_li0_btncase1"-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="left|center_vertical"-->
+<!--                            android:orientation="horizontal">-->
+
+<!--                            <com.example.naver_iso_v2.SquareButton-->
+<!--                                android:id="@+id/in_motion_li0_btncase1_radio"-->
+<!--                                android:layout_width="0px"-->
+<!--                                android:layout_height="@dimen/square_btn_height"-->
+<!--                                android:layout_marginTop="@dimen/square_btn_margin_top"-->
+<!--                                android:layout_marginRight="@dimen/square_btn_margin_right"-->
+<!--                                android:layout_weight="1"-->
+<!--                                android:background="@drawable/rect_button_radio"></com.example.naver_iso_v2.SquareButton>-->
+
+<!--                            <TextView-->
+<!--                                android:id="@+id/in_motion_li0_btncase1_text"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_gravity="center|top"-->
+<!--                                android:text="0.3s"-->
+<!--                                android:textAlignment="center"-->
+<!--                                android:textAppearance="@style/set_category_subtitle" />-->
+
+<!--                        </LinearLayout>-->
+
+<!--                        <LinearLayout-->
+<!--                            android:id="@+id/in_motion_li0_btncase2"-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="left|center_vertical"-->
+<!--                            android:orientation="horizontal">-->
+
+<!--                            <com.example.naver_iso_v2.SquareButton-->
+<!--                                android:id="@+id/in_motion_li0_btncase2_radio"-->
+<!--                                android:layout_width="0px"-->
+<!--                                android:layout_height="@dimen/square_btn_height"-->
+<!--                                android:layout_marginTop="@dimen/square_btn_margin_top"-->
+<!--                                android:layout_marginRight="@dimen/square_btn_margin_right"-->
+<!--                                android:layout_weight="1"-->
+<!--                                android:background="@drawable/rect_button_radio"></com.example.naver_iso_v2.SquareButton>-->
+
+<!--                            <TextView-->
+<!--                                android:id="@+id/in_motion_li0_btncase2_text"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_gravity="center|top"-->
+<!--                                android:text="0.4s"-->
+<!--                                android:textAlignment="center"-->
+<!--                                android:textAppearance="@style/set_category_subtitle" />-->
+
+<!--                        </LinearLayout>-->
+
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="left|center_vertical"-->
+<!--                            android:orientation="horizontal">-->
+<!--                        </LinearLayout>-->
+
+<!--                    </TableRow>-->
+
+<!--                    <TableRow-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:layout_marginTop="@dimen/ll_group_table_margin_top">-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/in_motion_li1_title"-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="left|center_vertical"-->
+<!--                            android:text="Position"-->
+<!--                            android:textAppearance="@style/set_category_title" />-->
+
+<!--                        <LinearLayout-->
+<!--                            android:id="@+id/in_motion_li1_btncase0"-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="left|center_vertical"-->
+<!--                            android:orientation="horizontal">-->
+
+<!--                            <com.example.naver_iso_v2.SquareButton-->
+<!--                                android:id="@+id/in_motion_li1_btncase0_radio"-->
+<!--                                android:layout_width="0px"-->
+<!--                                android:layout_height="@dimen/square_btn_height"-->
+<!--                                android:layout_marginTop="@dimen/square_btn_margin_top"-->
+<!--                                android:layout_marginRight="@dimen/square_btn_margin_right"-->
+<!--                                android:layout_weight="1"-->
+<!--                                android:background="@drawable/rect_button_radio"></com.example.naver_iso_v2.SquareButton>-->
+
+<!--                            <TextView-->
+<!--                                android:id="@+id/in_motion_li1_btncase0_text"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_gravity="center|top"-->
+<!--                                android:text="None"-->
+<!--                                android:textAlignment="center"-->
+<!--                                android:textAppearance="@style/set_category_subtitle" />-->
+
+<!--                        </LinearLayout>-->
+
+<!--                        <LinearLayout-->
+<!--                            android:id="@+id/in_motion_li1_btncase1"-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="left|center_vertical"-->
+<!--                            android:layout_marginLeft="@dimen/ll_group_margin_left"-->
+<!--                            android:orientation="horizontal">-->
+
+<!--                            <com.example.naver_iso_v2.SquareButton-->
+<!--                                android:id="@+id/in_motion_li1_btncase1_radio"-->
+<!--                                android:layout_width="0px"-->
+<!--                                android:layout_height="@dimen/square_btn_height"-->
+<!--                                android:layout_marginTop="@dimen/square_btn_margin_top"-->
+<!--                                android:layout_marginRight="@dimen/square_btn_margin_right"-->
+<!--                                android:layout_weight="1"-->
+<!--                                android:background="@drawable/rect_button_radio"></com.example.naver_iso_v2.SquareButton>-->
+
+<!--                            <TextView-->
+<!--                                android:id="@+id/in_motion_li1_btncase1_text"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_gravity="center|top"-->
+<!--                                android:text="Bottom"-->
+<!--                                android:textAlignment="center"-->
+<!--                                android:textAppearance="@style/set_category_subtitle" />-->
+
+<!--                        </LinearLayout>-->
+
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="left|center_vertical"-->
+<!--                            android:orientation="horizontal">-->
+<!--                        </LinearLayout>-->
+
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="left|center_vertical"-->
+<!--                            android:orientation="horizontal">-->
+<!--                        </LinearLayout>-->
+
+<!--                    </TableRow>-->
+
+<!--                    <TableRow-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:layout_marginTop="@dimen/ll_group_table_margin_top">-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/in_motion_li2_title"-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="left|center_vertical"-->
+<!--                            android:text="Scale"-->
+<!--                            android:textAppearance="@style/set_category_title" />-->
+
+<!--                        <LinearLayout-->
+<!--                            android:id="@+id/in_motion_li2_btncase0"-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="left|center_vertical"-->
+<!--                            android:orientation="horizontal">-->
+
+<!--                            <com.example.naver_iso_v2.SquareButton-->
+<!--                                android:id="@+id/in_motion_li2_btncase0_radio"-->
+<!--                                android:layout_width="0px"-->
+<!--                                android:layout_height="@dimen/square_btn_height"-->
+<!--                                android:layout_marginTop="@dimen/square_btn_margin_top"-->
+<!--                                android:layout_marginRight="@dimen/square_btn_margin_right"-->
+<!--                                android:layout_weight="1"-->
+<!--                                android:background="@drawable/rect_button_radio"></com.example.naver_iso_v2.SquareButton>-->
+
+<!--                            <TextView-->
+<!--                                android:id="@+id/in_motion_li2_btncase0_text"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_gravity="center|top"-->
+<!--                                android:text="0"-->
+<!--                                android:textAlignment="viewStart"-->
+<!--                                android:textAppearance="@style/set_category_subtitle" />-->
+
+<!--                        </LinearLayout>-->
+
+<!--                        <LinearLayout-->
+<!--                            android:id="@+id/in_motion_li2_btncase1"-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="left|center_vertical"-->
+<!--                            android:orientation="horizontal">-->
+
+<!--                            <com.example.naver_iso_v2.SquareButton-->
+<!--                                android:id="@+id/in_motion_li2_btncase1_radio"-->
+<!--                                android:layout_width="0px"-->
+<!--                                android:layout_height="@dimen/square_btn_height"-->
+<!--                                android:layout_marginTop="@dimen/square_btn_margin_top"-->
+<!--                                android:layout_marginRight="@dimen/square_btn_margin_right"-->
+<!--                                android:layout_weight="1"-->
+<!--                                android:background="@drawable/rect_button_radio"></com.example.naver_iso_v2.SquareButton>-->
+
+<!--                            <TextView-->
+<!--                                android:id="@+id/in_motion_li2_btncase1_text"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_gravity="center|top"-->
+<!--                                android:text="0.5"-->
+<!--                                android:textAlignment="viewStart"-->
+<!--                                android:textAppearance="@style/set_category_subtitle" />-->
+
+<!--                        </LinearLayout>-->
+
+<!--                        <LinearLayout-->
+<!--                            android:id="@+id/in_motion_li2_btncase2"-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="left|center_vertical"-->
+<!--                            android:orientation="horizontal">-->
+
+<!--                            <com.example.naver_iso_v2.SquareButton-->
+<!--                                android:id="@+id/in_motion_li2_btncase2_radio"-->
+<!--                                android:layout_width="0px"-->
+<!--                                android:layout_height="@dimen/square_btn_height"-->
+<!--                                android:layout_marginTop="@dimen/square_btn_margin_top"-->
+<!--                                android:layout_marginRight="@dimen/square_btn_margin_right"-->
+<!--                                android:layout_weight="1"-->
+<!--                                android:background="@drawable/rect_button_radio"></com.example.naver_iso_v2.SquareButton>-->
+
+<!--                            <TextView-->
+<!--                                android:id="@+id/in_motion_li2_btncase2_text"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_gravity="center|top"-->
+<!--                                android:text="0.7"-->
+<!--                                android:textAlignment="viewStart"-->
+<!--                                android:textAppearance="@style/set_category_subtitle" />-->
+
+<!--                        </LinearLayout>-->
+
+<!--                        <LinearLayout-->
+<!--                            android:id="@+id/in_motion_li2_btncase3"-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="left|center_vertical"-->
+<!--                            android:orientation="horizontal">-->
+
+<!--                            <com.example.naver_iso_v2.SquareButton-->
+<!--                                android:id="@+id/in_motion_li2_btncase3_radio"-->
+<!--                                android:layout_width="0px"-->
+<!--                                android:layout_height="@dimen/square_btn_height"-->
+<!--                                android:layout_marginTop="@dimen/square_btn_margin_top"-->
+<!--                                android:layout_marginRight="@dimen/square_btn_margin_right"-->
+<!--                                android:layout_weight="1"-->
+<!--                                android:background="@drawable/rect_button_radio"></com.example.naver_iso_v2.SquareButton>-->
+
+<!--                            <TextView-->
+<!--                                android:id="@+id/in_motion_li2_btncase3_text"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_gravity="center|top"-->
+<!--                                android:text="1"-->
+<!--                                android:textAlignment="viewStart"-->
+<!--                                android:textAppearance="@style/set_category_subtitle" />-->
+
+<!--                        </LinearLayout>-->
+
+<!--                    </TableRow>-->
+
+<!--                    <TableRow-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:layout_marginTop="@dimen/ll_group_table_margin_top">-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/in_motion_li3_title"-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="left|center_vertical"-->
+<!--                            android:text="Opacity"-->
+<!--                            android:textAppearance="@style/set_category_title" />-->
+
+<!--                        <LinearLayout-->
+<!--                            android:id="@+id/in_motion_li3_btncase0"-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="left|center_vertical"-->
+<!--                            android:orientation="horizontal">-->
+
+<!--                            <com.example.naver_iso_v2.SquareButton-->
+<!--                                android:id="@+id/in_motion_li3_btncase0_radio"-->
+<!--                                android:layout_width="0px"-->
+<!--                                android:layout_height="@dimen/square_btn_height"-->
+<!--                                android:layout_marginTop="@dimen/square_btn_margin_top"-->
+<!--                                android:layout_marginRight="@dimen/square_btn_margin_right"-->
+<!--                                android:layout_weight="1"-->
+<!--                                android:background="@drawable/rect_button_radio"></com.example.naver_iso_v2.SquareButton>-->
+
+<!--                            <TextView-->
+<!--                                android:id="@+id/in_motion_li3_btncase0_text"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_gravity="center|top"-->
+<!--                                android:text="0"-->
+<!--                                android:textAlignment="viewStart"-->
+<!--                                android:textAppearance="@style/set_category_subtitle" />-->
+
+<!--                        </LinearLayout>-->
+
+<!--                        <LinearLayout-->
+<!--                            android:id="@+id/in_motion_li3_btncase1"-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="left|center_vertical"-->
+<!--                            android:orientation="horizontal">-->
+
+<!--                            <com.example.naver_iso_v2.SquareButton-->
+<!--                                android:id="@+id/in_motion_li3_btncase1_radio"-->
+<!--                                android:layout_width="0px"-->
+<!--                                android:layout_height="@dimen/square_btn_height"-->
+<!--                                android:layout_marginTop="@dimen/square_btn_margin_top"-->
+<!--                                android:layout_marginRight="@dimen/square_btn_margin_right"-->
+<!--                                android:layout_weight="1"-->
+<!--                                android:background="@drawable/rect_button_radio"></com.example.naver_iso_v2.SquareButton>-->
+
+<!--                            <TextView-->
+<!--                                android:id="@+id/in_motion_li3_btncase1_text"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_gravity="center|top"-->
+<!--                                android:text="0.5"-->
+<!--                                android:textAlignment="viewStart"-->
+<!--                                android:textAppearance="@style/set_category_subtitle" />-->
+
+<!--                        </LinearLayout>-->
+
+<!--                        <LinearLayout-->
+<!--                            android:id="@+id/in_motion_li3_btncase2"-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="left|center_vertical"-->
+<!--                            android:orientation="horizontal">-->
+
+<!--                            <com.example.naver_iso_v2.SquareButton-->
+<!--                                android:id="@+id/in_motion_li3_btncase2_radio"-->
+<!--                                android:layout_width="0px"-->
+<!--                                android:layout_height="@dimen/square_btn_height"-->
+<!--                                android:layout_marginTop="@dimen/square_btn_margin_top"-->
+<!--                                android:layout_marginRight="@dimen/square_btn_margin_right"-->
+<!--                                android:layout_weight="1"-->
+<!--                                android:background="@drawable/rect_button_radio"></com.example.naver_iso_v2.SquareButton>-->
+
+<!--                            <TextView-->
+<!--                                android:id="@+id/in_motion_li3_btncase2_text"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_gravity="center|top"-->
+<!--                                android:text="0.7"-->
+<!--                                android:textAlignment="viewStart"-->
+<!--                                android:textAppearance="@style/set_category_subtitle" />-->
+
+<!--                        </LinearLayout>-->
+
+<!--                        <LinearLayout-->
+<!--                            android:id="@+id/in_motion_li3_btncase3"-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="left|center_vertical"-->
+<!--                            android:orientation="horizontal">-->
+
+<!--                            <com.example.naver_iso_v2.SquareButton-->
+<!--                                android:id="@+id/in_motion_li3_btncase3_radio"-->
+<!--                                android:layout_width="0px"-->
+<!--                                android:layout_height="@dimen/square_btn_height"-->
+<!--                                android:layout_marginTop="@dimen/square_btn_margin_top"-->
+<!--                                android:layout_marginRight="@dimen/square_btn_margin_right"-->
+<!--                                android:layout_weight="1"-->
+<!--                                android:background="@drawable/rect_button_radio"></com.example.naver_iso_v2.SquareButton>-->
+
+<!--                            <TextView-->
+<!--                                android:id="@+id/in_motion_li3_btncase3_text"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_gravity="center|top"-->
+<!--                                android:text="1"-->
+<!--                                android:textAlignment="viewStart"-->
+<!--                                android:textAppearance="@style/set_category_subtitle" />-->
+
+<!--                        </LinearLayout>-->
+
+<!--                    </TableRow>-->
+
+<!--                    <TableRow-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:layout_marginTop="@dimen/ll_group_table_margin_top">-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/in_motion_li4_title"-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="left|center_vertical"-->
+<!--                            android:text="Curve"-->
+<!--                            android:textAppearance="@style/set_category_title" />-->
+
+<!--                        <LinearLayout-->
+<!--                            android:id="@+id/in_motion_li4_btncase0"-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="left|center_vertical"-->
+<!--                            android:orientation="horizontal">-->
+
+<!--                            <com.example.naver_iso_v2.SquareButton-->
+<!--                                android:id="@+id/in_motion_li4_btncase0_radio"-->
+<!--                                android:layout_width="0px"-->
+<!--                                android:layout_height="@dimen/square_btn_height"-->
+<!--                                android:layout_marginTop="@dimen/square_btn_margin_top"-->
+<!--                                android:layout_marginRight="@dimen/square_btn_margin_right"-->
+<!--                                android:layout_weight="1"-->
+<!--                                android:background="@drawable/rect_button_radio"></com.example.naver_iso_v2.SquareButton>-->
+
+<!--                            <TextView-->
+<!--                                android:id="@+id/in_motion_li4_btncase0_textView"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_gravity="center|top"-->
+<!--                                android:textAlignment="viewStart"-->
+<!--                                android:textAppearance="@style/set_category_subtitle" />-->
+
+<!--                        </LinearLayout>-->
+
+<!--                        <LinearLayout-->
+<!--                            android:id="@+id/in_motion_li4_btncase1"-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="left|center_vertical"-->
+<!--                            android:orientation="horizontal">-->
+
+<!--                            <com.example.naver_iso_v2.SquareButton-->
+<!--                                android:id="@+id/in_motion_li4_btncase1_radio"-->
+<!--                                android:layout_width="0px"-->
+<!--                                android:layout_height="@dimen/square_btn_height"-->
+<!--                                android:layout_marginTop="@dimen/square_btn_margin_top"-->
+<!--                                android:layout_marginRight="@dimen/square_btn_margin_right"-->
+<!--                                android:layout_weight="1"-->
+<!--                                android:background="@drawable/rect_button_radio"></com.example.naver_iso_v2.SquareButton>-->
+
+<!--                            <TextView-->
+<!--                                android:id="@+id/in_motion_li4_btncase1_textView"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_gravity="center|top"-->
+<!--                                android:textAlignment="viewStart"-->
+<!--                                android:textAppearance="@style/set_category_subtitle" />-->
+
+<!--                        </LinearLayout>-->
+
+<!--                        <LinearLayout-->
+<!--                            android:id="@+id/in_motion_li4_btncase2"-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="left|center_vertical"-->
+<!--                            android:orientation="horizontal">-->
+
+<!--                            <com.example.naver_iso_v2.SquareButton-->
+<!--                                android:id="@+id/in_motion_li4_btncase2_radio"-->
+<!--                                android:layout_width="0px"-->
+<!--                                android:layout_height="@dimen/square_btn_height"-->
+<!--                                android:layout_marginTop="@dimen/square_btn_margin_top"-->
+<!--                                android:layout_marginRight="@dimen/square_btn_margin_right"-->
+<!--                                android:layout_weight="1"-->
+<!--                                android:background="@drawable/rect_button_radio"></com.example.naver_iso_v2.SquareButton>-->
+
+<!--                            <TextView-->
+<!--                                android:id="@+id/in_motion_li4_btncase2_textView"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_gravity="center|top"-->
+<!--                                android:textAlignment="viewStart"-->
+<!--                                android:textAppearance="@style/set_category_subtitle" />-->
+
+<!--                        </LinearLayout>-->
+
+<!--                        <LinearLayout-->
+<!--                            android:id="@+id/in_motion_li4_btncase3"-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="left|center_vertical"-->
+<!--                            android:orientation="horizontal">-->
+
+<!--                            <com.example.naver_iso_v2.SquareButton-->
+<!--                                android:id="@+id/in_motion_li4_btncase3_radio"-->
+<!--                                android:layout_width="0px"-->
+<!--                                android:layout_height="@dimen/square_btn_height"-->
+<!--                                android:layout_marginTop="@dimen/square_btn_margin_top"-->
+<!--                                android:layout_marginRight="@dimen/square_btn_margin_right"-->
+<!--                                android:layout_weight="1"-->
+<!--                                android:background="@drawable/rect_button_radio"></com.example.naver_iso_v2.SquareButton>-->
+
+<!--                            <TextView-->
+<!--                                android:id="@+id/in_motion_li4_btncase3_textView"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_gravity="center|top"-->
+<!--                                android:textAlignment="viewStart"-->
+<!--                                android:textAppearance="@style/set_category_subtitle" />-->
+
+<!--                        </LinearLayout>-->
+
+<!--                    </TableRow>-->
+
+<!--                    <TableRow-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:layout_marginTop="@dimen/ll_group_table_margin_top">-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/in_motion_li5_title"-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="left|center_vertical"-->
+<!--                            android:text="Haptic"-->
+<!--                            android:textAppearance="@style/set_category_title" />-->
+
+<!--                        <LinearLayout-->
+<!--                            android:id="@+id/in_motion_li5_btncase0"-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:orientation="horizontal">-->
+
+<!--                            <com.example.naver_iso_v2.SquareButton-->
+<!--                                android:id="@+id/in_motion_li5_btncase0_radio"-->
+<!--                                android:layout_width="0px"-->
+<!--                                android:layout_height="@dimen/square_btn_height"-->
+<!--                                android:layout_marginTop="@dimen/square_btn_margin_top"-->
+<!--                                android:layout_marginRight="@dimen/square_btn_margin_right"-->
+<!--                                android:layout_weight="1"-->
+<!--                                android:background="@drawable/rect_button_radio"></com.example.naver_iso_v2.SquareButton>-->
+
+<!--                            <TextView-->
+<!--                                android:id="@+id/in_motion_li5_btncase0_text"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_gravity="center|top"-->
+<!--                                android:text="None"-->
+<!--                                android:textAlignment="center"-->
+<!--                                android:textAppearance="@style/set_category_subtitle" />-->
+
+<!--                        </LinearLayout>-->
+
+<!--                        <LinearLayout-->
+<!--                            android:id="@+id/in_motion_li5_btncase1"-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="left|center_vertical"-->
+<!--                            android:orientation="horizontal">-->
+
+<!--                            <com.example.naver_iso_v2.SquareButton-->
+<!--                                android:id="@+id/in_motion_li5_btncase1_radio"-->
+<!--                                android:layout_width="0px"-->
+<!--                                android:layout_height="@dimen/square_btn_height"-->
+<!--                                android:layout_marginTop="@dimen/square_btn_margin_top"-->
+<!--                                android:layout_marginRight="@dimen/square_btn_margin_right"-->
+<!--                                android:layout_weight="1"-->
+<!--                                android:background="@drawable/rect_button_radio"></com.example.naver_iso_v2.SquareButton>-->
+
+<!--                            <TextView-->
+<!--                                android:id="@+id/in_motion_li5_btncase1_text"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_gravity="center|top"-->
+<!--                                android:text="Light"-->
+<!--                                android:textAlignment="center"-->
+<!--                                android:textAppearance="@style/set_category_subtitle" />-->
+
+<!--                        </LinearLayout>-->
+
+<!--                        <LinearLayout-->
+<!--                            android:id="@+id/in_motion_li5_btncase2"-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="left|center_vertical"-->
+<!--                            android:orientation="horizontal">-->
+
+<!--                            <com.example.naver_iso_v2.SquareButton-->
+<!--                                android:id="@+id/in_motion_li5_btncase2_radio"-->
+<!--                                android:layout_width="0px"-->
+<!--                                android:layout_height="@dimen/square_btn_height"-->
+<!--                                android:layout_marginTop="@dimen/square_btn_margin_top"-->
+<!--                                android:layout_marginRight="@dimen/square_btn_margin_right"-->
+<!--                                android:layout_weight="1"-->
+<!--                                android:background="@drawable/rect_button_radio"></com.example.naver_iso_v2.SquareButton>-->
+
+<!--                            <TextView-->
+<!--                                android:id="@+id/in_motion_li5_btncase2_text"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_gravity="center|top"-->
+<!--                                android:text="Medium"-->
+<!--                                android:textAlignment="center"-->
+<!--                                android:textAppearance="@style/set_category_subtitle" />-->
+
+<!--                        </LinearLayout>-->
+
+<!--                        <LinearLayout-->
+<!--                            android:id="@+id/in_motion_li5_btncase3"-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="left|center_vertical"-->
+
+<!--                            android:orientation="horizontal">-->
+
+<!--                            <com.example.naver_iso_v2.SquareButton-->
+<!--                                android:id="@+id/in_motion_li5_btncase3_radio"-->
+<!--                                android:layout_width="0px"-->
+<!--                                android:layout_height="@dimen/square_btn_height"-->
+<!--                                android:layout_marginTop="@dimen/square_btn_margin_top"-->
+<!--                                android:layout_marginRight="@dimen/square_btn_margin_right"-->
+<!--                                android:layout_weight="1"-->
+<!--                                android:background="@drawable/rect_button_radio"></com.example.naver_iso_v2.SquareButton>-->
+
+<!--                            <TextView-->
+<!--                                android:id="@+id/in_motion_li5_btncase3_text"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_gravity="center|top"-->
+<!--                                android:text="Heavy"-->
+<!--                                android:textAlignment="center"-->
+<!--                                android:textAppearance="@style/set_category_subtitle" />-->
+
+<!--                        </LinearLayout>-->
+
+<!--                    </TableRow>-->
+
+<!--                </TableLayout>-->
+
+<!--            </LinearLayout>-->
+
+<!--        </LinearLayout>-->
+
+<!--    </LinearLayout>-->
 
 </RelativeLayout>

@@ -62,8 +62,8 @@ public class ClickAdapter_InMotion_Li3 implements View.OnClickListener{
                 Pannel_ListLayout_InMotion.in_motion_li3_btncase3_radio_trans.startTransition(100);
                 break;
         }
-        Pannel_Result.inMotion_result_3.setText(String.valueOf(Vars_Def.inMotion_li3_state));
-        if (Vars_Def.inMotion_li3_state == 0){ Pannel_Result.inMotion_result_3.setText("0"); }
-        if (Vars_Def.inMotion_li3_state == 1){ Pannel_Result.inMotion_result_3.setText("1"); }
+//        Pannel_Result.inMotion_result_3.setText(String.valueOf(Vars_Def.inMotion_li3_state));
+//        if (Vars_Def.inMotion_li3_state == 0){ Pannel_Result.inMotion_result_3.setText("0"); }
+//        if (Vars_Def.inMotion_li3_state == 1){ Pannel_Result.inMotion_result_3.setText("1"); }
     }
 }

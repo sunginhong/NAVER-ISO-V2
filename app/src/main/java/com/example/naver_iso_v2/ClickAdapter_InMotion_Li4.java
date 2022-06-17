@@ -76,6 +76,6 @@ public class ClickAdapter_InMotion_Li4 implements View.OnClickListener{
                 break;
         }
         AnimRectObject.function_group1_selEase(Vars_Def.inMotion_li4_state);
-        Pannel_Result.inMotion_result_4.setText("ease" + Vars_Def.array_string_easeType[idx] + easeCase);
+//        Pannel_Result.inMotion_result_4.setText("ease" + Vars_Def.array_string_easeType[idx] + easeCase);
     }
 }
