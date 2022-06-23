@@ -116,7 +116,9 @@ public class Pannel_ListLayout_Top extends RelativeLayout {
     }
 
     public void objectpPlayAnim(boolean state){
-        if (BottomTabBar.clickIdx == 0){ if (state){ Fragment_0_Popup_v2.PlayAnim("Out"); } else { Fragment_0_Popup_v2.PlayAnim("In"); } }
+        if (Integer.parseInt(Activity_Interactions.Pos) == 0){ if (state){ new Interaction_PlayAnim(true, Fragment_0_Popup_v2.popup_v2_imageView); } else { new Interaction_PlayAnim(false, Fragment_0_Popup_v2.popup_v2_imageView); } }
+        if (Integer.parseInt(Activity_Interactions.Pos) == 1){ if (state){ new Interaction_PlayAnim(true, Fragment_1_Nudge_v2.nudge_v2_imageView); } else { new Interaction_PlayAnim(false, Fragment_1_Nudge_v2.nudge_v2_imageView); } }
+        if (Integer.parseInt(Activity_Interactions.Pos) == 2){ if (state){ new Interaction_PlayAnim(true, Fragment_2_Alarm_v2.alarm_v2_imageView); } else { new Interaction_PlayAnim(false, Fragment_2_Alarm_v2.alarm_v2_imageView); } }
     }
 
     public static void pannelReset(){

@@ -3,6 +3,7 @@ package com.example.naver_iso_v2;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.AttributeSet;
 import android.util.Log;
@@ -10,6 +11,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.ListView;
@@ -27,6 +29,7 @@ public class Main_ListFragment extends FrameLayout {
     ArrayList<Main_List_Item> mainListItem;
     public static ListView mainListView;
     private static Main_List_CustomAdapter customAdapter;
+    public static LinearLayout iso_link;
 
     public Main_ListFragment(Context ctx){
         super(ctx);
@@ -62,6 +65,7 @@ public class Main_ListFragment extends FrameLayout {
         mainListView.setAdapter(customAdapter);
         mainListView.addHeaderView(header);
 
+        iso_link = (LinearLayout) findViewById(R.id.iso_link);
 //        Toast.makeText(getContext(), "Clicked: " + position +" " + selectedItem, Toast.LENGTH_SHORT).show();
     }
 }

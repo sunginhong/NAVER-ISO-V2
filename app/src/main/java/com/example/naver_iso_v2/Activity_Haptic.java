@@ -3,7 +3,6 @@ package com.example.naver_iso_v2;
 import android.content.Context;
 import android.os.Bundle;
 import android.os.Vibrator;
-import android.util.Log;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -40,5 +39,10 @@ public class Activity_Haptic extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         finish();
+        pageOutAnim();
+    }
+
+    void pageOutAnim(){
+        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right_case2);
     }
 }

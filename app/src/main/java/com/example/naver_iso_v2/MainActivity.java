@@ -6,19 +6,18 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.Point;
 import android.os.Bundle;
-import android.os.Handler;
-import android.util.Log;
 import android.view.Display;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
-import android.widget.ListView;
 import android.widget.RelativeLayout;
-import android.widget.Toast;
 
-import java.util.ArrayList;
+import com.fasterxml.jackson.core.JsonProcessingException;
+
+import java.io.IOException;
 
 public class MainActivity extends AppCompatActivity {
     public static Context ctx;
@@ -55,13 +54,30 @@ public class MainActivity extends AppCompatActivity {
                     case 1:
                         Intent intent1 = new Intent(getApplicationContext(), Activity_InteractionsMenu.class);
                         startActivityForResult(intent1, sub);
+                        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left_case1);
                         break;
                     case 2:
                         Intent intent2 = new Intent(getApplicationContext(), Activity_Haptic.class);
                         startActivityForResult(intent2, sub);
+                        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left_case1);
                         break;
                 }
             }
         });
+
+        Main_ListFragment.iso_link.setOnClickListener(new Button.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(MainActivity.this,Acitivity_Webview_ISO.class);
+                startActivity(intent);
+                overridePendingTransition(R.anim.slide_in_up_case1, R.anim.slide_out_down_case1);
+            }
+        });
+    }
+
+    public void ss(){
+        Intent intent1 = new Intent(ctx.getApplicationContext(), Acitivity_Webview_ISO.class);
+        startActivityForResult(intent1, 1001);
+        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left_case1);
     }
 }

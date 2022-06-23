@@ -40,7 +40,7 @@ public class ClickAdapter_OutMotion_Li5 implements View.OnClickListener{
                 break;
 
             case R.id.out_motion_li5_btncase2:
-                Vars_Def.outMotion_li5_state = "Normal";
+                Vars_Def.outMotion_li5_state = "Medium";
                 Pannel_ListLayout_OutMotion.out_motion_li5_btncase0_text.setTextColor(Color.parseColor("#BDC0BD"));
                 Pannel_ListLayout_OutMotion.out_motion_li5_btncase1_text.setTextColor(Color.parseColor("#BDC0BD"));
                 Pannel_ListLayout_OutMotion.out_motion_li5_btncase2_text.setTextColor(Color.parseColor("#000000"));
@@ -52,7 +52,7 @@ public class ClickAdapter_OutMotion_Li5 implements View.OnClickListener{
                 break;
 
             case R.id.out_motion_li5_btncase3:
-                Vars_Def.outMotion_li5_state = "Strong";
+                Vars_Def.outMotion_li5_state = "Heavy";
                 Pannel_ListLayout_OutMotion.out_motion_li5_btncase0_text.setTextColor(Color.parseColor("#BDC0BD"));
                 Pannel_ListLayout_OutMotion.out_motion_li5_btncase1_text.setTextColor(Color.parseColor("#BDC0BD"));
                 Pannel_ListLayout_OutMotion.out_motion_li5_btncase2_text.setTextColor(Color.parseColor("#BDC0BD"));

@@ -4,6 +4,7 @@ import android.content.Context;
 import android.graphics.Color;
 import android.graphics.drawable.TransitionDrawable;
 import android.os.Build;
+import android.os.Environment;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,6 +14,15 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import androidx.annotation.RequiresApi;
+
+import com.fasterxml.jackson.core.JsonProcessingException;
+
+import org.json.JSONObject;
+
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 
 public class Pannel_ListLayout_InMotion extends RelativeLayout implements View.OnClickListener {
 
@@ -279,6 +289,13 @@ public class Pannel_ListLayout_InMotion extends RelativeLayout implements View.O
             @Override
             public void onClick(View view) {
                 if (!Vars_Def.codePage){
+                    try {
+                        new ObjectToJson(ctx);
+                    } catch (JsonProcessingException e) {
+                        e.printStackTrace();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
 //                    MainActivity.pannel_result.setX(0);
 //                    Utils_Anim.TransAlphaAnim(MainActivity.main_contain, 0, -Vars_Def.screenWidth/2, 0, 0, 1, 0.5f, 500);
 //                    Utils_Anim.TransAnim(MainActivity.pannel_result, Vars_Def.screenWidth, 0, 0, 0, 400);
@@ -294,5 +311,6 @@ public class Pannel_ListLayout_InMotion extends RelativeLayout implements View.O
 
         }
     }
+
 
 }

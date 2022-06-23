@@ -7,7 +7,6 @@ import android.graphics.Point;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
-import android.util.Log;
 import android.view.Display;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,6 +18,8 @@ import android.widget.RelativeLayout;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.bumptech.glide.Glide;
+
+import java.util.ArrayList;
 
 public class Activity_Interactions extends AppCompatActivity {
     public static Context ctx;
@@ -33,14 +34,14 @@ public class Activity_Interactions extends AppCompatActivity {
     public static View interaction_dimmed;
     public static int frag_header_height;
 
+    String value;
     public static Activity activity;
     private Display display;
     private static final int PICK_IMAGE = 100;
     public static Uri imageUri;
     private boolean appStart = false;
     private static final int REQUEST_CODE = 0;
-
-    Fragment_0_Popup_v2 fragment0;
+    public static String Pos;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,8 +52,9 @@ public class Activity_Interactions extends AppCompatActivity {
         new GetNavigationBarHeight(this);
 
         Intent intent = getIntent();
-        String Pos = intent.getStringExtra("Pos");
-        selFragment(Integer.parseInt(Pos));
+        Pos = intent.getStringExtra("Pos");
+
+        selFragment(Pos);
 
         openGallery();
 
@@ -89,7 +91,15 @@ public class Activity_Interactions extends AppCompatActivity {
             public void run() {
                 DragAdapter.rectCalcHeight = Vars_Def.heightMax;
                 interaction_rect_contain.setAlpha(1);
-                Glide.with(getApplicationContext()).load(R.drawable.popup).into(Fragment_0_Popup_v2.popup_v2_imageView);
+                if (Integer.parseInt(Pos) == 0){
+                    Glide.with(getApplicationContext()).load(R.drawable.popup).into(Fragment_0_Popup_v2.popup_v2_imageView);
+                }
+                if (Integer.parseInt(Pos) == 1){
+                    Glide.with(getApplicationContext()).load(R.drawable.nudge).into(Fragment_1_Nudge_v2.nudge_v2_imageView);
+                }
+                if (Integer.parseInt(Pos) == 2){
+                    Glide.with(getApplicationContext()).load(R.drawable.alarm).into(Fragment_2_Alarm_v2.alarm_v2_imageView);
+                }
             }
         }, 500);
 
@@ -119,6 +129,7 @@ public class Activity_Interactions extends AppCompatActivity {
         intent.setType("image/*");
         intent.setAction(Intent.ACTION_GET_CONTENT);
         startActivityForResult(intent, REQUEST_CODE);
+        overridePendingTransition(R.anim.slide_in_up_case1, R.anim.slide_out_down_case1);
     }
 
     @Override
@@ -128,7 +139,15 @@ public class Activity_Interactions extends AppCompatActivity {
             if (resultCode == RESULT_OK){
                 try {
                     imageUri = data.getData();
-                    Glide.with(getApplicationContext()).load(imageUri).into(Fragment_0_Popup_v2.popup_v2_imageView);
+                    if (Integer.parseInt(Pos) == 0) {
+                        Glide.with(getApplicationContext()).load(imageUri).into(Fragment_0_Popup_v2.popup_v2_imageView);
+                    }
+                    if (Integer.parseInt(Pos) == 1) {
+                        Glide.with(getApplicationContext()).load(imageUri).into(Fragment_1_Nudge_v2.nudge_v2_imageView);
+                    }
+                    if (Integer.parseInt(Pos) == 2) {
+                        Glide.with(getApplicationContext()).load(imageUri).into(Fragment_2_Alarm_v2.alarm_v2_imageView);
+                    }
                 } catch (Exception e){
 
                 }
@@ -136,12 +155,14 @@ public class Activity_Interactions extends AppCompatActivity {
 
             }
         }
+        overridePendingTransition(R.anim.slide_in_up_case2, R.anim.slide_out_down_case2);
     }
 
     @Override
     public void onBackPressed() {
         if (!Vars_Def.container_bool){
             activity.finish();
+            pageOutAnim();
         } else {
             Vars_Def.container_bool = false;
             DragAdapter.AlphaAnimCusEase(Activity_Interactions.interaction_dimmed, 0, 400, AnimRectObject.interpolator_easeOut);
@@ -162,18 +183,27 @@ public class Activity_Interactions extends AppCompatActivity {
         }
     }
 
-    public void selFragment(int Pos){
+    public void selFragment(String Pos){
         switch(Pos){
-            case 0:
-                fragment0 = new Fragment_0_Popup_v2();
+            case "0":
+                Fragment_0_Popup_v2 fragment0 = new Fragment_0_Popup_v2();
                 getSupportFragmentManager().beginTransaction().replace(R.id.interaction_rect_objectRL, fragment0).commitAllowingStateLoss();
+                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left_case1);
                 break;
-            case 2:
-
+            case "1":
+                Fragment_1_Nudge_v2 fragment1 = new Fragment_1_Nudge_v2();
+                getSupportFragmentManager().beginTransaction().replace(R.id.interaction_rect_objectRL, fragment1).commitAllowingStateLoss();
+                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left_case1);
                 break;
-            case 3:
-
+            case "2":
+                Fragment_2_Alarm_v2 fragment2 = new Fragment_2_Alarm_v2();
+                getSupportFragmentManager().beginTransaction().replace(R.id.interaction_rect_objectRL, fragment2).commitAllowingStateLoss();
+                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left_case1);
                 break;
         }
+    }
+
+    void pageOutAnim(){
+        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right_case2);
     }
 }

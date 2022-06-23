@@ -17,6 +17,7 @@
     </ListView>
 
     <LinearLayout
+        android:id="@+id/iso_link"
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="50dp"
