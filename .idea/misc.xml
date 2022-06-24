@@ -20,6 +20,7 @@
         <entry key="app/src/main/res/drawable/list_circle.xml" value="0.148" />
         <entry key="app/src/main/res/drawable/radius.xml" value="0.148" />
         <entry key="app/src/main/res/drawable/rect_button_change_photo.xml" value="0.2485" />
+        <entry key="app/src/main/res/drawable/rect_button_codereview.xml" value="0.1235" />
         <entry key="app/src/main/res/drawable/rect_button_playmotion.xml" value="0.139" />
         <entry key="app/src/main/res/drawable/rect_button_radio.xml" value="0.139" />
         <entry key="app/src/main/res/drawable/rect_container.xml" value="0.139" />
@@ -74,6 +75,7 @@
         <entry key="app/src/main/res/layout/haptic_row_header.xml" value="0.17097264437689969" />
         <entry key="app/src/main/res/layout/haptic_row_item.xml" value="0.165" />
         <entry key="app/src/main/res/layout/haptic_rows.xml" value="0.20516304347826086" />
+        <entry key="app/src/main/res/layout/interaction_popup_activity.xml" value="0.34556159420289856" />
         <entry key="app/src/main/res/layout/iso_webview.xml" value="0.16995947315096252" />
         <entry key="app/src/main/res/layout/main_list_menu_row_item.xml" value="0.171875" />
         <entry key="app/src/main/res/layout/main_list_row_item.xml" value="0.17097264437689969" />
@@ -88,8 +90,8 @@
         <entry key="app/src/main/res/layout/pannel_layout.xml" value="0.25" />
         <entry key="app/src/main/res/layout/pannel_layout_1st_ll.xml" value="0.5692307692307692" />
         <entry key="app/src/main/res/layout/pannel_layout_bottom.xml" value="0.34556159420289856" />
-        <entry key="app/src/main/res/layout/pannel_layout_in_motion.xml" value="0.4601593625498008" />
-        <entry key="app/src/main/res/layout/pannel_layout_out_motion.xml" value="0.5241038318912238" />
+        <entry key="app/src/main/res/layout/pannel_layout_in_motion.xml" value="0.4393939393939394" />
+        <entry key="app/src/main/res/layout/pannel_layout_out_motion.xml" value="0.38593155893536124" />
         <entry key="app/src/main/res/layout/pannel_layout_test.xml" value="0.44594594594594594" />
         <entry key="app/src/main/res/layout/pannel_layout_top.xml" value="0.165" />
         <entry key="app/src/main/res/layout/parent_rowlayout.xml" value="0.25" />

@@ -19,4 +19,5 @@
     <dimen name="offset">30dp</dimen>
     <dimen name="pageMarginAndOffset">50dp</dimen>
     <dimen name="frag_header_height">66dp</dimen>
+    <dimen name="table_row_margin">5dp</dimen>
 </resources>

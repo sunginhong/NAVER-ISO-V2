@@ -136,7 +136,7 @@
                 android:orientation="vertical"
                 android:background="@color/black">
                 <TextView
-                    android:text="OK"
+                    android:text="닫기"
                     android:gravity="center"
                     android:textColor="@color/white"
                     android:layout_width="match_parent"

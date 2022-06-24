@@ -43,14 +43,6 @@
                         android:layout_height="0dp"
                         android:layout_weight="1" />
 
-                    <View
-                        android:id="@+id/code_review1"
-                        android:layout_width="44.37dp"
-                        android:layout_height="16.5dp"
-                        android:layout_gravity="center|right"
-                        android:layout_marginTop="0.75dp"
-                        android:background="@drawable/icn_codecopy" />
-
                 </LinearLayout>
 
                 <View

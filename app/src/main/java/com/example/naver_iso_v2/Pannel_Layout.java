@@ -16,6 +16,7 @@ public class Pannel_Layout extends RelativeLayout implements View.OnClickListene
 
     public Context ctx;
     public static RelativeLayout container;
+    public static Button button_code_review;
 
     public Pannel_Layout(Context ctx){
         super(ctx);
@@ -51,6 +52,7 @@ public class Pannel_Layout extends RelativeLayout implements View.OnClickListene
         container = findViewById(R.id.container);
         DragAdapter dragAdapter = new DragAdapter(ctx);
         container.setOnTouchListener(dragAdapter);
+        button_code_review = findViewById(R.id.button_code_review);
     }
 
     public static void setContain(){

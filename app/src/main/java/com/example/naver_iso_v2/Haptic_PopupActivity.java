@@ -67,7 +67,6 @@ public class Haptic_PopupActivity extends Activity {
         }
 
         Intent intent = getIntent();
-//        String Receive = intent.getStringExtra("String");
         ArrayList<String> ReceiveArr = intent.getStringArrayListExtra("ArrayList");
 
         haptic_title.setText(ReceiveArr.get(0));

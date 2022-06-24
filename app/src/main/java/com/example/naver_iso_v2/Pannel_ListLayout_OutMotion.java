@@ -21,8 +21,6 @@ public class Pannel_ListLayout_OutMotion extends RelativeLayout implements View.
 
     public Context ctx;
 
-    public static View code_review2;
-
     public static LinearLayout out_motion_li0_btncase0;
     public static LinearLayout out_motion_li0_btncase1;
     public static LinearLayout out_motion_li0_btncase2;
@@ -141,8 +139,6 @@ public class Pannel_ListLayout_OutMotion extends RelativeLayout implements View.
         LayoutInflater li = (LayoutInflater) getContext().getSystemService(infService);
         View v = li.inflate(R.layout.pannel_layout_out_motion, this, false);
         addView(v);
-
-        code_review2 = findViewById(R.id.code_review2);
 
         Vars_Def.array_string_easeType = getResources().getStringArray(R.array.string_easeType);
         Vars_Def.inMotion_li4_state = Vars_Def.array_string_easeType[0];
@@ -277,25 +273,6 @@ public class Pannel_ListLayout_OutMotion extends RelativeLayout implements View.
         out_motion_li5_btncase1.setOnClickListener(clickAdapter_outMotion_Li5);
         out_motion_li5_btncase2.setOnClickListener(clickAdapter_outMotion_Li5);
         out_motion_li5_btncase3.setOnClickListener(clickAdapter_outMotion_Li5);
-
-        code_review2.setOnClickListener(new Button.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (!Vars_Def.codePage){
-                    try {
-                        new ObjectToJson(ctx);
-                    } catch (JsonProcessingException e) {
-                        e.printStackTrace();
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
-//                    MainActivity.pannel_result.setX(0);
-//                    Utils_Anim.TransAlphaAnim(MainActivity.main_contain, 0, -Vars_Def.screenWidth/2, 0, 0, 1, 0.5f, 500);
-//                    Utils_Anim.TransAnim(MainActivity.pannel_result, Vars_Def.screenWidth, 0, 0, 0, 400);
-//                    Vars_Def.codePage = true;
-                }
-            }
-        });
     }
 
     @Override

@@ -14,11 +14,13 @@ import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.bumptech.glide.Glide;
 
+import java.io.File;
 import java.util.ArrayList;
 
 public class Activity_Interactions extends AppCompatActivity {
@@ -53,6 +55,7 @@ public class Activity_Interactions extends AppCompatActivity {
 
         Intent intent = getIntent();
         Pos = intent.getStringExtra("Pos");
+        View rootView = getWindow().getDecorView();
 
         selFragment(Pos);
 
@@ -111,16 +114,30 @@ public class Activity_Interactions extends AppCompatActivity {
                 openGallery();
             }
         });
+
+        Pannel_Layout.button_code_review.setOnClickListener(new Button.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Interaction_ResultArray.ArrData = new ArrayList<>();
+                Interaction_ResultArray.getData();
+
+                Intent intent = new Intent(ctx, Interaction_PopupActivity.class);
+                intent.putStringArrayListExtra("ArrayList", Interaction_ResultArray.ArrData);
+                v.getContext().startActivity(intent);
+            }
+        });
+
     }
 
     @Override
     public void onResume() {
-        if (Vars_Def.container_bool) {
+        if (!Vars_Def.container_bool) {
             DragAdapter.function_containAnim(Pannel_Layout.container, Vars_Def.posMinY, 000, AnimRectObject.interpolator_bounce2);
+            DragAdapter.AlphaAnimCusEase(interaction_dimmed, 0, 300, AnimRectObject.interpolator_easeOut);
         } else {
-            DragAdapter.function_containAnim(Pannel_Layout.container, Vars_Def.posMinY, 000, AnimRectObject.interpolator_bounce2);
+            DragAdapter.function_containAnim(Pannel_Layout.container, Vars_Def.posMaxY, 000, AnimRectObject.interpolator_bounce2);
+            DragAdapter.AlphaAnimCusEase(interaction_dimmed, 1, 300, AnimRectObject.interpolator_easeOut);
         }
-        Utils_Anim.AlphaAnim(interaction_dimmed, 0, 0, 0);
         super.onResume();
     }
 
@@ -165,7 +182,7 @@ public class Activity_Interactions extends AppCompatActivity {
             pageOutAnim();
         } else {
             Vars_Def.container_bool = false;
-            DragAdapter.AlphaAnimCusEase(Activity_Interactions.interaction_dimmed, 0, 400, AnimRectObject.interpolator_easeOut);
+            DragAdapter.AlphaAnimCusEase(interaction_dimmed, 0, 400, AnimRectObject.interpolator_easeOut);;
             DragAdapter.function_containAnim(Pannel_Layout.container, Vars_Def.posMinY, 400, AnimRectObject.interpolator_bounce2);
         }
     }
@@ -206,4 +223,5 @@ public class Activity_Interactions extends AppCompatActivity {
     void pageOutAnim(){
         overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right_case2);
     }
+
 }
