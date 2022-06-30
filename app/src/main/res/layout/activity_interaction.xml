@@ -26,8 +26,7 @@
             <com.example.naver_iso_v2.Fragment_Header
                 android:id="@+id/interaction_header"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-            </com.example.naver_iso_v2.Fragment_Header>
+                android:layout_height="wrap_content"/>
 
             <RelativeLayout
                 android:id="@+id/interaction_rect_objectFL_contain"

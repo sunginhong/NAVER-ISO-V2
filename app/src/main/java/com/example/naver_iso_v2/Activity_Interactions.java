@@ -35,6 +35,7 @@ public class Activity_Interactions extends AppCompatActivity {
     public static Fragment_Header interaction_header;
     public static View interaction_dimmed;
     public static int frag_header_height;
+    public static boolean headerBool = false;
 
     String value;
     public static Activity activity;
@@ -44,6 +45,8 @@ public class Activity_Interactions extends AppCompatActivity {
     private boolean appStart = false;
     private static final int REQUEST_CODE = 0;
     public static String Pos;
+    Fragment_Header fragment_Header;
+    public static int selPos;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,10 +70,9 @@ public class Activity_Interactions extends AppCompatActivity {
         display.getRealSize(size);
 
         activity = this;
-
+        headerBool = false;
         if (!appStart){
             appStart = true;
-            Fragment_Header fragment_Header = new Fragment_Header(ctx, 0);
         }
 
         Vars_Def.screenHeight = display.getHeight();
@@ -87,6 +89,7 @@ public class Activity_Interactions extends AppCompatActivity {
         frag_header_height = (int)getResources().getDimension(R.dimen.frag_header_height);
         DragAdapter.AlphaAnimCusEase(Activity_Interactions.interaction_dimmed, 0, 0, AnimRectObject.interpolator_easeOut);
 
+
         new Pannel_SetCalc(this);
         Pannel_ListLayout_Top.pannelReset();
         new Handler().postDelayed(new Runnable() {
@@ -94,6 +97,8 @@ public class Activity_Interactions extends AppCompatActivity {
             public void run() {
                 DragAdapter.rectCalcHeight = Vars_Def.heightMax;
                 interaction_rect_contain.setAlpha(1);
+                selPos = Integer.parseInt(Pos);
+                fragment_Header.header_int_title = findViewById(R.id.header_int_title);
                 if (Integer.parseInt(Pos) == 0){
                     Glide.with(getApplicationContext()).load(R.drawable.popup).into(Fragment_0_Popup_v2.popup_v2_imageView);
                 }
@@ -197,6 +202,7 @@ public class Activity_Interactions extends AppCompatActivity {
         if (!Vars_Def.container_bool){
             activity.finish();
             Vars_Def.container_bool = false;
+            headerBool = false;
         }
     }
 
@@ -221,6 +227,7 @@ public class Activity_Interactions extends AppCompatActivity {
     }
 
     void pageOutAnim(){
+        headerBool = false;
         overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right_case2);
     }
 

@@ -59,6 +59,7 @@ public class Main_ListFragment extends FrameLayout {
         mainListItem = new ArrayList<>();
         mainListItem.add(new Main_List_Item("Interactions", "https://cdn-icons.flaticon.com/png/512/5279/premium/5279347.png?token=exp=1655446326~hmac=09f46ad1200b6418b9f5166c7c5a80e7", "디자인 컴포넌트의 인터랙션을 확인 할 수 있어요"));
         mainListItem.add(new Main_List_Item("Haptics", "https://cdn-icons.flaticon.com/png/512/2837/premium/2837854.png?token=exp=1655446258~hmac=3f6398a9d68cb4bc1e8a048e5d3201a0", "여러가지 햅택을 느껴볼 수 있어요"));
+        mainListItem.add(new Main_List_Item("Lottie", "https://miro.medium.com/max/1400/1*fb1WOhFJ6uJZcysFTP_3XA.jpeg", "로띠 JSON 이미지 테스트가 가능해요"));
 
         mainListView = (ListView) findViewById(R.id.main_listView_custom);
         customAdapter = new Main_List_CustomAdapter(getContext(),mainListItem);

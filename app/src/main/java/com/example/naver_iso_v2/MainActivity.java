@@ -1,11 +1,14 @@
 package com.example.naver_iso_v2;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.collection.ArraySet;
 
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Point;
+import android.os.AsyncTask;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Display;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,6 +19,11 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
+
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
 
 import java.io.IOException;
 
@@ -59,6 +67,11 @@ public class MainActivity extends AppCompatActivity {
                     case 2:
                         Intent intent2 = new Intent(getApplicationContext(), Activity_Haptic.class);
                         startActivityForResult(intent2, sub);
+                        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left_case1);
+                        break;
+                    case 3:
+                        Intent intent3 = new Intent(getApplicationContext(), Activity_LottieView.class);
+                        startActivityForResult(intent3, sub);
                         overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left_case1);
                         break;
                 }

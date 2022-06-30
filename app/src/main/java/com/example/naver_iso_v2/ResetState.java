@@ -13,6 +13,7 @@ public class ResetState {
     public static void defCaseState00(){
         defCaseState();
         Pannel_ListLayout_Top.anim_title.setText("Popup Animation");
+        Fragment_Header.header_int_title.setText("Popup Animation");
 
         Vars_Def.defCaseState00_inMotion_li4_state_def = Vars_Def.array_string_easeType[1];
         Vars_Def.inMotion_li0_state = Vars_Def.defCaseState00_inMotion_li0_state_def;
@@ -69,6 +70,7 @@ public class ResetState {
     public static void defCaseState01(){
         defCaseState();
         Pannel_ListLayout_Top.anim_title.setText("Nudge Animation");
+        Fragment_Header.header_int_title.setText("Nudge Animation");
 
         Vars_Def.defCaseState01_inMotion_li4_state_def = Vars_Def.array_string_easeType[1];
         Vars_Def.inMotion_li0_state = Vars_Def.defCaseState01_inMotion_li0_state_def;
@@ -125,6 +127,7 @@ public class ResetState {
     public static void defCaseState02(){
         defCaseState();
         Pannel_ListLayout_Top.anim_title.setText("Alarm Animation");
+        Fragment_Header.header_int_title.setText("Alarm Animation");
 
         Vars_Def.defCaseState02_inMotion_li4_state_def = Vars_Def.array_string_easeType[1];
         Vars_Def.inMotion_li0_state = Vars_Def.defCaseState02_inMotion_li0_state_def;

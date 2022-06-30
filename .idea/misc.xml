@@ -13,6 +13,7 @@
         <entry key="app/src/main/res/drawable/category_button_nor.xml" value="0.139" />
         <entry key="app/src/main/res/drawable/category_button_open.xml" value="0.139" />
         <entry key="app/src/main/res/drawable/category_button_sel.xml" value="0.139" />
+        <entry key="app/src/main/res/drawable/color_circleview.xml" value="0.2485" />
         <entry key="app/src/main/res/drawable/ddd.xml" value="0.2485" />
         <entry key="app/src/main/res/drawable/ic_launcher.xml" value="0.267" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.302" />
@@ -33,9 +34,13 @@
         <entry key="app/src/main/res/drawable/rect_main_list_row.xml" value="0.148" />
         <entry key="app/src/main/res/drawable/rect_radiogroup.xml" value="0.139" />
         <entry key="app/src/main/res/drawable/rectangle_bg.xml" value="0.139" />
+        <entry key="app/src/main/res/layout/activity_captureform.xml" value="0.16995947315096252" />
         <entry key="app/src/main/res/layout/activity_haptic.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_interaction.xml" value="0.16995947315096252" />
         <entry key="app/src/main/res/layout/activity_interaction_menu.xml" value="0.171875" />
+        <entry key="app/src/main/res/layout/activity_lottie_bottom_view.xml" value="0.125" />
+        <entry key="app/src/main/res/layout/activity_lottie_view.xml" value="0.16995947315096252" />
+        <entry key="app/src/main/res/layout/activity_lottie_view_b.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.165" />
         <entry key="app/src/main/res/layout/activity_main_0.xml" value="0.171875" />
         <entry key="app/src/main/res/layout/activity_main_b.xml" value="0.16995947315096252" />

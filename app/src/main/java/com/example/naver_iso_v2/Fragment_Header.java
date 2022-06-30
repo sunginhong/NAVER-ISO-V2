@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.graphics.Color;
 import android.os.Build;
+import android.os.Handler;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -21,8 +22,8 @@ public class Fragment_Header extends ConstraintLayout implements View.OnClickLis
 
     public Context ctx;
     public static FrameLayout header_int_back;
-    TextView header_int_title;
-    int Pos = 0;
+    public static TextView header_int_title;
+    int Pos ;
 
     public Fragment_Header(Context ctx, int pos){
         super(ctx);
@@ -55,38 +56,20 @@ public class Fragment_Header extends ConstraintLayout implements View.OnClickLis
         LayoutInflater li = (LayoutInflater) getContext().getSystemService(infService);
         View v = li.inflate(R.layout.fragment_header, this, false);
         addView(v);
-        header_int_back = v.findViewById(R.id.header_int_back);
-
+        header_int_title = findViewById(R.id.header_int_title);
+        header_int_back = findViewById(R.id.header_int_back);
         header_int_back.setOnClickListener(new Button.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Activity_Interactions.actFin();
             }
         });
-        header_int_title = v.findViewById(R.id.header_int_title);
-        func_header_title(Pos);
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()){
 
-        }
-    }
-
-    public void func_header_title(int Pos){
-        switch(Pos){
-            case 0:
-                header_int_title.setText("Interactions");
-                break;
-
-            case 1:
-
-                break;
-
-            case 2:
-
-                break;
         }
     }
 }

@@ -11,4 +11,10 @@
     <color name="tabBgColor">#FFFFFFFF</color>
     <color name="tabAccentColor">#FFFFFF</color>
     <color name="tabTextColor">#FFFFFF</color>
+    <color name="lottie_color_0">#FFFFFF</color>
+    <color name="lottie_color_1">#000000</color>
+    <color name="lottie_color_2">#ff5a60</color>
+    <color name="lottie_color_3">#008489</color>
+    <color name="lottie_color_4">#a61d55</color>
+    <color name="lottie_color_5">#ffb400</color>
 </resources>
