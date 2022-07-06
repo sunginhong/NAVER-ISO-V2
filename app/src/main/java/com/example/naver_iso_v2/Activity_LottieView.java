@@ -2,44 +2,23 @@ package com.example.naver_iso_v2;
 
 import android.content.Context;
 import android.content.Intent;
-import android.content.res.Resources;
-import android.graphics.Bitmap;
-import android.graphics.Color;
-import android.graphics.drawable.Drawable;
-import android.graphics.drawable.GradientDrawable;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.os.Handler;
-import android.util.Log;
-import android.view.KeyEvent;
 import android.view.View;
-import android.view.inputmethod.EditorInfo;
-import android.view.inputmethod.InputMethodManager;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
-import android.webkit.WebViewClient;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.content.res.AppCompatResources;
-import androidx.core.graphics.drawable.DrawableCompat;
 
 import com.airbnb.lottie.LottieAnimationView;
-import com.google.zxing.BarcodeFormat;
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
-import com.journeyapps.barcodescanner.BarcodeEncoder;
-import com.journeyapps.barcodescanner.ScanOptions;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
-import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 import java.io.IOException;
@@ -53,6 +32,11 @@ public class Activity_LottieView extends AppCompatActivity {
     LottieAnimationView lv_view;
     IntentIntegrator integrator;
     String getLottieUrl;
+    Button play_btn1;
+    Button play_btn2;
+    Button play_btn3;
+    Button play_btn4;
+    boolean lvLoop = true;
 
     class RealTask extends AsyncTask<Void,Void,String> {
         private String Url;
@@ -82,7 +66,8 @@ public class Activity_LottieView extends AppCompatActivity {
             lv_view.setAnimationFromUrl(getLottieUrl);
             lv_view.loop(true);
             lv_view.playAnimation();
-            Toast.makeText(ctx, "Scanned: " + getLottieUrl, Toast.LENGTH_SHORT).show();
+            lvLoop = true;
+//            Toast.makeText(ctx, "Scanned: " + getLottieUrl, Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -94,6 +79,10 @@ public class Activity_LottieView extends AppCompatActivity {
         contain_ll = findViewById(R.id.contain_ll);
         wv = findViewById(R.id.wv);
         lv_view = findViewById(R.id.lv_view);
+        play_btn1 = findViewById(R.id.play_btn1);
+        play_btn2 = findViewById(R.id.play_btn2);
+        play_btn3 = findViewById(R.id.play_btn3);
+        play_btn4 = findViewById(R.id.play_btn4);
 
         WebSettings webSettings = wv.getSettings();
 
@@ -108,7 +97,49 @@ public class Activity_LottieView extends AppCompatActivity {
         integrator.setBarcodeImageEnabled(true);
 //        integrator.setCaptureActivity(CaptureActivity.class);
         //바코드 스캐너 시작
-//        integrator.initiateScan();
+        integrator.initiateScan();
+
+        play_btn1.setOnClickListener(new Button.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                integrator.initiateScan();
+                lvLoop = true;
+            }
+        });
+        play_btn2.setOnClickListener(new Button.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (lvLoop){
+                    lvLoop = false;
+                } else {
+                    lvLoop = true;
+                }
+                lv_view.loop(lvLoop);
+                lv_view.setProgress(0);
+                lv_view.setSpeed(1);
+                lv_view.playAnimation();
+            }
+        });
+        play_btn3.setOnClickListener(new Button.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                lvLoop = false;
+                lv_view.loop(false);
+                lv_view.setProgress(0);
+                lv_view.setSpeed(1);
+                lv_view.playAnimation();
+            }
+        });
+        play_btn4.setOnClickListener(new Button.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                lvLoop = false;
+                lv_view.loop(false);
+                lv_view.setProgress(1);
+                lv_view.setSpeed(-1);
+                lv_view.playAnimation();
+            }
+        });
     }
 
     @Override
@@ -128,8 +159,6 @@ public class Activity_LottieView extends AppCompatActivity {
             if(result.getContents() == null){
             }else{
                 new RealTask(result.getContents()).execute();
-//                Toast.makeText(this, "Scanned: " + htmlPageUrl, Toast.LENGTH_SHORT).show();
-//                Toast.makeText(this, "Scanned: " + result.getContents(), Toast.LENGTH_SHORT).show();
             }
         }else{
             super.onActivityResult(requestCode, resultCode, data);

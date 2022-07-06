@@ -12,6 +12,7 @@ import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.Button;
 import android.widget.ProgressBar;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -19,7 +20,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.bumptech.glide.Glide;
 
 public class Acitivity_Webview_ISO extends AppCompatActivity {
-    private String TAG = Acitivity_Webview_ISO.class.getSimpleName();
+    private static Context ctx;
     public static Activity activity;
     private WebView webView = null;
     ProgressBar pBar;
@@ -30,6 +31,7 @@ public class Acitivity_Webview_ISO extends AppCompatActivity {
         setContentView(R.layout.webview_iso);
 
         activity = this;
+        ctx = this.getApplicationContext();
 
         pBar = findViewById(R.id.pBar);
         pBar.setVisibility(View.GONE);
@@ -53,6 +55,13 @@ public class Acitivity_Webview_ISO extends AppCompatActivity {
         webView.getSettings().setDomStorageEnabled(true);  // 로컬 스토리지 (localStorage) 사용여부
 
         initWebView();
+
+        WebView_Header.webview_header_int_back.setOnClickListener(new Button.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                actFin();
+            }
+        });
     }
 
     public void initWebView(){
@@ -84,10 +93,17 @@ public class Acitivity_Webview_ISO extends AppCompatActivity {
     public void onBackPressed() {
         webView.goBack();
         activity.finish();
-        overridePendingTransition(R.anim.slide_in_up_case2, R.anim.slide_out_down_case2);
+        pageOutAnim();
     }
 
-    public static void actFin(){
+    public void actFin(){
+        webView.goBack();
         activity.finish();
+        pageOutAnim();
     }
+
+    void pageOutAnim(){
+        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right_case2);
+    }
+
 }

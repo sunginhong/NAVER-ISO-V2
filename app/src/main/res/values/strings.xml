@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">InteractionKit</string>
-    <string name="popup_anima">Popup Animation</string>
+    <string name="popup_anima">Popup</string>
     <string name="popup">Popup</string>
     <string name="nudge">Nudge</string>
     <string name="alarm">Alarm</string>
@@ -15,4 +15,22 @@
     <string name="paly_out_mo">Play Out Motion</string>
     <string name="in_motion">In Motion</string>
     <string name="out_motion">Out Motion</string>
+    <string name="elemaents_title">Elements</string>
+    <string name="elemaents_case1">Popup</string>
+    <string name="elemaents_case2">Alarm</string>
+    <string name="elemaents_case3">Nudge</string>
+    <string name="gestures_title">Gestures</string>
+    <string name="gestures_case1">Swipe</string>
+    <string name="gestures_case2">Flicking</string>
+    <string name="gestures_case3">Drag</string>
+    <string name="vertical_case1_title">Haptics</string>
+    <string name="vertical_case1_subtitle">여러가지 햅틱을 느껴볼 수 있습니다.</string>
+    <string name="vertical_case2_title">Lottie</string>
+    <string name="vertical_case2_subtitle">로띠 애니메이션 확인이 가능해요.</string>
+    <string name="vertical_case3_title">Interactive Studio.</string>
+    <string name="vertical_case3_subtitle">진행한 프로젝트를 볼 수 있어요.</string>
+    <string name="hi_">Hi,</string>
+    <string name="interaction">Interaction Kit</string>
+    <string name="some_id">\u00F0\u009F\u0091\u008B</string>
+    <string name="naver_desig">NAVER DESIGN</string>
 </resources>

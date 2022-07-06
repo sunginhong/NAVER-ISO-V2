@@ -2,7 +2,7 @@
 <FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="80dp"
     android:background="@color/white">
 
     <FrameLayout
@@ -16,81 +16,85 @@
             android:alpha="0.15"
             android:layout_gravity="top"/>
 
-        <LinearLayout
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:layout_height="50dp"
             android:clipChildren="false"
             android:layout_gravity="center">
 
-            <com.example.naver_iso_v2.SquareButton_Icn
-                android:id="@+id/lottie_color_0"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/color_circleview"
-                android:layout_weight="1"
-                android:onClick="changeBgColor"
-                android:layout_marginLeft="@dimen/lottie_change_color_margin">
+            <TableRow
+                android:clipChildren="false">
 
-            </com.example.naver_iso_v2.SquareButton_Icn>
+                <com.example.naver_iso_v2.SquareButton_Icn
+                    android:id="@+id/lottie_color_0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/color_circleview"
+                    android:onClick="changeBgColor"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/lottie_change_color_margin">
 
-            <com.example.naver_iso_v2.SquareButton_Icn
-                android:id="@+id/lottie_color_1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/color_circleview"
-                android:backgroundTint="@color/lottie_color_1"
-                android:layout_weight="1"
-                android:onClick="changeBgColor"
-                android:layout_marginLeft="@dimen/lottie_change_color_margin">
-            </com.example.naver_iso_v2.SquareButton_Icn>
+                </com.example.naver_iso_v2.SquareButton_Icn>
 
-            <com.example.naver_iso_v2.SquareButton_Icn
-                android:id="@+id/lottie_color_2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/color_circleview"
-                android:backgroundTint="@color/lottie_color_2"
-                android:layout_weight="1"
-                android:onClick="changeBgColor"
-                android:layout_marginLeft="@dimen/lottie_change_color_margin">
-            </com.example.naver_iso_v2.SquareButton_Icn>
+                <com.example.naver_iso_v2.SquareButton_Icn
+                    android:id="@+id/lottie_color_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/color_circleview"
+                    android:backgroundTint="@color/lottie_color_1"
+                    android:onClick="changeBgColor"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/lottie_change_color_margin">
+                </com.example.naver_iso_v2.SquareButton_Icn>
 
-            <com.example.naver_iso_v2.SquareButton_Icn
-                android:id="@+id/lottie_color_3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/color_circleview"
-                android:backgroundTint="@color/lottie_color_3"
-                android:layout_weight="1"
-                android:onClick="changeBgColor"
-                android:layout_marginLeft="@dimen/lottie_change_color_margin">
-            </com.example.naver_iso_v2.SquareButton_Icn>
+                <com.example.naver_iso_v2.SquareButton_Icn
+                    android:id="@+id/lottie_color_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/color_circleview"
+                    android:backgroundTint="@color/lottie_color_2"
+                    android:onClick="changeBgColor"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/lottie_change_color_margin">
+                </com.example.naver_iso_v2.SquareButton_Icn>
 
-            <com.example.naver_iso_v2.SquareButton_Icn
-                android:id="@+id/lottie_color_4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/color_circleview"
-                android:backgroundTint="@color/lottie_color_4"
-                android:layout_weight="1"
-                android:onClick="changeBgColor"
-                android:layout_marginLeft="@dimen/lottie_change_color_margin">
-            </com.example.naver_iso_v2.SquareButton_Icn>
+                <com.example.naver_iso_v2.SquareButton_Icn
+                    android:id="@+id/lottie_color_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/color_circleview"
+                    android:backgroundTint="@color/lottie_color_3"
+                    android:onClick="changeBgColor"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/lottie_change_color_margin">
+                </com.example.naver_iso_v2.SquareButton_Icn>
 
-            <com.example.naver_iso_v2.SquareButton_Icn
-                android:id="@+id/lottie_color_5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/color_circleview"
-                android:backgroundTint="@color/lottie_color_5"
-                android:layout_weight="1"
-                android:onClick="changeBgColor"
-                android:layout_marginRight="@dimen/lottie_change_color_margin"
-                android:layout_marginLeft="@dimen/lottie_change_color_margin">
-            </com.example.naver_iso_v2.SquareButton_Icn>
+                <com.example.naver_iso_v2.SquareButton_Icn
+                    android:id="@+id/lottie_color_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/color_circleview"
+                    android:backgroundTint="@color/lottie_color_4"
+                    android:onClick="changeBgColor"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/lottie_change_color_margin">
+                </com.example.naver_iso_v2.SquareButton_Icn>
 
-        </LinearLayout>
+                <com.example.naver_iso_v2.SquareButton_Icn
+                    android:id="@+id/lottie_color_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/color_circleview"
+                    android:backgroundTint="@color/lottie_color_5"
+                    android:onClick="changeBgColor"
+                    android:layout_weight="1"
+                    android:layout_marginRight="@dimen/lottie_change_color_margin"
+                    android:layout_marginLeft="@dimen/lottie_change_color_margin">
+                </com.example.naver_iso_v2.SquareButton_Icn>
+
+            </TableRow>
+
+        </TableLayout>
 
     </FrameLayout>
 

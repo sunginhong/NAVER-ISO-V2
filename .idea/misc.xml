@@ -14,27 +14,38 @@
         <entry key="app/src/main/res/drawable/category_button_open.xml" value="0.139" />
         <entry key="app/src/main/res/drawable/category_button_sel.xml" value="0.139" />
         <entry key="app/src/main/res/drawable/color_circleview.xml" value="0.2485" />
+        <entry key="app/src/main/res/drawable/d.xml" value="0.2485" />
         <entry key="app/src/main/res/drawable/ddd.xml" value="0.2485" />
+        <entry key="app/src/main/res/drawable/element_btn_playmotion.xml" value="0.1235" />
+        <entry key="app/src/main/res/drawable/element_vp_frag_item.xml" value="0.1235" />
         <entry key="app/src/main/res/drawable/ic_launcher.xml" value="0.267" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.302" />
         <entry key="app/src/main/res/drawable/line_21.xml" value="0.139" />
         <entry key="app/src/main/res/drawable/list_circle.xml" value="0.148" />
+        <entry key="app/src/main/res/drawable/main_iconset_1_1.xml" value="0.1235" />
+        <entry key="app/src/main/res/drawable/main_rcv_item_case1_horizon.xml" value="0.2485" />
         <entry key="app/src/main/res/drawable/radius.xml" value="0.148" />
         <entry key="app/src/main/res/drawable/rect_button_change_photo.xml" value="0.2485" />
         <entry key="app/src/main/res/drawable/rect_button_codereview.xml" value="0.1235" />
         <entry key="app/src/main/res/drawable/rect_button_playmotion.xml" value="0.139" />
         <entry key="app/src/main/res/drawable/rect_button_radio.xml" value="0.139" />
         <entry key="app/src/main/res/drawable/rect_container.xml" value="0.139" />
+        <entry key="app/src/main/res/drawable/rect_element_vp_item.xml" value="0.1805" />
         <entry key="app/src/main/res/drawable/rect_haptic_footer.xml" value="0.148" />
         <entry key="app/src/main/res/drawable/rect_haptic_list_footer.xml" value="0.148" />
         <entry key="app/src/main/res/drawable/rect_haptic_list_row.xml" value="0.148" />
         <entry key="app/src/main/res/drawable/rect_haptic_list_row_nor.xml" value="0.1235" />
         <entry key="app/src/main/res/drawable/rect_haptic_list_row_sel.xml" value="0.165" />
         <entry key="app/src/main/res/drawable/rect_main_list_footer.xml" value="0.148" />
+        <entry key="app/src/main/res/drawable/rect_main_list_rcv_case_horizon.xml" value="0.1235" />
+        <entry key="app/src/main/res/drawable/rect_main_list_rcv_case_vertical.xml" value="0.1235" />
         <entry key="app/src/main/res/drawable/rect_main_list_row.xml" value="0.148" />
         <entry key="app/src/main/res/drawable/rect_radiogroup.xml" value="0.139" />
         <entry key="app/src/main/res/drawable/rectangle_bg.xml" value="0.139" />
+        <entry key="app/src/main/res/font/poppins.xml" value="0.22870370370370371" />
+        <entry key="app/src/main/res/font/poppins_medium.xml" value="0.22870370370370371" />
         <entry key="app/src/main/res/layout/activity_captureform.xml" value="0.16995947315096252" />
+        <entry key="app/src/main/res/layout/activity_element.xml" value="0.165" />
         <entry key="app/src/main/res/layout/activity_haptic.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_interaction.xml" value="0.16995947315096252" />
         <entry key="app/src/main/res/layout/activity_interaction_menu.xml" value="0.171875" />
@@ -44,16 +55,22 @@
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.165" />
         <entry key="app/src/main/res/layout/activity_main_0.xml" value="0.171875" />
         <entry key="app/src/main/res/layout/activity_main_b.xml" value="0.16995947315096252" />
+        <entry key="app/src/main/res/layout/activity_main_t2.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_main_t2_top.xml" value="0.11573546180159636" />
         <entry key="app/src/main/res/layout/bottom_tab_layout.xml" value="0.25" />
         <entry key="app/src/main/res/layout/child_rowlayout.xml" value="0.17046605876393112" />
+        <entry key="app/src/main/res/layout/element_pannel_layout.xml" value="0.4176954732510288" />
+        <entry key="app/src/main/res/layout/element_pannel_layout_top.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_0_popup.xml" value="0.16822916666666668" />
         <entry key="app/src/main/res/layout/fragment_0_popup_v2.xml" value="0.16995947315096252" />
         <entry key="app/src/main/res/layout/fragment_1.xml" value="0.33541666666666664" />
         <entry key="app/src/main/res/layout/fragment_1_nudge.xml" value="0.3016304347826087" />
         <entry key="app/src/main/res/layout/fragment_1_nudge_v2.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_1p.xml" value="0.34556159420289856" />
         <entry key="app/src/main/res/layout/fragment_2_alarm.xml" value="0.3016304347826087" />
         <entry key="app/src/main/res/layout/fragment_2alarm.xml" value="0.2798913043478261" />
         <entry key="app/src/main/res/layout/fragment_2alarm_v2.xml" value="0.34556159420289856" />
+        <entry key="app/src/main/res/layout/fragment_2p.xml" value="0.34556159420289856" />
         <entry key="app/src/main/res/layout/fragment_3viewpager.xml" value="0.3609375" />
         <entry key="app/src/main/res/layout/fragment_3viewpager_frag1.xml" value="0.2608695652173913" />
         <entry key="app/src/main/res/layout/fragment_3viewpager_frag2.xml" value="0.2608695652173913" />
@@ -91,6 +108,12 @@
         <entry key="app/src/main/res/layout/main_listview_menu.xml" value="0.17291666666666666" />
         <entry key="app/src/main/res/layout/main_listview_menu_custom.xml" value="0.171875" />
         <entry key="app/src/main/res/layout/main_listview_menu_header.xml" value="0.171875" />
+        <entry key="app/src/main/res/layout/main_rcv_item_case1_horizon.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/main_rcv_item_case2_horizon.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/main_rcv_item_horizon_case1.xml" value="0.17046605876393112" />
+        <entry key="app/src/main/res/layout/main_rcv_item_horizon_case2.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/main_rcv_item_vertical_case1.xml" value="0.16995947315096252" />
+        <entry key="app/src/main/res/layout/main_rcv_item_vertical_case2.xml" value="0.16995947315096252" />
         <entry key="app/src/main/res/layout/pannel_code_result.xml" value="0.3016304347826087" />
         <entry key="app/src/main/res/layout/pannel_layout.xml" value="0.25" />
         <entry key="app/src/main/res/layout/pannel_layout_1st_ll.xml" value="0.5692307692307692" />
@@ -98,7 +121,7 @@
         <entry key="app/src/main/res/layout/pannel_layout_in_motion.xml" value="0.4393939393939394" />
         <entry key="app/src/main/res/layout/pannel_layout_out_motion.xml" value="0.38593155893536124" />
         <entry key="app/src/main/res/layout/pannel_layout_test.xml" value="0.44594594594594594" />
-        <entry key="app/src/main/res/layout/pannel_layout_top.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/pannel_layout_top.xml" value="0.335" />
         <entry key="app/src/main/res/layout/parent_rowlayout.xml" value="0.25" />
         <entry key="app/src/main/res/layout/parents.xml" value="0.17097264437689969" />
         <entry key="app/src/main/res/layout/rect_code_result.xml" value="0.3016304347826087" />

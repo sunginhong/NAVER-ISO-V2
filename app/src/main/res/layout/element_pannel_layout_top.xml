@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/element_container_top_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:layout_marginRight="@dimen/margin_20"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:clipChildren="false"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="left|center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="7.75dp"
+                    android:layout_height="14.5dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/element_arrow"
+                    android:layout_marginRight="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Back"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/element_title_color"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/element_anim_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center"
+                android:text="@string/popup_anima"
+                android:textSize="16sp"
+                android:lineHeight="24sp"
+                android:fontFamily="@font/poppins_semibold"
+                android:textColor="@color/element_title_color"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/element_btn_trigger"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="right|center"
+                android:background="@drawable/arrow_10x" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

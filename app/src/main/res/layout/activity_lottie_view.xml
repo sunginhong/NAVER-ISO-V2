@@ -28,14 +28,47 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scaleType="fitCenter"
-                app:lottie_loop="true"
-                app:lottie_autoPlay="true"
                 android:layout_gravity="center"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true">
             </com.airbnb.lottie.LottieAnimationView>
 
         </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/play_btn1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="로띠 애니메이션 교체"/>
+
+            <Button
+                android:id="@+id/play_btn2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="반복 재생"/>
+
+            <Button
+                android:id="@+id/play_btn3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="애니메이션 앞으로 재생"/>
+
+            <Button
+                android:id="@+id/play_btn4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="애니메이션 뒤로 재생"/>
+
+        </LinearLayout>
 
         <com.example.naver_iso_v2.LottieSelBottom_Menu
             android:layout_width="match_parent"

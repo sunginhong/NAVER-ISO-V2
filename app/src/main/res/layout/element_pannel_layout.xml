@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/element_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rect_container"
+        android:backgroundTint="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/element_title_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/line_21"
+                android:layout_width="35dp"
+                android:layout_height="5dp"
+                android:layout_gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/line_21" />
+
+            <com.example.naver_iso_v2.Element_Pannel_ListLayout_Top
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_title_dot"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/element_container_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:id="@+id/scrollview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_gravity="bottom">
+
+                        <androidx.viewpager2.widget.ViewPager2
+                            android:id="@+id/element_viewpager"
+                            android:clipToPadding="false"
+                            android:clipChildren="false"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/main_vp_frameSize" />
+
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="37dp">
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white">
+
+        <View
+            android:id="@+id/tabbar_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="11dp"
+            android:background="#EDEDED"
+            />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/elem_bottom_guidebtn"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="11dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="8dp"
+                android:layout_gravity="left"
+                android:background="@drawable/elem_icn_guide" />
+
+            <FrameLayout
+                android:id="@+id/elem_bottom_playbtn"
+                android:layout_width="184dp"
+                android:layout_height="40dp"
+                android:background="@drawable/element_btn_playmotion"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="8dp"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:lineHeight="18sp"
+                    android:text="@string/paly_in_mot"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+            </FrameLayout>
+
+            <ImageView
+                android:id="@+id/elem_bottom_imagebtn"
+                android:layout_width="33dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="12dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="8dp"
+                android:layout_gravity="right"
+                android:background="@drawable/elem_icn_image" />
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

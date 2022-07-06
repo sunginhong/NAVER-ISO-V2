@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    tools:context=".MainActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.example.naver_iso_v2.MainTop_Layout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="0dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:text="@string/elemaents_title"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textColor="@color/main_rcv_item_horizon_case1_txt_color_t1"
+                    android:textSize="@dimen/main_rcv_item_horizon_case1_title_size"
+                    android:textStyle="bold"
+                    android:lineHeight="21sp"
+                    android:gravity="top"
+                    android:paddingLeft="@dimen/main_padding"
+                    android:layout_marginBottom="0dp"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/main_rcv_item_case1_horizon"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="@dimen/main_padding"
+                    android:paddingRight="@dimen/main_padding"
+                    android:layout_marginTop="@dimen/main_title_rcv_margin_top"
+                    android:layout_marginBottom="@dimen/main_title_rcv_margin_bottom"
+                    android:clipToPadding="false"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:text="@string/gestures_title"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textColor="@color/main_rcv_item_horizon_case1_txt_color_t2"
+                    android:textSize="@dimen/main_rcv_item_horizon_case1_title_size"
+                    android:textStyle="bold"
+                    android:lineHeight="21sp"
+                    android:gravity="top"
+                    android:paddingLeft="@dimen/main_padding"
+                    android:layout_marginBottom="0dp"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/main_rcv_item_case2_horizon"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="@dimen/main_padding"
+                    android:paddingRight="@dimen/main_padding"
+                    android:layout_marginTop="@dimen/main_title_rcv_margin_top"
+                    android:layout_marginBottom="@dimen/main_title_rcv_margin_bottom"
+                    android:clipToPadding="false"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/main_padding"
+                android:paddingRight="@dimen/main_padding"
+                android:orientation="vertical">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/main_rcv_item_case1_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:clipToPadding="false"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.example.naver_iso_v2.Main_IsoBanner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/naver_desig"
+                android:layout_width="120dp"
+                android:layout_height="12dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/footer_design"
+                android:textAppearance="@style/naver_desig"
+                android:lineSpacingExtra="-3sp"
+                android:gravity="top"
+                android:layout_gravity="center"
+                android:layout_marginTop="105dp"
+                android:layout_marginBottom="95dp"
+                />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

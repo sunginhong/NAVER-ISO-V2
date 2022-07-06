@@ -2,9 +2,10 @@ package com.example.naver_iso_v2;
 
 import android.content.Context;
 import android.util.AttributeSet;
+import android.view.View;
 import android.widget.Button;
 
-public class SquareButton_Icn extends androidx.appcompat.widget.AppCompatButton {
+public class SquareButton_Icn extends View {
 
     public SquareButton_Icn(Context context) {
         super(context);

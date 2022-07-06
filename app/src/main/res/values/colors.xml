@@ -17,4 +17,12 @@
     <color name="lottie_color_3">#008489</color>
     <color name="lottie_color_4">#a61d55</color>
     <color name="lottie_color_5">#ffb400</color>
+    <color name="main_rcv_bg_color">#000000</color>
+    <color name="main_rcv_item_case1_horizon_color">#272B34</color>
+    <color name="main_bg_color">#010101</color>
+    <color name="rect_element_vp_item_color0">#eaf2ff</color>
+    <color name="rect_element_vp_item_color1">#fce996</color>
+    <color name="main_rcv_item_horizon_case1_txt_color_t1">#54FF84</color>
+    <color name="main_rcv_item_horizon_case1_txt_color_t2">#FFD736</color>
+    <color name="element_title_color">#242424</color>
 </resources>

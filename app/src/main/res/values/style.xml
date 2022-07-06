@@ -67,4 +67,25 @@
     <style name="noAnimTheme">
         <item name="android:windowAnimationStyle">@null</item>
     </style>
+
+    <style name="hi_">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="interaction">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="some_id">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="naver_desig">
+        <item name="android:textSize">16sp</item>
+        <item name="android:letterSpacing">-0.03</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
 </resources>
