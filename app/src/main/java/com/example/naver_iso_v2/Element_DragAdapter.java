@@ -1,6 +1,8 @@
 package com.example.naver_iso_v2;
 
+import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
+import android.animation.ValueAnimator;
 import android.content.Context;
 import android.util.Property;
 import android.view.MotionEvent;
@@ -45,27 +47,19 @@ public class Element_DragAdapter implements View.OnTouchListener {
                 if (move){
                     if (Vars_Def.container_top_margin < moveY) {
                         Element_Pannel_Layout.element_container.setY( moveY );
-                        if ((Vars_Def.heightMax-Vars_Def.heightMin) > moveY){
-                            rectCalcHeight = Utils_Calc.ModulateCalc(moveY, Vars_Def.posMaxY, Vars_Def.posMinY_drag, Vars_Def.heightMin, Vars_Def.heightMax);
-                        }
-                        if ((int) rectCalcHeight > Vars_Def.heightMin && (int) rectCalcHeight < Vars_Def.heightMax){
-
-                        }
+                        rectCalcHeight = Utils_Calc.ModulateCalc((int) moveY, Vars_Def.posMaxY, Vars_Def.posMinY, objHeight_min, objHeight_max);
                     }
                 }
+                function_rectObjAnim(Activity_Element.element_obj_layout, (int) rectCalcHeight, (int) rectCalcHeight, 0, interpolator_bounce);
                 Element_Pannel_Layout.element_container.invalidate();
                 break;
             case MotionEvent.ACTION_UP:
-                if (move){
-                }
-                if (moveY < Vars_Def.posMaxY+Element_Pannel_Layout.element_container.getHeight()/2){
-                    if (Activity_Element.element_root.getHeight() >= (int) rectCalcHeight){
-                        function_containAnim(Element_Pannel_Layout.element_container, Vars_Def.posMaxY, 400, AnimRectObject.interpolator_easeOut);
-                        Vars_Def.container_bool = true;
+                if (moveY < Vars_Def.posMaxY+Element_Pannel_Layout.element_container.getHeight()/2.5){
+                    function_containAnim(Element_Pannel_Layout.element_container, Vars_Def.posMaxY, 400, AnimRectObject.interpolator_easeOut);
+                    Vars_Def.container_bool = true;
 
-                        Element_Pannel_ListLayout_Top.element_btn_trigger.setRotation(-180);
-                        function_HeightAnim(Activity_Element.element_obj_layout, objHeight_min, 400, AnimRectObject.interpolator_easeOut);
-                    }
+                    Element_Pannel_ListLayout_Top.element_btn_trigger.setRotation(-180);
+                    function_HeightAnim(Activity_Element.element_obj_layout, objHeight_min, 400, AnimRectObject.interpolator_easeOut);
                 } else {
                     function_containAnim(Element_Pannel_Layout.element_container, Vars_Def.posMinY, 400, AnimRectObject.interpolator_bounce2);
                     Vars_Def.container_bool = false;
@@ -86,24 +80,21 @@ public class Element_DragAdapter implements View.OnTouchListener {
         containAnim.start();
     }
 
-    public static void function_HeightAnim(RelativeLayout view, int n, int duration, Interpolator interpolator) {
+    public static void function_HeightAnim(RelativeLayout view, float n, int duration, Interpolator interpolator) {
         final int currentHeight = view.getHeight();
-        ObjectAnimator animator = ObjectAnimator.ofInt(view, new HeightProperty(), currentHeight, n);
+        ObjectAnimator animator = ObjectAnimator.ofInt(view, new HeightProperty(), currentHeight, (int) n);
         animator.setDuration(300);
         animator.setInterpolator(interpolator);
         animator.start();
     }
 
     static class HeightProperty extends Property<View, Integer> {
-
         public HeightProperty() {
             super(Integer.class, "height");
         }
-
         @Override public Integer get(View view) {
             return view.getHeight();
         }
-
         @Override public void set(View view, Integer value) {
             view.getLayoutParams().height = value;
             view.setLayoutParams(view.getLayoutParams());
@@ -115,5 +106,18 @@ public class Element_DragAdapter implements View.OnTouchListener {
         containAnim.setInterpolator(interpolator);
         containAnim.setDuration(duration);
         containAnim.start();
+    }
+
+    public static void function_rectObjAnim(View view, int currentHeight, int newHeight, int duration, Interpolator interpolator) {
+        ValueAnimator slideAnimator = ValueAnimator.ofInt(currentHeight, newHeight).setDuration(duration);
+        slideAnimator.addUpdateListener(animation1 -> {
+            Integer value = (Integer) animation1.getAnimatedValue();
+            view.getLayoutParams().height = value.intValue();
+            view.requestLayout();
+        });
+        AnimatorSet animationSet = new AnimatorSet();
+        animationSet.setInterpolator(interpolator);
+        animationSet.play(slideAnimator);
+        animationSet.start();
     }
 }

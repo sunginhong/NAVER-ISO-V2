@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -11,13 +12,355 @@
         android:background="@drawable/element_vp_frag_item"
         android:orientation="vertical">
 
-        <FrameLayout
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent"
+            android:paddingTop="19dp"
+            android:paddingBottom="12dp"
+            android:paddingLeft="20.16dp"
+            android:paddingRight="13.44dp"
+            android:orientation="vertical">
 
-        </FrameLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:orientation="horizontal"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="49dp"
+                    android:layout_height="32dp"
+                    android:orientation="vertical"
+                    android:clipChildren="false">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="-5dp"
+                        android:gravity="left"
+                        android:lineHeight="18sp"
+                        android:text="Time"
+                        android:textColor="#242424"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textAppearance="@style/elem_menu_txt_title" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:lineHeight="13.5sp"
+                        android:text="(Duration)"
+                        android:textColor="#242424"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textSize="8sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="146.88dp"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="11.18dp"
+                    android:background="@drawable/element_vp_frag_item_inner">
+
+                    <TextView
+                        android:layout_width="72dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:lineHeight="18sp"
+                        android:text="0.3s"
+                        android:textAppearance="@style/elem_menu_txt_lsit"
+                        android:textColor="#5A636A"
+                        android:fontFamily="@font/poppins_medium"/>
+
+                    <TextView
+                        android:layout_width="72dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:lineHeight="18sp"
+                        android:text="0.4s"
+                        android:textAppearance="@style/elem_menu_txt_lsit"
+                        android:textColor="#5A636A"
+                        android:fontFamily="@font/poppins_medium"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:orientation="horizontal"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="16dp">
+
+                <LinearLayout
+                    android:layout_width="49dp"
+                    android:layout_height="32dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="28dp"
+                        android:gravity="left"
+                        android:lineHeight="18sp"
+                        android:text="Position"
+                        android:textColor="#242424"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textAppearance="@style/elem_menu_txt_lsit" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="217.92dp"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="11.18dp"
+                    android:background="@drawable/element_vp_frag_item_inner">
+
+                    <TextView
+                        android:layout_width="72dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:lineHeight="18sp"
+                        android:text="None"
+                        android:textAppearance="@style/elem_menu_txt_lsit"
+                        android:textColor="#5A636A"
+                        android:fontFamily="@font/poppins_medium"/>
+
+                    <TextView
+                        android:layout_width="72dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:lineHeight="18sp"
+                        android:text="Bottom"
+                        android:textAppearance="@style/elem_menu_txt_lsit"
+                        android:textColor="#5A636A"
+                        android:fontFamily="@font/poppins_medium"/>
+
+                    <TextView
+                        android:layout_width="72dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:lineHeight="18sp"
+                        android:text="Top"
+                        android:textAppearance="@style/elem_menu_txt_lsit"
+                        android:textColor="#5A636A"
+                        android:fontFamily="@font/poppins_medium"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:orientation="horizontal"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="16dp">
+
+                <LinearLayout
+                    android:layout_width="49dp"
+                    android:layout_height="32dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="28dp"
+                        android:gravity="left"
+                        android:lineHeight="18sp"
+                        android:text="Scale"
+                        android:textColor="#242424"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textAppearance="@style/elem_menu_txt_lsit" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="217.92dp"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="11.18dp"
+                    android:background="@drawable/element_vp_frag_item_inner">
+
+                    <TextView
+                        android:layout_width="72dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:lineHeight="18sp"
+                        android:text="0%"
+                        android:textAppearance="@style/elem_menu_txt_lsit"
+                        android:textColor="#5A636A"
+                        android:fontFamily="@font/poppins_medium"/>
+
+                    <TextView
+                        android:layout_width="72dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:lineHeight="18sp"
+                        android:text="50%"
+                        android:textAppearance="@style/elem_menu_txt_lsit"
+                        android:textColor="#5A636A"
+                        android:fontFamily="@font/poppins_medium"/>
+
+                    <TextView
+                        android:layout_width="72dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:lineHeight="18sp"
+                        android:text="100%"
+                        android:textAppearance="@style/elem_menu_txt_lsit"
+                        android:textColor="#5A636A"
+                        android:fontFamily="@font/poppins_medium"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:orientation="horizontal"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="16dp">>
+
+                <LinearLayout
+                    android:layout_width="49dp"
+                    android:layout_height="32dp"
+                    android:orientation="vertical"
+                    android:clipChildren="false">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="-5dp"
+                        android:gravity="left"
+                        android:lineHeight="18sp"
+                        android:text="Alpha"
+                        android:textColor="#242424"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textAppearance="@style/elem_menu_txt_title" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:lineHeight="13.5sp"
+                        android:text="(Opacity)"
+                        android:textColor="#242424"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textSize="8sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="217.92dp"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="11.18dp"
+                    android:background="@drawable/element_vp_frag_item_inner">
+
+                    <TextView
+                        android:layout_width="72dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:lineHeight="18sp"
+                        android:text="0%"
+                        android:textAppearance="@style/elem_menu_txt_lsit"
+                        android:textColor="#5A636A"
+                        android:fontFamily="@font/poppins_medium"/>
+
+                    <TextView
+                        android:layout_width="72dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:lineHeight="18sp"
+                        android:text="50%"
+                        android:textAppearance="@style/elem_menu_txt_lsit"
+                        android:textColor="#5A636A"
+                        android:fontFamily="@font/poppins_medium"/>
+
+                    <TextView
+                        android:layout_width="72dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:lineHeight="18sp"
+                        android:text="100%"
+                        android:textAppearance="@style/elem_menu_txt_lsit"
+                        android:textColor="#5A636A"
+                        android:fontFamily="@font/poppins_medium"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:orientation="horizontal"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="16dp">
+
+                <LinearLayout
+                    android:layout_width="49dp"
+                    android:layout_height="32dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="28dp"
+                        android:gravity="left"
+                        android:lineHeight="18sp"
+                        android:text="Curve"
+                        android:textColor="#242424"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textAppearance="@style/elem_menu_txt_lsit" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="146.88dp"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="11.18dp"
+                    android:background="@drawable/element_vp_frag_item_inner">
+
+                    <TextView
+                        android:layout_width="72dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:lineHeight="18sp"
+                        android:text="Out"
+                        android:textAppearance="@style/elem_menu_txt_lsit"
+                        android:textColor="#5A636A"
+                        android:fontFamily="@font/poppins_medium"/>
+
+                    <TextView
+                        android:layout_width="72dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:lineHeight="18sp"
+                        android:text="In-Out"
+                        android:textAppearance="@style/elem_menu_txt_lsit"
+                        android:textColor="#5A636A"
+                        android:fontFamily="@font/poppins_medium"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
 
     </RelativeLayout>
-
 
 </FrameLayout>

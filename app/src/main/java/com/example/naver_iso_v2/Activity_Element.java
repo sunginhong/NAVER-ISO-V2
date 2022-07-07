@@ -33,6 +33,7 @@ public class Activity_Element extends AppCompatActivity {
     public static FrameLayout main_contain;
     public static LinearLayout layout_container_top_group;
     public static Pannel_Result pannel_result;
+    public static RelativeLayout element_obj_layout_contain;
     public static RelativeLayout element_obj_layout;
     public static RelativeLayout element_root;
     public static ViewGroup.LayoutParams params_copy;
@@ -43,6 +44,7 @@ public class Activity_Element extends AppCompatActivity {
     static String Val;
     boolean appStart = false;
     int num_page = 2;
+    public static int selPos;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -71,11 +73,37 @@ public class Activity_Element extends AppCompatActivity {
         element_root = (RelativeLayout)  findViewById(R.id.element_root);
 
         layout_container_top_group = findViewById(R.id.element_container_top_group);
+        element_obj_layout_contain = findViewById(R.id.element_obj_layout_contain);
         element_obj_layout = findViewById(R.id.element_obj_layout);
         frag_header_height = (int)getResources().getDimension(R.dimen.frag_header_height);
 
+        Utils_Anim.AlphaAnim(element_obj_layout_contain, 0, 0, 0);
+
         new Element_Pannel_SetCalc(this);
 
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                DragAdapter.rectCalcHeight = Vars_Def.heightMax;
+                selPos = Integer.parseInt(Val);
+                if (Integer.parseInt(Val) == 0){
+                    Glide.with(getApplicationContext()).load(R.drawable.popup).into(Fragment_0_Popup_v2.popup_v2_imageView);
+                }
+                if (Integer.parseInt(Val) == 1){
+                    Glide.with(getApplicationContext()).load(R.drawable.nudge).into(Fragment_1_Nudge_v2.nudge_v2_imageView);
+                }
+                if (Integer.parseInt(Val) == 2){
+                    Glide.with(getApplicationContext()).load(R.drawable.alarm).into(Fragment_2_Alarm_v2.alarm_v2_imageView);
+                }
+            }
+        }, 000);
+
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                Utils_Anim.AlphaAnim(element_obj_layout_contain, 0, 1, 200);
+            }
+        }, 300);
         mPager = findViewById(R.id.element_viewpager);
 
         pagerAdapter = new Main_Rcv_VpAdapter(this, num_page);
@@ -147,12 +175,18 @@ public class Activity_Element extends AppCompatActivity {
     void titleChange(String Val){
         switch(Val){
             case "0":
+                Fragment_0_Popup_v2 fragment0 = new Fragment_0_Popup_v2();
+                getSupportFragmentManager().beginTransaction().replace(R.id.element_obj_layout, fragment0).commitAllowingStateLoss();
                 Element_Pannel_ListLayout_Top.element_anim_title.setText(R.string.popup);
                 break;
             case "1":
+                Fragment_1_Nudge_v2 fragment1 = new Fragment_1_Nudge_v2();
+                getSupportFragmentManager().beginTransaction().replace(R.id.element_obj_layout, fragment1).commitAllowingStateLoss();
                 Element_Pannel_ListLayout_Top.element_anim_title.setText(R.string.alarm);
                 break;
             case "2":
+                Fragment_2_Alarm_v2 fragment2 = new Fragment_2_Alarm_v2();
+                getSupportFragmentManager().beginTransaction().replace(R.id.element_obj_layout, fragment2).commitAllowingStateLoss();
                 Element_Pannel_ListLayout_Top.element_anim_title.setText(R.string.nudge);
                 break;
         }

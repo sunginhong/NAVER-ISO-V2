@@ -188,9 +188,9 @@ public class ResetState {
 
         Vars_Def.play_btn_state = false;
         Vars_Def.playMotionState = "In";
-        Pannel_ListLayout_Top.button_playmotion.setText("Play in Motion");
-        Pannel_ListLayout_Top.button_playmotion_trans.resetTransition();
-        Pannel_ListLayout_Top.button_playmotion.setTextColor(Color.parseColor("#ffffff"));
+//        Pannel_ListLayout_Top.button_playmotion.setText("Play in Motion");
+//        Pannel_ListLayout_Top.button_playmotion_trans.resetTransition();
+//        Pannel_ListLayout_Top.button_playmotion.setTextColor(Color.parseColor("#ffffff"));
 
         Pannel_ListLayout_InMotion.in_motion_li0_btncase0_text.setTextColor(Color.parseColor("#BDC0BD"));
         Pannel_ListLayout_InMotion.in_motion_li0_btncase0_radio_trans.resetTransition();

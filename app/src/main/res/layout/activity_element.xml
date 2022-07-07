@@ -18,6 +18,7 @@
             android:alpha="0.18"/>
 
         <RelativeLayout
+            android:id="@+id/element_obj_layout_contain"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="center"

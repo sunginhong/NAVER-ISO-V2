@@ -25,8 +25,8 @@ public class Fragment_2_Alarm_v2 extends Fragment {
         View view = inflater.inflate(R.layout.fragment_2alarm_v2, container, false);
         ctx = container.getContext();
         alarm_v2_imageView = view.findViewById(R.id.alarm_v2_imageView);
-        ResetState.defCaseState02();
-        AnimRectObject.function_containAnim(alarm_v2_imageView, Float.parseFloat(Vars_Def.inMotion_li1_state +"f"), Float.parseFloat(Vars_Def.inMotion_li2_state +"f"), Float.parseFloat(Vars_Def.inMotion_li3_state +"f"), 0, AnimRectObject.selEase_group1);
+        Element_ResetState.defCaseState02();
+//        AnimRectObject.function_containAnim(alarm_v2_imageView, Float.parseFloat(Vars_Def.inMotion_li1_state +"f"), Float.parseFloat(Vars_Def.inMotion_li2_state +"f"), Float.parseFloat(Vars_Def.inMotion_li3_state +"f"), 0, AnimRectObject.selEase_group1);
         return view;
     }
 
