@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.res.Resources;
 import android.os.Handler;
-import android.util.Log;
 import android.view.ViewGroup;
 
 public class Element_Pannel_SetCalc {
@@ -22,12 +21,15 @@ public class Element_Pannel_SetCalc {
             @Override
             public void run() {
                 Vars_Def.bottom_rectHeight = 0;
-                Vars_Def.rootHeight = Activity_Element.root.getHeight();
+                Vars_Def.rootHeight = Activity_Element.element_root.getHeight();
                 Vars_Def.posMinY = (int) 0 + Element_Pannel_Layout.element_container_top.getHeight();
                 Vars_Def.posMaxY = (int) 0;
 
                 Vars_Def.screenWidth = Resources.getSystem().getDisplayMetrics().widthPixels;
 
+                Element_DragAdapter.objHeight_max = Activity_Element.element_obj_layout.getMeasuredHeight() - Element_Pannel_Layout.element_title_top.getMeasuredHeight();
+                Element_DragAdapter.objHeight_min = Vars_Def.screenHeight - Activity_Element.element_root.getMeasuredHeight() - Utils_Calc.dpToPx(16);
+                Element_DragAdapter.function_HeightAnim(Activity_Element.element_obj_layout, Element_DragAdapter.objHeight_max, 0, AnimRectObject.interpolator_easeOut);
                 Element_Pannel_Layout.setContain();
             }
         }, 100);

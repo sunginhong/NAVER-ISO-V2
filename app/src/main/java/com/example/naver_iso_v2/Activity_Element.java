@@ -22,6 +22,8 @@ import androidx.fragment.app.FragmentActivity;
 import androidx.viewpager2.widget.ViewPager2;
 
 import com.bumptech.glide.Glide;
+import com.google.android.material.tabs.TabLayout;
+import com.google.android.material.tabs.TabLayoutMediator;
 
 public class Activity_Element extends AppCompatActivity {
 
@@ -31,7 +33,8 @@ public class Activity_Element extends AppCompatActivity {
     public static FrameLayout main_contain;
     public static LinearLayout layout_container_top_group;
     public static Pannel_Result pannel_result;
-    public static RelativeLayout root;
+    public static RelativeLayout element_obj_layout;
+    public static RelativeLayout element_root;
     public static ViewGroup.LayoutParams params_copy;
     public static int frag_header_height;
 
@@ -65,9 +68,10 @@ public class Activity_Element extends AppCompatActivity {
         Vars_Def.screenHeight = display.getHeight();
 
         main_contain = (FrameLayout) findViewById(R.id.element_main_contain);
-        root = (RelativeLayout)  findViewById(R.id.element_root);
+        element_root = (RelativeLayout)  findViewById(R.id.element_root);
 
         layout_container_top_group = findViewById(R.id.element_container_top_group);
+        element_obj_layout = findViewById(R.id.element_obj_layout);
         frag_header_height = (int)getResources().getDimension(R.dimen.frag_header_height);
 
         new Element_Pannel_SetCalc(this);
@@ -76,10 +80,15 @@ public class Activity_Element extends AppCompatActivity {
 
         pagerAdapter = new Main_Rcv_VpAdapter(this, num_page);
         mPager.setAdapter(pagerAdapter);
-
         mPager.setOrientation(ViewPager2.ORIENTATION_HORIZONTAL);
         mPager.setCurrentItem(0);
         mPager.setOffscreenPageLimit(2);
+
+        new TabLayoutMediator(Element_Pannel_Layout.element_vp_tab_layout, mPager, new TabLayoutMediator.TabConfigurationStrategy() {
+            @Override
+            public void onConfigureTab(@NonNull TabLayout.Tab tab, int position) {
+            }
+        }).attach();
 
         mPager.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {
             @Override
@@ -113,6 +122,14 @@ public class Activity_Element extends AppCompatActivity {
                 } else {
                     page.setTranslationY(myOffset);
                 }
+            }
+        });
+
+        Element_Pannel_ListLayout_Top.element_anim_backbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+                pageOutAnim();
             }
         });
     }

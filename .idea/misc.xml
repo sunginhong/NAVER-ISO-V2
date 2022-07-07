@@ -16,7 +16,10 @@
         <entry key="app/src/main/res/drawable/color_circleview.xml" value="0.2485" />
         <entry key="app/src/main/res/drawable/d.xml" value="0.2485" />
         <entry key="app/src/main/res/drawable/ddd.xml" value="0.2485" />
+        <entry key="app/src/main/res/drawable/default_dot.xml" value="0.1235" />
+        <entry key="app/src/main/res/drawable/elem_button_play.xml" value="0.124" />
         <entry key="app/src/main/res/drawable/element_btn_playmotion.xml" value="0.1235" />
+        <entry key="app/src/main/res/drawable/element_btn_playmotion_sel.xml" value="0.124" />
         <entry key="app/src/main/res/drawable/element_vp_frag_item.xml" value="0.1235" />
         <entry key="app/src/main/res/drawable/ic_launcher.xml" value="0.267" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.302" />
@@ -39,9 +42,15 @@
         <entry key="app/src/main/res/drawable/rect_main_list_footer.xml" value="0.148" />
         <entry key="app/src/main/res/drawable/rect_main_list_rcv_case_horizon.xml" value="0.1235" />
         <entry key="app/src/main/res/drawable/rect_main_list_rcv_case_vertical.xml" value="0.1235" />
+        <entry key="app/src/main/res/drawable/rect_main_list_rcv_horizon.xml" value="0.1235" />
+        <entry key="app/src/main/res/drawable/rect_main_list_rcv_vertical.xml" value="0.1235" />
         <entry key="app/src/main/res/drawable/rect_main_list_row.xml" value="0.148" />
         <entry key="app/src/main/res/drawable/rect_radiogroup.xml" value="0.139" />
         <entry key="app/src/main/res/drawable/rectangle_bg.xml" value="0.139" />
+        <entry key="app/src/main/res/drawable/selected_dot.xml" value="0.1235" />
+        <entry key="app/src/main/res/drawable/tab_selector.xml" value="0.1235" />
+        <entry key="app/src/main/res/drawable/vp_default_dot.xml" value="0.1235" />
+        <entry key="app/src/main/res/drawable/vp_tab_selector.xml" value="0.1235" />
         <entry key="app/src/main/res/font/poppins.xml" value="0.22870370370370371" />
         <entry key="app/src/main/res/font/poppins_medium.xml" value="0.22870370370370371" />
         <entry key="app/src/main/res/layout/activity_captureform.xml" value="0.16995947315096252" />

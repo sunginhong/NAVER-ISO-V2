@@ -1,5 +1,8 @@
 package com.example.naver_iso_v2;
 
+import static com.example.naver_iso_v2.R.*;
+
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.os.Build;
 import android.util.AttributeSet;
@@ -10,18 +13,24 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 import androidx.annotation.RequiresApi;
+
+import com.google.android.material.tabs.TabLayout;
 
 public class Element_Pannel_Layout extends RelativeLayout implements View.OnClickListener {
 
     public Context ctx;
+    public boolean playMotion = false;
     public static LinearLayout element_container;
     public static LinearLayout element_title_top;
     public static LinearLayout element_container_top;
     public static ImageView elem_bottom_guidebtn;
     public static FrameLayout elem_bottom_playbtn;
+    public static TextView elem_bottom_playbtn_txt;
     public static ImageView elem_bottom_imagebtn;
+    public static TabLayout element_vp_tab_layout;
 
     public Element_Pannel_Layout(Context ctx){
         super(ctx);
@@ -51,18 +60,37 @@ public class Element_Pannel_Layout extends RelativeLayout implements View.OnClic
     private void init() {
         String infService = Context.LAYOUT_INFLATER_SERVICE;
         LayoutInflater li = (LayoutInflater) getContext().getSystemService(infService);
-        View v = li.inflate(R.layout.element_pannel_layout, this, false);
+        View v = li.inflate(layout.element_pannel_layout, this, false);
         addView(v);
 
-        element_container =  v.findViewById(R.id.element_container);
-        element_title_top = v.findViewById(R.id.element_title_top);
-        element_container_top =  v.findViewById(R.id.element_container_top);
-        elem_bottom_guidebtn = v.findViewById(R.id.elem_bottom_guidebtn);
-        elem_bottom_playbtn = v.findViewById(R.id.elem_bottom_playbtn);
-        elem_bottom_imagebtn = v.findViewById(R.id.elem_bottom_imagebtn);
+        element_container =  v.findViewById(id.element_container);
+        element_title_top = v.findViewById(id.element_title_top);
+        element_container_top =  v.findViewById(id.element_container_top);
+        elem_bottom_guidebtn = v.findViewById(id.elem_bottom_guidebtn);
+        elem_bottom_playbtn = v.findViewById(id.elem_bottom_playbtn);
+        elem_bottom_playbtn_txt = v.findViewById(R.id.elem_bottom_playbtn_txt);
+        elem_bottom_imagebtn = v.findViewById(id.elem_bottom_imagebtn);
+        element_vp_tab_layout = v.findViewById(id.element_vp_tab_layout);
 
         Element_DragAdapter element_dragAdapter = new Element_DragAdapter(ctx);
         element_container.setOnTouchListener(element_dragAdapter);
+
+        elem_bottom_playbtn.setOnClickListener(new OnClickListener() {
+            @SuppressLint("ResourceAsColor")
+            @Override
+            public void onClick(View view) {
+                if (!playMotion){
+                    playMotion = true;
+                    elem_bottom_playbtn_txt.setText(R.string.paly_out_mo);
+                    elem_bottom_playbtn.setBackground(getResources().getDrawable(drawable.element_btn_playmotion_sel));
+                } else {
+                    playMotion = false;
+                    elem_bottom_playbtn_txt.setText(string.paly_in_mot);
+                    elem_bottom_playbtn.setBackground(getResources().getDrawable(drawable.element_btn_playmotion_nor));
+                }
+
+            }
+        });
     }
 
     public static void setContain(){

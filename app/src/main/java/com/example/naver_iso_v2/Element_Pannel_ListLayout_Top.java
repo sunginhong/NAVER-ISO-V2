@@ -9,6 +9,7 @@ import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -18,6 +19,7 @@ public class Element_Pannel_ListLayout_Top extends RelativeLayout {
 
     public Context ctx;
     public static TextView element_anim_title;
+    public static LinearLayout element_anim_backbtn;
     public static View element_btn_trigger;
 
     public Element_Pannel_ListLayout_Top(Context ctx){
@@ -52,6 +54,7 @@ public class Element_Pannel_ListLayout_Top extends RelativeLayout {
         addView(v);
 
         element_anim_title = (TextView) findViewById(R.id.element_anim_title);
+        element_anim_backbtn = (LinearLayout) findViewById(R.id.element_anim_backbtn);
         element_btn_trigger = (View) findViewById(R.id.element_btn_trigger);
 
         element_btn_trigger.setOnClickListener(new Button.OnClickListener() {
@@ -61,10 +64,12 @@ public class Element_Pannel_ListLayout_Top extends RelativeLayout {
                     Element_DragAdapter.function_containAnim(Element_Pannel_Layout.element_container, Vars_Def.posMaxY, 400, AnimRectObject.interpolator_easeOut);
                     Vars_Def.container_bool = true;
                     element_btn_trigger.setRotation(-180);
+                    Element_DragAdapter.function_HeightAnim(Activity_Element.element_obj_layout, Element_DragAdapter.objHeight_min, 400, AnimRectObject.interpolator_easeOut);
                 } else {
                     Element_DragAdapter.function_containAnim(Element_Pannel_Layout.element_container, Vars_Def.posMinY, 400, AnimRectObject.interpolator_easeOut);
                     Vars_Def.container_bool = false;
                     element_btn_trigger.setRotation(0);
+                    Element_DragAdapter.function_HeightAnim(Activity_Element.element_obj_layout, Element_DragAdapter.objHeight_max, 400, AnimRectObject.interpolator_easeOut);
                 }
             }
         });
