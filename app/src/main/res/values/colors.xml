@@ -25,4 +25,6 @@
     <color name="main_rcv_item_horizon_case1_txt_color_t1">#54FF84</color>
     <color name="main_rcv_item_horizon_case1_txt_color_t2">#FFD736</color>
     <color name="element_title_color">#242424</color>
+    <color name="main_vp_text_norcolor">#5A636A</color>
+    <color name="main_vp_text_selcolor">#FFFFFF</color>
 </resources>

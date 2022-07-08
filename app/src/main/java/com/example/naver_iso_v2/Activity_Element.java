@@ -42,6 +42,7 @@ public class Activity_Element extends AppCompatActivity {
     private ViewPager2 mPager;
     private Main_Rcv_VpAdapter pagerAdapter;
     static String Val;
+    public static String Pos;
     boolean appStart = false;
     int num_page = 2;
     public static int selPos;
@@ -106,7 +107,7 @@ public class Activity_Element extends AppCompatActivity {
         }, 300);
         mPager = findViewById(R.id.element_viewpager);
 
-        pagerAdapter = new Main_Rcv_VpAdapter(this, num_page);
+        pagerAdapter = new Main_Rcv_VpAdapter(this, num_page, ctx);
         mPager.setAdapter(pagerAdapter);
         mPager.setOrientation(ViewPager2.ORIENTATION_HORIZONTAL);
         mPager.setCurrentItem(0);

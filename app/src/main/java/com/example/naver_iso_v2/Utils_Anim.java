@@ -4,6 +4,7 @@ import android.animation.ArgbEvaluator;
 import android.animation.ObjectAnimator;
 import android.animation.ValueAnimator;
 import android.content.Context;
+import android.util.Property;
 import android.view.View;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
@@ -163,5 +164,33 @@ public class Utils_Anim {
         anim.setInterpolator(interpolator);
         anim.setDuration(duration);
         view.startAnimation(anim);
+    }
+
+    public static void function_containAnim(View view, float n, int duration, Interpolator interpolator){
+        ObjectAnimator containAnim = ObjectAnimator.ofFloat(view, "translationX", n);
+        containAnim.setInterpolator(interpolator);
+        containAnim.setDuration(duration);
+        containAnim.start();
+    }
+
+    public static void function_WidthAnim(View view, float n, int duration, Interpolator interpolator) {
+        final int currentWidth = view.getWidth();
+        ObjectAnimator animator = ObjectAnimator.ofInt(view, new WidthProperty(), currentWidth, (int) n);
+        animator.setDuration(duration);
+        animator.setInterpolator(interpolator);
+        animator.start();
+    }
+
+    static class WidthProperty extends Property<View, Integer> {
+        public WidthProperty() {
+            super(Integer.class, "width");
+        }
+        @Override public Integer get(View view) {
+            return view.getWidth();
+        }
+        @Override public void set(View view, Integer value) {
+            view.getLayoutParams().width = value;
+            view.setLayoutParams(view.getLayoutParams());
+        }
     }
 }

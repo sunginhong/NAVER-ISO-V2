@@ -31,6 +31,7 @@ public class Element_Pannel_Layout extends RelativeLayout implements View.OnClic
     public static TextView elem_bottom_playbtn_txt;
     public static ImageView elem_bottom_imagebtn;
     public static TabLayout element_vp_tab_layout;
+    public static View animView;
 
     public Element_Pannel_Layout(Context ctx){
         super(ctx);
@@ -88,17 +89,20 @@ public class Element_Pannel_Layout extends RelativeLayout implements View.OnClic
                     elem_bottom_playbtn_txt.setText(string.paly_in_mot);
                     elem_bottom_playbtn.setBackground(getResources().getDrawable(drawable.element_btn_playmotion_nor));
                 }
-
+                objectpPlayAnim(playMotion);
             }
         });
+    }
+
+    public void objectpPlayAnim(boolean state){
+        if (state){ new Element_PlayAnim(true, animView); } else { new Element_PlayAnim(false, animView); }
+//        if (Activity_Element.selPos == 0){ if (state){ new Element_PlayAnim(true, Fragment_0_Popup_v2.popup_v2_imageView); } else { new Element_PlayAnim(false, Fragment_0_Popup_v2.popup_v2_imageView); } }
     }
 
     public static void setContain(){
         element_container.setY(Vars_Def.posMinY);
         if (!Vars_Def.appStart){
             Vars_Def.appStart = true;
-
-//            Activity_Element.element_rect_objectFL.setY(0);
         }
     }
     @Override

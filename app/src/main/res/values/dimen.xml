@@ -40,4 +40,5 @@
     <dimen name="main_vp_pageMarginAndOffset">40dp</dimen>
     <dimen name="main_vp_frameSize">235dp</dimen>
     <dimen name="main_bottom_menu_height">60dp</dimen>
+    <dimen name="main_vp_menu_text_margin">2dp</dimen>
 </resources>

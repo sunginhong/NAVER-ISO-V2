@@ -31,7 +31,7 @@
 
                 <LinearLayout
                     android:layout_width="49dp"
-                    android:layout_height="32dp"
+                    android:layout_height="match_parent"
                     android:orientation="vertical"
                     android:clipChildren="false">
 
@@ -59,31 +59,63 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="146.88dp"
+                    android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="horizontal"
-                    android:layout_marginLeft="11.18dp"
-                    android:background="@drawable/element_vp_frag_item_inner">
+                    android:layout_marginLeft="11.18dp">
 
-                    <TextView
-                        android:layout_width="72dp"
+                    <FrameLayout
+                        android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:lineHeight="18sp"
-                        android:text="0.3s"
-                        android:textAppearance="@style/elem_menu_txt_lsit"
-                        android:textColor="#5A636A"
-                        android:fontFamily="@font/poppins_medium"/>
+                        android:layout_weight="1"
+                        android:background="@drawable/element_vp_frag_item_inner">
 
-                    <TextView
-                        android:layout_width="72dp"
+                        <View
+                            android:id="@+id/elem_p1_item_sel_0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@drawable/element_vp_frag_item_selector_blue" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/elem_p1_item_lst_r0_c0"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:lineHeight="18sp"
+                                android:layout_weight="1"
+                                android:text="0.3s"
+                                android:layout_marginTop="@dimen/main_vp_menu_text_margin"
+                                android:textAppearance="@style/elem_menu_txt_lsit"
+                                android:textColor="@color/main_vp_text_norcolor"
+                                android:fontFamily="@font/poppins_medium"/>
+
+                            <TextView
+                                android:id="@+id/elem_p1_item_lst_r0_c1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:layout_weight="1"
+                                android:lineHeight="18sp"
+                                android:text="0.4s"
+                                android:layout_marginTop="@dimen/main_vp_menu_text_margin"
+                                android:textAppearance="@style/elem_menu_txt_lsit"
+                                android:textColor="@color/main_vp_text_norcolor"
+                                android:fontFamily="@font/poppins_medium"/>
+
+                        </LinearLayout>
+
+                    </FrameLayout>
+
+                    <View
+                        android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:lineHeight="18sp"
-                        android:text="0.4s"
-                        android:textAppearance="@style/elem_menu_txt_lsit"
-                        android:textColor="#5A636A"
-                        android:fontFamily="@font/poppins_medium"/>
+                        android:layout_weight="2"/>
 
                 </LinearLayout>
 
@@ -105,7 +137,7 @@
 
                     <TextView
                         android:layout_width="wrap_content"
-                        android:layout_height="28dp"
+                        android:layout_height="match_parent"
                         android:gravity="left"
                         android:lineHeight="18sp"
                         android:text="Position"
@@ -116,41 +148,71 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="217.92dp"
+                    android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="horizontal"
-                    android:layout_marginLeft="11.18dp"
-                    android:background="@drawable/element_vp_frag_item_inner">
+                    android:layout_marginLeft="11.18dp">
 
-                    <TextView
-                        android:layout_width="72dp"
+                    <FrameLayout
+                        android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:lineHeight="18sp"
-                        android:text="None"
-                        android:textAppearance="@style/elem_menu_txt_lsit"
-                        android:textColor="#5A636A"
-                        android:fontFamily="@font/poppins_medium"/>
+                        android:layout_weight="1"
+                        android:background="@drawable/element_vp_frag_item_inner">
 
-                    <TextView
-                        android:layout_width="72dp"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:lineHeight="18sp"
-                        android:text="Bottom"
-                        android:textAppearance="@style/elem_menu_txt_lsit"
-                        android:textColor="#5A636A"
-                        android:fontFamily="@font/poppins_medium"/>
+                        <View
+                            android:id="@+id/elem_p1_item_sel_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@drawable/element_vp_frag_item_selector_blue" />
 
-                    <TextView
-                        android:layout_width="72dp"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:lineHeight="18sp"
-                        android:text="Top"
-                        android:textAppearance="@style/elem_menu_txt_lsit"
-                        android:textColor="#5A636A"
-                        android:fontFamily="@font/poppins_medium"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/elem_p1_item_lst_r1_c0"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:lineHeight="18sp"
+                                android:layout_weight="1"
+                                android:text="None"
+                                android:layout_marginTop="@dimen/main_vp_menu_text_margin"
+                                android:textAppearance="@style/elem_menu_txt_lsit"
+                                android:textColor="@color/main_vp_text_norcolor"
+                                android:fontFamily="@font/poppins_medium"/>
+
+                            <TextView
+                                android:id="@+id/elem_p1_item_lst_r1_c1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:layout_weight="1"
+                                android:lineHeight="18sp"
+                                android:text="Bottom"
+                                android:layout_marginTop="@dimen/main_vp_menu_text_margin"
+                                android:textAppearance="@style/elem_menu_txt_lsit"
+                                android:textColor="@color/main_vp_text_norcolor"
+                                android:fontFamily="@font/poppins_medium"/>
+
+                            <TextView
+                                android:id="@+id/elem_p1_item_lst_r1_c2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:layout_weight="1"
+                                android:lineHeight="18sp"
+                                android:text="Top"
+                                android:layout_marginTop="@dimen/main_vp_menu_text_margin"
+                                android:textAppearance="@style/elem_menu_txt_lsit"
+                                android:textColor="@color/main_vp_text_norcolor"
+                                android:fontFamily="@font/poppins_medium"/>
+
+                        </LinearLayout>
+
+                    </FrameLayout>
 
                 </LinearLayout>
 
@@ -167,7 +229,7 @@
 
                 <LinearLayout
                     android:layout_width="49dp"
-                    android:layout_height="32dp"
+                    android:layout_height="match_parent"
                     android:orientation="vertical">
 
                     <TextView
@@ -183,41 +245,71 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="217.92dp"
+                    android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="horizontal"
-                    android:layout_marginLeft="11.18dp"
-                    android:background="@drawable/element_vp_frag_item_inner">
+                    android:layout_marginLeft="11.18dp">
 
-                    <TextView
-                        android:layout_width="72dp"
+                    <FrameLayout
+                        android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:lineHeight="18sp"
-                        android:text="0%"
-                        android:textAppearance="@style/elem_menu_txt_lsit"
-                        android:textColor="#5A636A"
-                        android:fontFamily="@font/poppins_medium"/>
+                        android:layout_weight="1"
+                        android:background="@drawable/element_vp_frag_item_inner">
 
-                    <TextView
-                        android:layout_width="72dp"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:lineHeight="18sp"
-                        android:text="50%"
-                        android:textAppearance="@style/elem_menu_txt_lsit"
-                        android:textColor="#5A636A"
-                        android:fontFamily="@font/poppins_medium"/>
+                        <View
+                            android:id="@+id/elem_p1_item_sel_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@drawable/element_vp_frag_item_selector_blue" />
 
-                    <TextView
-                        android:layout_width="72dp"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:lineHeight="18sp"
-                        android:text="100%"
-                        android:textAppearance="@style/elem_menu_txt_lsit"
-                        android:textColor="#5A636A"
-                        android:fontFamily="@font/poppins_medium"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/elem_p1_item_lst_r2_c0"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:lineHeight="18sp"
+                                android:layout_weight="1"
+                                android:text="0%"
+                                android:layout_marginTop="@dimen/main_vp_menu_text_margin"
+                                android:textAppearance="@style/elem_menu_txt_lsit"
+                                android:textColor="@color/main_vp_text_norcolor"
+                                android:fontFamily="@font/poppins_medium"/>
+
+                            <TextView
+                                android:id="@+id/elem_p1_item_lst_r2_c1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:layout_weight="1"
+                                android:lineHeight="18sp"
+                                android:text="50%"
+                                android:layout_marginTop="@dimen/main_vp_menu_text_margin"
+                                android:textAppearance="@style/elem_menu_txt_lsit"
+                                android:textColor="@color/main_vp_text_norcolor"
+                                android:fontFamily="@font/poppins_medium"/>
+
+                            <TextView
+                                android:id="@+id/elem_p1_item_lst_r2_c2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:layout_weight="1"
+                                android:lineHeight="18sp"
+                                android:text="100%"
+                                android:layout_marginTop="@dimen/main_vp_menu_text_margin"
+                                android:textAppearance="@style/elem_menu_txt_lsit"
+                                android:textColor="@color/main_vp_text_norcolor"
+                                android:fontFamily="@font/poppins_medium"/>
+
+                        </LinearLayout>
+
+                    </FrameLayout>
 
                 </LinearLayout>
 
@@ -230,11 +322,11 @@
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                android:layout_marginTop="16dp">>
+                android:layout_marginTop="16dp">
 
                 <LinearLayout
                     android:layout_width="49dp"
-                    android:layout_height="32dp"
+                    android:layout_height="match_parent"
                     android:orientation="vertical"
                     android:clipChildren="false">
 
@@ -262,41 +354,71 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="217.92dp"
+                    android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="horizontal"
-                    android:layout_marginLeft="11.18dp"
-                    android:background="@drawable/element_vp_frag_item_inner">
+                    android:layout_marginLeft="11.18dp">
 
-                    <TextView
-                        android:layout_width="72dp"
+                    <FrameLayout
+                        android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:lineHeight="18sp"
-                        android:text="0%"
-                        android:textAppearance="@style/elem_menu_txt_lsit"
-                        android:textColor="#5A636A"
-                        android:fontFamily="@font/poppins_medium"/>
+                        android:layout_weight="1"
+                        android:background="@drawable/element_vp_frag_item_inner">
 
-                    <TextView
-                        android:layout_width="72dp"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:lineHeight="18sp"
-                        android:text="50%"
-                        android:textAppearance="@style/elem_menu_txt_lsit"
-                        android:textColor="#5A636A"
-                        android:fontFamily="@font/poppins_medium"/>
+                        <View
+                            android:id="@+id/elem_p1_item_sel_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@drawable/element_vp_frag_item_selector_blue" />
 
-                    <TextView
-                        android:layout_width="72dp"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:lineHeight="18sp"
-                        android:text="100%"
-                        android:textAppearance="@style/elem_menu_txt_lsit"
-                        android:textColor="#5A636A"
-                        android:fontFamily="@font/poppins_medium"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/elem_p1_item_lst_r3_c0"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:lineHeight="18sp"
+                                android:layout_weight="1"
+                                android:text="0%"
+                                android:layout_marginTop="@dimen/main_vp_menu_text_margin"
+                                android:textAppearance="@style/elem_menu_txt_lsit"
+                                android:textColor="@color/main_vp_text_norcolor"
+                                android:fontFamily="@font/poppins_medium"/>
+
+                            <TextView
+                                android:id="@+id/elem_p1_item_lst_r3_c1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:layout_weight="1"
+                                android:lineHeight="18sp"
+                                android:text="50%"
+                                android:layout_marginTop="@dimen/main_vp_menu_text_margin"
+                                android:textAppearance="@style/elem_menu_txt_lsit"
+                                android:textColor="@color/main_vp_text_norcolor"
+                                android:fontFamily="@font/poppins_medium"/>
+
+                            <TextView
+                                android:id="@+id/elem_p1_item_lst_r3_c2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:layout_weight="1"
+                                android:lineHeight="18sp"
+                                android:text="100%"
+                                android:layout_marginTop="@dimen/main_vp_menu_text_margin"
+                                android:textAppearance="@style/elem_menu_txt_lsit"
+                                android:textColor="@color/main_vp_text_norcolor"
+                                android:fontFamily="@font/poppins_medium"/>
+
+                        </LinearLayout>
+
+                    </FrameLayout>
 
                 </LinearLayout>
 
@@ -314,46 +436,86 @@
                 <LinearLayout
                     android:layout_width="49dp"
                     android:layout_height="32dp"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:clipChildren="false">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="28dp"
-                        android:gravity="left"
-                        android:lineHeight="18sp"
-                        android:text="Curve"
-                        android:textColor="#242424"
-                        android:fontFamily="@font/poppins_semibold"
-                        android:textAppearance="@style/elem_menu_txt_lsit" />
+                    <LinearLayout
+                        android:layout_width="49dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="left"
+                            android:lineHeight="18sp"
+                            android:text="Curve"
+                            android:textColor="#242424"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:textAppearance="@style/elem_menu_txt_lsit" />
+
+                    </LinearLayout>
 
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="146.88dp"
+                    android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="horizontal"
-                    android:layout_marginLeft="11.18dp"
-                    android:background="@drawable/element_vp_frag_item_inner">
+                    android:layout_marginLeft="11.18dp">
 
-                    <TextView
-                        android:layout_width="72dp"
+                    <FrameLayout
+                        android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:lineHeight="18sp"
-                        android:text="Out"
-                        android:textAppearance="@style/elem_menu_txt_lsit"
-                        android:textColor="#5A636A"
-                        android:fontFamily="@font/poppins_medium"/>
+                        android:layout_weight="1"
+                        android:background="@drawable/element_vp_frag_item_inner">
 
-                    <TextView
-                        android:layout_width="72dp"
+                        <View
+                            android:id="@+id/elem_p1_item_sel_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginBottom="2.5dp"
+                            android:background="@drawable/element_vp_frag_item_selector_blue" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/elem_p1_item_lst_r4_c0"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:lineHeight="18sp"
+                                android:layout_weight="1"
+                                android:text="Out"
+                                android:layout_marginTop="@dimen/main_vp_menu_text_margin"
+                                android:textAppearance="@style/elem_menu_txt_lsit"
+                                android:textColor="@color/main_vp_text_norcolor"
+                                android:fontFamily="@font/poppins_medium"/>
+
+                            <TextView
+                                android:id="@+id/elem_p1_item_lst_r4_c1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:layout_weight="1"
+                                android:lineHeight="18sp"
+                                android:text="In-Out"
+                                android:layout_marginTop="@dimen/main_vp_menu_text_margin"
+                                android:textAppearance="@style/elem_menu_txt_lsit"
+                                android:textColor="@color/main_vp_text_norcolor"
+                                android:fontFamily="@font/poppins_medium"/>
+
+                        </LinearLayout>
+
+                    </FrameLayout>
+
+                    <View
+                        android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:lineHeight="18sp"
-                        android:text="In-Out"
-                        android:textAppearance="@style/elem_menu_txt_lsit"
-                        android:textColor="#5A636A"
-                        android:fontFamily="@font/poppins_medium"/>
+                        android:layout_weight="2"/>
 
                 </LinearLayout>
 
