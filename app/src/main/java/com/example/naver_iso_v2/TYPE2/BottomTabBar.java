@@ -1,4 +1,4 @@
-package com.example.naver_iso_v2;
+package com.example.naver_iso_v2.TYPE2;
 
 import android.content.Context;
 import android.graphics.drawable.TransitionDrawable;
@@ -12,12 +12,17 @@ import android.widget.RelativeLayout;
 import androidx.annotation.RequiresApi;
 import androidx.fragment.app.FragmentActivity;
 
+import com.example.naver_iso_v2.Pannel_ListLayout_Top;
+import com.example.naver_iso_v2.R;
+import com.example.naver_iso_v2.ResetState;
 import com.example.naver_iso_v2.TYPE1.Fragment_0_Popup;
 import com.example.naver_iso_v2.TYPE1.Fragment_1_Nudge;
 import com.example.naver_iso_v2.TYPE1.Fragment_2_Alarm;
 import com.example.naver_iso_v2.TYPE1.Fragment_3_ViewPager;
 import com.example.naver_iso_v2.TYPE1.Fragment_4_ViewPager;
 import com.example.naver_iso_v2.TYPE1.Fragment_5_Drag;
+import com.example.naver_iso_v2.Utils_Calc;
+import com.example.naver_iso_v2.Vars_Def;
 
 import java.util.ArrayList;
 import java.util.List;

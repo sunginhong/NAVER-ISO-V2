@@ -1,7 +1,9 @@
 package com.example.naver_iso_v2;
 
 import android.os.Build;
-import android.os.VibrationEffect;
+
+import com.example.naver_iso_v2.TYPE2.Haptic_PopupActivity;
+import com.example.naver_iso_v2.TYPE2.Haptic_Vibrate;
 
 public class HapticFunction {
     public static void VibeSet(Object tag, int pos){

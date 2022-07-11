@@ -42,11 +42,11 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-               <com.example.naver_iso_v2.Haptic_Footer
+               <com.example.naver_iso_v2.TYPE2.Haptic_Footer
                    android:layout_width="match_parent"
                    android:layout_height="match_parent"
                    android:layout_marginTop="30dp">
-               </com.example.naver_iso_v2.Haptic_Footer>
+               </com.example.naver_iso_v2.TYPE2.Haptic_Footer>
 
             <View
                 android:layout_width="match_parent"

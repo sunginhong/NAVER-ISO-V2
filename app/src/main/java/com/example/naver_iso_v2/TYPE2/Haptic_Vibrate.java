@@ -1,12 +1,13 @@
-package com.example.naver_iso_v2;
+package com.example.naver_iso_v2.TYPE2;
 
 import android.content.Context;
 import android.os.Build;
 import android.os.VibrationEffect;
-import android.util.Log;
 import android.view.HapticFeedbackConstants;
 
 import androidx.annotation.RequiresApi;
+
+import com.example.naver_iso_v2.Activity_Haptic;
 
 public class Haptic_Vibrate {
     protected Context context;

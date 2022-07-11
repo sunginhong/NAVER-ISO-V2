@@ -4,6 +4,8 @@ import android.graphics.Color;
 import android.os.Handler;
 import android.view.View;
 
+import com.example.naver_iso_v2.TYPE2.Pannel_Result;
+
 public class ResetState_B {
     public ResetState_B(View view){
 

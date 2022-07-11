@@ -1,10 +1,15 @@
-package com.example.naver_iso_v2;
+package com.example.naver_iso_v2.TYPE2;
 
 import android.content.Context;
 import android.graphics.Color;
 import android.view.View;
 
 import androidx.core.view.animation.PathInterpolatorCompat;
+
+import com.example.naver_iso_v2.AnimRectObject;
+import com.example.naver_iso_v2.Pannel_ListLayout_InMotion;
+import com.example.naver_iso_v2.R;
+import com.example.naver_iso_v2.Vars_Def;
 
 public class ClickAdapter_InMotion_Li4 implements View.OnClickListener{
 

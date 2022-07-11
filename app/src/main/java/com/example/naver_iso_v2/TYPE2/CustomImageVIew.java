@@ -1,4 +1,4 @@
-package com.example.naver_iso_v2;
+package com.example.naver_iso_v2.TYPE2;
 
 import android.content.Context;
 import android.graphics.Bitmap;

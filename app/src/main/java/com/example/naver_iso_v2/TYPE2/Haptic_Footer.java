@@ -1,4 +1,4 @@
-package com.example.naver_iso_v2;
+package com.example.naver_iso_v2.TYPE2;
 
 import android.content.Context;
 import android.os.Build;
@@ -8,6 +8,8 @@ import android.view.View;
 
 import androidx.annotation.RequiresApi;
 import androidx.constraintlayout.widget.ConstraintLayout;
+
+import com.example.naver_iso_v2.R;
 
 public class Haptic_Footer extends ConstraintLayout {
     public Context ctx;

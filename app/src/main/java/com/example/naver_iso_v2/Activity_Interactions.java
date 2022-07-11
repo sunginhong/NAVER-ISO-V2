@@ -14,13 +14,13 @@ import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.bumptech.glide.Glide;
+import com.example.naver_iso_v2.TYPE2.DragAdapter;
+import com.example.naver_iso_v2.TYPE2.Pannel_Result;
 
-import java.io.File;
 import java.util.ArrayList;
 
 public class Activity_Interactions extends AppCompatActivity {

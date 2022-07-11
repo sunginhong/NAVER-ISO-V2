@@ -1,31 +1,23 @@
-package com.example.naver_iso_v2;
-
-import static androidx.core.content.ContextCompat.getSystemService;
+package com.example.naver_iso_v2.TYPE2;
 
 import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Handler;
-import android.os.VibrationEffect;
-import android.os.Vibrator;
-import android.util.Log;
-import android.util.Printer;
-import android.view.HapticFeedbackConstants;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.animation.Animation;
-import android.view.animation.ScaleAnimation;
-import android.widget.AdapterView;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
-import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.naver_iso_v2.AnimRectObject;
+import com.example.naver_iso_v2.HapticFunction;
+import com.example.naver_iso_v2.R;
+import com.example.naver_iso_v2.Utils_Anim;
 
 import java.util.ArrayList;
 

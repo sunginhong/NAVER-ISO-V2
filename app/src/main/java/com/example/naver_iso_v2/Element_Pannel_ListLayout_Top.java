@@ -1,10 +1,7 @@
 package com.example.naver_iso_v2;
 
 import android.content.Context;
-import android.graphics.Color;
-import android.graphics.drawable.TransitionDrawable;
 import android.os.Build;
-import android.os.Vibrator;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,6 +11,8 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import androidx.annotation.RequiresApi;
+
+import com.example.naver_iso_v2.TYPE2.DragAdapter;
 
 public class Element_Pannel_ListLayout_Top extends RelativeLayout {
 

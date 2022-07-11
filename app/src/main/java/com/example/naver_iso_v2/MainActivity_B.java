@@ -3,22 +3,17 @@ package com.example.naver_iso_v2;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
-import android.content.Intent;
 import android.graphics.Point;
 import android.os.Bundle;
 import android.os.Handler;
-import android.util.Log;
 import android.view.Display;
-import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
-import android.widget.ListView;
 import android.widget.RelativeLayout;
-import android.widget.Toast;
 
-import java.util.ArrayList;
+import com.example.naver_iso_v2.TYPE2.DragAdapter;
+import com.example.naver_iso_v2.TYPE2.Pannel_Result;
 
 public class MainActivity_B extends AppCompatActivity {
     public static Context ctx;

@@ -6,16 +6,18 @@ import android.os.Build;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import androidx.annotation.RequiresApi;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
-
-import java.io.IOException;
+import com.example.naver_iso_v2.TYPE2.ClickAdapter_OutMotion_Li0;
+import com.example.naver_iso_v2.TYPE2.ClickAdapter_OutMotion_Li1;
+import com.example.naver_iso_v2.TYPE2.ClickAdapter_OutMotion_Li2;
+import com.example.naver_iso_v2.TYPE2.ClickAdapter_OutMotion_Li3;
+import com.example.naver_iso_v2.TYPE2.ClickAdapter_OutMotion_Li4;
+import com.example.naver_iso_v2.TYPE2.ClickAdapter_OutMotion_Li5;
 
 public class Pannel_ListLayout_OutMotion extends RelativeLayout implements View.OnClickListener {
 

@@ -10,6 +10,8 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.naver_iso_v2.TYPE2.Haptic_ChildRecyclerAdapter;
+
 import java.util.ArrayList;
 
 public class Haptic_ParentRecyclerAdapter extends RecyclerView.Adapter<Haptic_ParentRecyclerAdapter.MyViewHolder> {

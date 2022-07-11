@@ -1,12 +1,9 @@
-package com.example.naver_iso_v2;
+package com.example.naver_iso_v2.TYPE2;
 
 import android.content.Context;
-import android.graphics.drawable.TransitionDrawable;
 import android.os.Build;
 import android.os.Handler;
-import android.os.Vibrator;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
@@ -14,6 +11,11 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import androidx.annotation.RequiresApi;
+
+import com.example.naver_iso_v2.MainActivity;
+import com.example.naver_iso_v2.R;
+import com.example.naver_iso_v2.Utils_Anim;
+import com.example.naver_iso_v2.Vars_Def;
 
 public class Pannel_Result extends RelativeLayout {
 

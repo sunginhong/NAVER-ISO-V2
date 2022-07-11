@@ -1,30 +1,23 @@
 package com.example.naver_iso_v2;
 
 import android.content.Context;
-import android.content.Intent;
-import android.graphics.Color;
 import android.graphics.drawable.TransitionDrawable;
 import android.os.Build;
-import android.os.Environment;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import androidx.annotation.RequiresApi;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
-
-import org.json.JSONObject;
-
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.util.ArrayList;
+import com.example.naver_iso_v2.TYPE2.ClickAdapter_InMotion_Li0;
+import com.example.naver_iso_v2.TYPE2.ClickAdapter_InMotion_Li1;
+import com.example.naver_iso_v2.TYPE2.ClickAdapter_InMotion_Li2;
+import com.example.naver_iso_v2.TYPE2.ClickAdapter_InMotion_Li3;
+import com.example.naver_iso_v2.TYPE2.ClickAdapter_InMotion_Li4;
+import com.example.naver_iso_v2.TYPE2.ClickAdapter_InMotion_Li5;
 
 public class Pannel_ListLayout_InMotion extends RelativeLayout implements View.OnClickListener {
 

@@ -12,6 +12,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.naver_iso_v2.TYPE2.Pannel_Result;
+
 import java.util.ArrayList;
 
 public class MainActivity_T2 extends AppCompatActivity {

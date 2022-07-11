@@ -1,4 +1,4 @@
-package com.example.naver_iso_v2;
+package com.example.naver_iso_v2.TYPE2;
 
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
@@ -12,6 +12,13 @@ import android.view.animation.Animation;
 import android.view.animation.Interpolator;
 
 import androidx.core.view.animation.PathInterpolatorCompat;
+
+import com.example.naver_iso_v2.Activity_Interactions;
+import com.example.naver_iso_v2.AnimRectObject;
+import com.example.naver_iso_v2.Pannel_Layout;
+import com.example.naver_iso_v2.Pannel_ListLayout_Top;
+import com.example.naver_iso_v2.Utils_Calc;
+import com.example.naver_iso_v2.Vars_Def;
 
 public class DragAdapter implements View.OnTouchListener {
 

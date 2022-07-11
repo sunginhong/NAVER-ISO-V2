@@ -1,9 +1,13 @@
-package com.example.naver_iso_v2;
+package com.example.naver_iso_v2.TYPE2;
 
 import android.content.Context;
 import android.graphics.Color;
 import android.util.Log;
 import android.view.View;
+
+import com.example.naver_iso_v2.Pannel_ListLayout_InMotion;
+import com.example.naver_iso_v2.R;
+import com.example.naver_iso_v2.Vars_Def;
 
 import java.util.ArrayList;
 

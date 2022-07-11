@@ -1,9 +1,7 @@
 package com.example.naver_iso_v2;
 
 import android.content.Context;
-import android.content.res.Resources;
 import android.os.Build;
-import android.os.Handler;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,6 +9,8 @@ import android.widget.Button;
 import android.widget.RelativeLayout;
 
 import androidx.annotation.RequiresApi;
+
+import com.example.naver_iso_v2.TYPE2.DragAdapter;
 
 public class Pannel_Layout extends RelativeLayout implements View.OnClickListener {
 
