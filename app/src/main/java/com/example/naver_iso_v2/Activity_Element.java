@@ -1,5 +1,6 @@
 package com.example.naver_iso_v2;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -11,6 +12,7 @@ import android.util.Log;
 import android.view.Display;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
@@ -25,10 +27,14 @@ import com.bumptech.glide.Glide;
 import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
 
+import java.util.ArrayList;
+
 public class Activity_Element extends AppCompatActivity {
 
     public static Context ctx;
     private Display display;
+    private static final int REQUEST_CODE = 0;
+    public static Uri imageUri;
     public static Activity activity;
     public static FrameLayout main_contain;
     public static LinearLayout layout_container_top_group;
@@ -161,6 +167,26 @@ public class Activity_Element extends AppCompatActivity {
                 pageOutAnim();
             }
         });
+
+        Element_Pannel_Layout.elem_bottom_imagebtn.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("ResourceAsColor")
+            @Override
+            public void onClick(View view) {
+                openGallery();
+            }
+        });
+
+        Element_Pannel_Layout.elem_bottom_guidebtn.setOnClickListener(new Button.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Element_ResultArray.ArrData = new ArrayList<>();
+                Element_ResultArray.getData();
+
+                Intent intent = new Intent(ctx, Element_PopupActivity.class);
+                intent.putStringArrayListExtra("ArrayList", Element_ResultArray.ArrData);
+                v.getContext().startActivity(intent);
+            }
+        });
     }
 
     @Override
@@ -191,5 +217,41 @@ public class Activity_Element extends AppCompatActivity {
                 Element_Pannel_ListLayout_Top.element_anim_title.setText(R.string.nudge);
                 break;
         }
+
     }
+
+    private void openGallery() {
+        Intent intent = new Intent();
+        intent.setType("image/*");
+        intent.setAction(Intent.ACTION_GET_CONTENT);
+        startActivityForResult(intent, 0);
+        overridePendingTransition(R.anim.slide_in_up_case1, R.anim.slide_out_down_case1);
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data){
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == REQUEST_CODE){
+            if (resultCode == RESULT_OK){
+                try {
+                    imageUri = data.getData();
+                    if (Integer.parseInt(Val) == 0) {
+                        Glide.with(getApplicationContext()).load(imageUri).into(Fragment_0_Popup_v2.popup_v2_imageView);
+                    }
+                    if (Integer.parseInt(Val) == 1) {
+                        Glide.with(getApplicationContext()).load(imageUri).into(Fragment_1_Nudge_v2.nudge_v2_imageView);
+                    }
+                    if (Integer.parseInt(Val) == 2) {
+                        Glide.with(getApplicationContext()).load(imageUri).into(Fragment_2_Alarm_v2.alarm_v2_imageView);
+                    }
+                } catch (Exception e){
+
+                }
+            } else if(resultCode == RESULT_CANCELED){//취소시 액션
+
+            }
+        }
+        overridePendingTransition(R.anim.slide_in_up_case2, R.anim.slide_out_down_case2);
+    }
+
 }

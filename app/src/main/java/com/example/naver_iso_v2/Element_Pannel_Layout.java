@@ -4,6 +4,7 @@ import static com.example.naver_iso_v2.R.*;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Build;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
@@ -96,7 +97,6 @@ public class Element_Pannel_Layout extends RelativeLayout implements View.OnClic
 
     public void objectpPlayAnim(boolean state){
         if (state){ new Element_PlayAnim(true, animView); } else { new Element_PlayAnim(false, animView); }
-//        if (Activity_Element.selPos == 0){ if (state){ new Element_PlayAnim(true, Fragment_0_Popup_v2.popup_v2_imageView); } else { new Element_PlayAnim(false, Fragment_0_Popup_v2.popup_v2_imageView); } }
     }
 
     public static void setContain(){
@@ -105,6 +105,7 @@ public class Element_Pannel_Layout extends RelativeLayout implements View.OnClic
             Vars_Def.appStart = true;
         }
     }
+
     @Override
     public void onClick(View v) {
         switch (v.getId()){

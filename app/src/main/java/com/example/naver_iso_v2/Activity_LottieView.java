@@ -104,6 +104,10 @@ public class Activity_LottieView extends AppCompatActivity {
             public void onClick(View view) {
                 integrator.initiateScan();
                 lvLoop = true;
+                lv_view.loop(true);
+                lv_view.setProgress(0);
+                lv_view.setSpeed(1);
+                lv_view.playAnimation();
             }
         });
         play_btn2.setOnClickListener(new Button.OnClickListener() {
@@ -146,6 +150,7 @@ public class Activity_LottieView extends AppCompatActivity {
     public void onBackPressed() {
         finish();
         pageOutAnim();
+        super.onBackPressed();
     }
 
     void pageOutAnim(){

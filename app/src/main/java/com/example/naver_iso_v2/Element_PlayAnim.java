@@ -18,7 +18,6 @@ public class Element_PlayAnim {
 
             AnimRectObject.function_containAnim(view, Float.parseFloat(Elem_Vars_Def.OUT_li1_state +"f"), Float.parseFloat(Elem_Vars_Def.OUT_li2_state +"f"), Float.parseFloat(Elem_Vars_Def.OUT_li3_state +"f"), Elem_Vars_Def.OUT_li0_state, Elem_Vars_Def.OUT_li4_state);
         }
-        System.out.println("sadsadasdas"+state);
     }
 
 }

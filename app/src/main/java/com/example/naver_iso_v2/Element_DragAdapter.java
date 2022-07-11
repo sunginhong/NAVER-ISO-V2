@@ -50,7 +50,11 @@ public class Element_DragAdapter implements View.OnTouchListener {
                         rectCalcHeight = Utils_Calc.ModulateCalc((int) moveY, Vars_Def.posMaxY, Vars_Def.posMinY, objHeight_min, objHeight_max);
                     }
                 }
-                function_rectObjAnim(Activity_Element.element_obj_layout, (int) rectCalcHeight, (int) rectCalcHeight, 0, interpolator_bounce);
+//                Drag Move iMAGE Container
+                if (rectCalcHeight > 0){
+                    function_rectObjAnim(Activity_Element.element_obj_layout, (int) rectCalcHeight, (int) rectCalcHeight, 0, interpolator_bounce);
+                    System.out.println((int) rectCalcHeight);
+                }
                 Element_Pannel_Layout.element_container.invalidate();
                 break;
             case MotionEvent.ACTION_UP:

@@ -40,7 +40,7 @@ public class Interaction_PopupActivity extends Activity {
         ctx = this.getApplicationContext();
 
         requestWindowFeature(Window.FEATURE_NO_TITLE);
-        setContentView(R.layout.interaction_popup_activity);
+        setContentView(R.layout.element_popup_activity);
 
         View rootView = getWindow().getDecorView();
 
@@ -83,13 +83,11 @@ public class Interaction_PopupActivity extends Activity {
         result_in_motion_li2.setText(ReceiveArr.get(3));
         result_in_motion_li3.setText(ReceiveArr.get(4));
         result_in_motion_li4.setText(ReceiveArr.get(5));
-        result_in_motion_li5.setText(ReceiveArr.get(6));
-        result_out_motion_li0.setText(ReceiveArr.get(7));
-        result_out_motion_li1.setText(ReceiveArr.get(8));
-        result_out_motion_li2.setText(ReceiveArr.get(9));
-        result_out_motion_li3.setText(ReceiveArr.get(10));
-        result_out_motion_li4.setText(ReceiveArr.get(11));
-        result_out_motion_li5.setText(ReceiveArr.get(12));
+        result_out_motion_li0.setText(ReceiveArr.get(6));
+        result_out_motion_li1.setText(ReceiveArr.get(7));
+        result_out_motion_li2.setText(ReceiveArr.get(8));
+        result_out_motion_li3.setText(ReceiveArr.get(9));
+        result_out_motion_li4.setText(ReceiveArr.get(10));
 
         LinearLayout result_closebtn = findViewById(R.id.result_closebtn);
         result_closebtn.setOnClickListener(new View.OnClickListener() {

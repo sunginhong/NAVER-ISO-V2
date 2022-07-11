@@ -26,14 +26,17 @@ public class Fragment_1_Nudge_v2 extends Fragment {
         View view = inflater.inflate(R.layout.fragment_1_nudge_v2, container, false);
         ctx = container.getContext();
         nudge_v2_imageView = view.findViewById(R.id.nudge_v2_imageView);
-        Element_ResetState.defCaseState01();
         Element_Pannel_Layout.animView = nudge_v2_imageView;
-//        AnimRectObject.function_containAnim(nudge_v2_imageView, Float.parseFloat(Elem_Vars_Def.IN_li1_state +"f"), Float.parseFloat(Elem_Vars_Def.IN_li2_state +"f"), Float.parseFloat(Elem_Vars_Def.IN_li3_state +"f"), 0, Elem_Vars_Def.IN_li4_state);
+        AnimRectObject.function_containAnim(nudge_v2_imageView, Float.parseFloat(Elem_Vars_Def.IN_li1_state +"f"), Float.parseFloat(Elem_Vars_Def.IN_li2_state +"f"), Float.parseFloat(Elem_Vars_Def.IN_li3_state +"f"), 0, Elem_Vars_Def.IN_li4_state);
         return view;
     }
 
     private void init() {
-
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                Element_ResetState.defCaseState01(ctx);
+            }
+        }, 400);
     }
-
 }

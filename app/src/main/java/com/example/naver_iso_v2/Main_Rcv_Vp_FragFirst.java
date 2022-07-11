@@ -150,9 +150,7 @@ public class Main_Rcv_Vp_FragFirst extends Fragment {
     View.OnClickListener btn_elem_p1_row1Listener = new View.OnClickListener() {
         @SuppressLint("ResourceType")
         @Override
-        public void onClick(View v) {
-            Main_Rcv_Vp_FragFirst_SelAnim.set_r1(ctx, v, 300);
-        }
+        public void onClick(View v) { Main_Rcv_Vp_FragFirst_SelAnim.set_r1(ctx, v, 300); }
     };
 
     View.OnClickListener btn_elem_p1_row2Listener = new View.OnClickListener() {

@@ -26,13 +26,17 @@ public class Fragment_0_Popup_v2 extends Fragment {
         View view = inflater.inflate(R.layout.fragment_0_popup_v2, container, false);
         ctx = container.getContext();
         popup_v2_imageView = view.findViewById(R.id.popup_v2_imageView);
-        Element_ResetState.defCaseState00();
         Element_Pannel_Layout.animView = popup_v2_imageView;
         AnimRectObject.function_containAnim(popup_v2_imageView, Float.parseFloat(Elem_Vars_Def.IN_li1_state +"f"), Float.parseFloat(Elem_Vars_Def.IN_li2_state +"f"), Float.parseFloat(Elem_Vars_Def.IN_li3_state +"f"), 0, Elem_Vars_Def.IN_li4_state);
         return view;
     }
 
     private void init() {
-
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                Element_ResetState.defCaseState00(ctx);
+            }
+        }, 400);
     }
 }

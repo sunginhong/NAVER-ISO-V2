@@ -37,7 +37,7 @@
             tools:replace="screenOrientation"/>
         <activity android:name=".CaptureForm" />
         <activity android:name=".Acitivity_Webview_ISO" android:parentActivityName=".MainActivity_T2"/>
-        <activity android:name=".Interaction_PopupActivity" android:theme="@android:style/Theme.Dialog" android:parentActivityName=".Activity_Interactions"/>
+        <activity android:name=".Element_PopupActivity" android:theme="@android:style/Theme.Dialog" android:parentActivityName=".Activity_Interactions"/>
         <activity android:name=".Haptic_PopupActivity" android:theme="@android:style/Theme.Dialog" android:parentActivityName=".Activity_Haptic"/>
 
         <meta-data

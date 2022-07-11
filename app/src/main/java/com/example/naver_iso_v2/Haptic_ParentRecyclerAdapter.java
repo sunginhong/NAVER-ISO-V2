@@ -45,7 +45,7 @@ public class Haptic_ParentRecyclerAdapter extends RecyclerView.Adapter<Haptic_Pa
         }
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(ctx,LinearLayoutManager.VERTICAL,false);
         holder.hapticsRV.setLayoutManager(layoutManager);
-        holder.hapticsRV.setHasFixedSize(true);
+//        holder.hapticsRV.setHasFixedSize(true);
         holder.hapticsRV.setTag(titleArryList.get(position));
         RecyclerDecoration_Height decoration_height = new RecyclerDecoration_Height(30);
         holder.hapticsRV.addItemDecoration(decoration_height);

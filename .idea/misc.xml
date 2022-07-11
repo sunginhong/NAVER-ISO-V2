@@ -9,6 +9,7 @@
         <entry key="app/src/main/res/drawable/border_rect.xml" value="0.2075" />
         <entry key="app/src/main/res/drawable/bottom_button_closed.xml" value="0.302" />
         <entry key="app/src/main/res/drawable/bottom_button_open.xml" value="0.139" />
+        <entry key="app/src/main/res/drawable/btn_play_bg.xml" value="0.1805" />
         <entry key="app/src/main/res/drawable/category_button_closed.xml" value="0.139" />
         <entry key="app/src/main/res/drawable/category_button_nor.xml" value="0.139" />
         <entry key="app/src/main/res/drawable/category_button_open.xml" value="0.139" />
@@ -52,6 +53,7 @@
         <entry key="app/src/main/res/drawable/rect_radiogroup.xml" value="0.139" />
         <entry key="app/src/main/res/drawable/rectangle_bg.xml" value="0.139" />
         <entry key="app/src/main/res/drawable/selected_dot.xml" value="0.1235" />
+        <entry key="app/src/main/res/drawable/separator.xml" value="0.1805" />
         <entry key="app/src/main/res/drawable/tab_selector.xml" value="0.1235" />
         <entry key="app/src/main/res/drawable/vp_default_dot.xml" value="0.1235" />
         <entry key="app/src/main/res/drawable/vp_tab_selector.xml" value="0.1235" />
@@ -75,6 +77,7 @@
         <entry key="app/src/main/res/layout/child_rowlayout.xml" value="0.17046605876393112" />
         <entry key="app/src/main/res/layout/element_pannel_layout.xml" value="0.4176954732510288" />
         <entry key="app/src/main/res/layout/element_pannel_layout_top.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/element_popup_activity.xml" value="0.375" />
         <entry key="app/src/main/res/layout/fragment_0_popup.xml" value="0.16822916666666668" />
         <entry key="app/src/main/res/layout/fragment_0_popup_v2.xml" value="0.16995947315096252" />
         <entry key="app/src/main/res/layout/fragment_1.xml" value="0.33541666666666664" />
