@@ -18,7 +18,6 @@ import android.widget.RelativeLayout;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.bumptech.glide.Glide;
-import com.example.naver_iso_v2.TYPE2.DragAdapter;
 import com.example.naver_iso_v2.TYPE2.Pannel_Result;
 
 import java.util.ArrayList;

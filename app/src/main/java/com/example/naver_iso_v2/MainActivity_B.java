@@ -12,7 +12,6 @@ import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
-import com.example.naver_iso_v2.TYPE2.DragAdapter;
 import com.example.naver_iso_v2.TYPE2.Pannel_Result;
 
 public class MainActivity_B extends AppCompatActivity {

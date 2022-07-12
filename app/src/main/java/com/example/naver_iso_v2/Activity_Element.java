@@ -22,7 +22,6 @@ import androidx.core.view.ViewCompat;
 import androidx.viewpager2.widget.ViewPager2;
 
 import com.bumptech.glide.Glide;
-import com.example.naver_iso_v2.TYPE2.DragAdapter;
 import com.example.naver_iso_v2.TYPE2.Pannel_Result;
 import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
@@ -91,16 +90,16 @@ public class Activity_Element extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                DragAdapter.rectCalcHeight = Vars_Def.heightMax;
+                Element_DragAdapter.rectCalcHeight = Vars_Def.heightMax;
                 selPos = Integer.parseInt(Val);
                 if (Integer.parseInt(Val) == 0){
                     Glide.with(getApplicationContext()).load(R.drawable.popup).into(Fragment_0_Popup_v2.popup_v2_imageView);
                 }
                 if (Integer.parseInt(Val) == 1){
-                    Glide.with(getApplicationContext()).load(R.drawable.nudge).into(Fragment_1_Nudge_v2.nudge_v2_imageView);
+                    Glide.with(getApplicationContext()).load(R.drawable.alarm).into(Fragment_1_Nudge_v2.nudge_v2_imageView);
                 }
                 if (Integer.parseInt(Val) == 2){
-                    Glide.with(getApplicationContext()).load(R.drawable.alarm).into(Fragment_2_Alarm_v2.alarm_v2_imageView);
+                    Glide.with(getApplicationContext()).load(R.drawable.nudge).into(Fragment_2_Alarm_v2.alarm_v2_imageView);
                 }
             }
         }, 000);

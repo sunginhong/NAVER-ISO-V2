@@ -12,8 +12,6 @@ import android.widget.TextView;
 
 import androidx.annotation.RequiresApi;
 
-import com.example.naver_iso_v2.TYPE2.DragAdapter;
-
 public class Element_Pannel_ListLayout_Top extends RelativeLayout {
 
     public Context ctx;

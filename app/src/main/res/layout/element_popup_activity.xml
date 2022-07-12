@@ -52,24 +52,24 @@
                            android:layout_marginTop="14dp"
                            android:layout_marginBottom="12.5dp">
                            <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
                                android:id="@+id/element_result_title"
                                android:text="Title"
                                android:fontFamily="@font/poppins_semibold"
                                android:textColor="@color/black"
                                android:textStyle="bold"
                                android:textSize="16sp"
-                               android:lineHeight="24sp"
-                               android:layout_width="wrap_content"
-                               android:layout_height="wrap_content" />
+                               android:lineHeight="24sp" />
                            <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
                                android:text=" Guide"
                                android:fontFamily="@font/poppins_semibold"
                                android:textColor="@color/black"
                                android:textStyle="bold"
                                android:textSize="16sp"
-                               android:lineHeight="24sp"
-                               android:layout_width="wrap_content"
-                               android:layout_height="wrap_content" />
+                               android:lineHeight="24sp" />
                        </LinearLayout>
 
                        <FrameLayout
@@ -98,7 +98,6 @@
                         android:layout_alignParentRight="true"
                         android:layout_marginRight="26dp"
                         android:layout_alignParentBottom="true"
-                        android:layout_marginBottom="22dp"
                         android:background="@drawable/separator"
                         />
 
@@ -106,16 +105,18 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="vertical"
-                        android:layout_marginTop="20dp">
+                        android:layout_marginTop="22dp">
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="In Motion"
                             android:fontFamily="@font/poppins_semibold"
-                            android:textSize="14sp"
+                            android:fontWeight="600"
+                            android:textStyle="bold"
                             android:lineHeight="21sp"
-                            android:textColor="#0F81FE"/>
+                            android:text="In Motion"
+                            android:textColor="#0F81FE"
+                            android:textSize="14sp" />
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -295,6 +296,7 @@
                             android:layout_height="wrap_content"
                             android:text="Out Motion"
                             android:fontFamily="@font/poppins_semibold"
+                            android:textStyle="bold"
                             android:textSize="14sp"
                             android:lineHeight="21sp"
                             android:textColor="#FF550F"/>
