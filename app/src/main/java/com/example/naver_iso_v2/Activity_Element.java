@@ -22,6 +22,7 @@ import androidx.core.view.ViewCompat;
 import androidx.viewpager2.widget.ViewPager2;
 
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.engine.Resource;
 import com.example.naver_iso_v2.TYPE2.Pannel_Result;
 import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
@@ -85,7 +86,7 @@ public class Activity_Element extends AppCompatActivity {
 
         Utils_Anim.AlphaAnim(element_obj_layout_contain, 0, 0, 0);
 
-        new Element_Pannel_SetCalc(this);
+        new Element_Pannel_SetCalc(this, ctx);
 
         new Handler().postDelayed(new Runnable() {
             @Override
@@ -108,8 +109,10 @@ public class Activity_Element extends AppCompatActivity {
             @Override
             public void run() {
                 Utils_Anim.AlphaAnim(element_obj_layout_contain, 0, 1, 200);
+                Element_DragAdapter.function_HeightAnim(Activity_Element.element_obj_layout,  Element_DragAdapter.objHeight_min, 0, AnimRectObject.interpolator_easeOut);
+                Element_DragAdapter.function_containAnim(Activity_Element.element_obj_layout, Element_DragAdapter.objPos_min, 0, AnimRectObject.interpolator_easeOut);
             }
-        }, 300);
+        }, 400);
         mPager = findViewById(R.id.element_viewpager);
 
         pagerAdapter = new Main_Rcv_VpAdapter(this, num_page, ctx);

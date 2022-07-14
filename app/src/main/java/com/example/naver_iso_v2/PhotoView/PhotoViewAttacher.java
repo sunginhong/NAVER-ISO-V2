@@ -40,9 +40,9 @@ import android.widget.OverScroller;
 public class PhotoViewAttacher implements View.OnTouchListener,
         View.OnLayoutChangeListener {
 
-    private static float DEFAULT_MAX_SCALE = 2.0f;
-    private static float DEFAULT_MID_SCALE = 1.0f;
-    private static float DEFAULT_MIN_SCALE = 0.55f;
+    private static float DEFAULT_MAX_SCALE = 1.05f;
+    private static float DEFAULT_MID_SCALE = 0.7f;
+    private static float DEFAULT_MIN_SCALE = 0.5f;
 //    private static float DEFAULT_MAX_SCALE = 3.0f;
 //    private static float DEFAULT_MID_SCALE = 1.75f;
 //    private static float DEFAULT_MIN_SCALE = 1.0f;

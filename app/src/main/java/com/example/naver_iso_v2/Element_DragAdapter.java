@@ -25,6 +25,8 @@ public class Element_DragAdapter implements View.OnTouchListener {
     static float rectCalcHeight;
     static int objHeight_max;
     static int objHeight_min;
+    static int objPos_max;
+    static int objPos_min;
 
     @Override
     public boolean onTouch(View view, MotionEvent event) {
@@ -52,8 +54,8 @@ public class Element_DragAdapter implements View.OnTouchListener {
                 }
 //                Drag Move iMAGE Container
                 if (rectCalcHeight > 0){
-                    function_rectObjAnim(Activity_Element.element_obj_layout, (int) rectCalcHeight, (int) rectCalcHeight, 0, interpolator_bounce);
-                    System.out.println((int) rectCalcHeight);
+//                    function_rectObjAnim(Activity_Element.element_obj_layout, (int) rectCalcHeight, (int) rectCalcHeight, 0, interpolator_bounce);
+//                    System.out.println((int) rectCalcHeight);
                 }
                 Element_Pannel_Layout.element_container.invalidate();
                 break;
@@ -63,12 +65,14 @@ public class Element_DragAdapter implements View.OnTouchListener {
                     Vars_Def.container_bool = true;
 
                     Element_Pannel_ListLayout_Top.element_btn_trigger.setRotation(-180);
-                    function_HeightAnim(Activity_Element.element_obj_layout, objHeight_min, 400, AnimRectObject.interpolator_easeOut);
+                    Element_DragAdapter.function_containAnim(Activity_Element.element_obj_layout, 0, 400, AnimRectObject.interpolator_easeOut);
+//                    function_HeightAnim(Activity_Element.element_obj_layout, objHeight_min, 400, AnimRectObject.interpolator_easeOut);
                 } else {
                     function_containAnim(Element_Pannel_Layout.element_container, Vars_Def.posMinY, 400, AnimRectObject.interpolator_bounce2);
                     Vars_Def.container_bool = false;
                     Element_Pannel_ListLayout_Top.element_btn_trigger.setRotation(0);
-                    function_HeightAnim(Activity_Element.element_obj_layout, objHeight_max, 400, AnimRectObject.interpolator_easeOut);
+                    Element_DragAdapter.function_containAnim(Activity_Element.element_obj_layout, Element_DragAdapter.objPos_min, 400, AnimRectObject.interpolator_easeOut);
+//                    function_HeightAnim(Activity_Element.element_obj_layout, objHeight_max, 400, AnimRectObject.interpolator_easeOut);
                 }
                 move = false;
                 break;

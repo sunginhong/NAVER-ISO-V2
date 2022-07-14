@@ -61,12 +61,14 @@ public class Element_Pannel_ListLayout_Top extends RelativeLayout {
                     Element_DragAdapter.function_containAnim(Element_Pannel_Layout.element_container, Vars_Def.posMaxY, 400, AnimRectObject.interpolator_easeOut);
                     Vars_Def.container_bool = true;
                     element_btn_trigger.setRotation(-180);
-                    Element_DragAdapter.function_HeightAnim(Activity_Element.element_obj_layout, Element_DragAdapter.objHeight_min, 400, AnimRectObject.interpolator_easeOut);
+                    Element_DragAdapter.function_containAnim(Activity_Element.element_obj_layout, Element_DragAdapter.objPos_max, 400, AnimRectObject.interpolator_easeOut);
+//                    Element_DragAdapter.function_HeightAnim(Activity_Element.element_obj_layout, Element_DragAdapter.objHeight_min, 400, AnimRectObject.interpolator_easeOut);
                 } else {
                     Element_DragAdapter.function_containAnim(Element_Pannel_Layout.element_container, Vars_Def.posMinY, 400, AnimRectObject.interpolator_easeOut);
                     Vars_Def.container_bool = false;
                     element_btn_trigger.setRotation(0);
-                    Element_DragAdapter.function_HeightAnim(Activity_Element.element_obj_layout, Element_DragAdapter.objHeight_max, 400, AnimRectObject.interpolator_easeOut);
+                    Element_DragAdapter.function_containAnim(Activity_Element.element_obj_layout, Element_DragAdapter.objPos_min, 400, AnimRectObject.interpolator_easeOut);
+//                    Element_DragAdapter.function_HeightAnim(Activity_Element.element_obj_layout, Element_DragAdapter.objHeight_max, 400, AnimRectObject.interpolator_easeOut);
                 }
             }
         });
