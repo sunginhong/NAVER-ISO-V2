@@ -4,11 +4,14 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.os.Handler;
+import android.util.Log;
 import android.view.View;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -22,6 +25,7 @@ import org.jsoup.nodes.Document;
 import org.jsoup.select.Elements;
 
 import java.io.IOException;
+import java.net.URL;
 
 
 public class Activity_LottieView extends AppCompatActivity {
@@ -37,22 +41,26 @@ public class Activity_LottieView extends AppCompatActivity {
     Button play_btn3;
     Button play_btn4;
     boolean lvLoop = true;
+    String fUrl;
+    String path = null;
 
     class RealTask extends AsyncTask<Void,Void,String> {
         private String Url;
         public RealTask(String url) {
             this.Url = url;
+            fUrl = url;
         }
 
         @Override
         protected String doInBackground(Void... voids) {
-            String path = null;
             try {
+                getLottieUrl = null;
                 Document doc = Jsoup.connect(Url).get();
-//                Document doc = Jsoup.connect("https://lottiefiles.com/110855-cube-animation/").get();
+//                Document doc = Jsoup.connect("https://lottiefiles.com/share/saxq9jbh").get();
                 Elements els = doc.select("lf-player"); //클래스는 .
                 path = els.first().absUrl("path");
                 getLottieUrl = path;
+
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -62,8 +70,14 @@ public class Activity_LottieView extends AppCompatActivity {
         @Override
         protected void onPostExecute(String result) {
             super.onPostExecute(result);
-            getLottieUrl = result;
-            lv_view.setAnimationFromUrl(getLottieUrl);
+            String getLottieUrlF;
+            if (getLottieUrl != null){
+                getLottieUrlF = getLottieUrl;
+            } else {
+                getLottieUrlF = fUrl;
+            }
+//            Log.d("ssss", "sssssss"+getLottieUrlF);
+            lv_view.setAnimationFromUrl(String.valueOf(getLottieUrlF));
             lv_view.loop(true);
             lv_view.playAnimation();
             lvLoop = true;
