@@ -28,6 +28,7 @@
         <entry key="app/src/main/res/drawable/element_vp_frag_item_selector_red.xml" value="0.1805" />
         <entry key="app/src/main/res/drawable/ic_launcher.xml" value="0.267" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.302" />
+        <entry key="app/src/main/res/drawable/icon_noti.xml" value="0.165" />
         <entry key="app/src/main/res/drawable/line_21.xml" value="0.139" />
         <entry key="app/src/main/res/drawable/list_circle.xml" value="0.148" />
         <entry key="app/src/main/res/drawable/main_iconset_1_1.xml" value="0.1235" />
@@ -72,7 +73,7 @@
         <entry key="app/src/main/res/layout/activity_main_0.xml" value="0.171875" />
         <entry key="app/src/main/res/layout/activity_main_b.xml" value="0.16995947315096252" />
         <entry key="app/src/main/res/layout/activity_main_t2.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/activity_main_t2_top.xml" value="0.11573546180159636" />
+        <entry key="app/src/main/res/layout/activity_main_t2_top.xml" value="0.375" />
         <entry key="app/src/main/res/layout/bottom_tab_layout.xml" value="0.25" />
         <entry key="app/src/main/res/layout/child_rowlayout.xml" value="0.17046605876393112" />
         <entry key="app/src/main/res/layout/element_pannel_layout.xml" value="0.1" />

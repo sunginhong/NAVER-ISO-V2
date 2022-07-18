@@ -27,7 +27,7 @@ public class Fragment_0_Popup_v2 extends Fragment {
         ctx = container.getContext();
         popup_v2_imageView = view.findViewById(R.id.popup_v2_imageView);
         Element_Pannel_Layout.animView = popup_v2_imageView;
-        AnimRectObject.function_containAnim(popup_v2_imageView, Float.parseFloat(Elem_Vars_Def.IN_li1_state +"f"), Float.parseFloat(Elem_Vars_Def.IN_li2_state +"f"), Float.parseFloat(Elem_Vars_Def.IN_li3_state +"f"), 0, Elem_Vars_Def.IN_li4_state);
+        AnimRectObject.function_containAnim(popup_v2_imageView, Float.parseFloat(Elem_Vars_Def.defCase0_IN_li1_def +"f"), Float.parseFloat(Elem_Vars_Def.defCase0_IN_li2_def +"f"), Float.parseFloat(Elem_Vars_Def.defCase0_IN_li3_def +"f"), 0, Elem_Vars_Def.defCase0_IN_li4_def);
         return view;
     }
 

@@ -1,10 +1,8 @@
 package com.example.naver_iso_v2;
 
 import android.content.Context;
-import android.graphics.Color;
 import android.os.Handler;
 import android.view.View;
-import android.view.animation.Interpolator;
 
 public class Element_ResetState {
     Context ctx;
@@ -16,17 +14,17 @@ public class Element_ResetState {
     public static void defCaseState00(Context ctx){
         defCaseState();
         Main_Rcv_Vp_StateReset.setListPos(0, ctx);
-        Elem_Vars_Def.IN_li0_state = Elem_Vars_Def.defCaseCase0_IN_li0_def;
-        Elem_Vars_Def.IN_li1_state = Elem_Vars_Def.defCaseCase0_IN_li1_def;
-        Elem_Vars_Def.IN_li2_state = Elem_Vars_Def.defCaseCase0_IN_li2_def;
-        Elem_Vars_Def.IN_li3_state = Elem_Vars_Def.defCaseCase0_IN_li3_def;
-        Elem_Vars_Def.IN_li4_state = Elem_Vars_Def.defCaseCase0_IN_li4_def;
+        Elem_Vars_Def.IN_li0_state = Elem_Vars_Def.defCase0_IN_li0_def;
+        Elem_Vars_Def.IN_li1_state = Elem_Vars_Def.defCase0_IN_li1_def;
+        Elem_Vars_Def.IN_li2_state = Elem_Vars_Def.defCase0_IN_li2_def;
+        Elem_Vars_Def.IN_li3_state = Elem_Vars_Def.defCase0_IN_li3_def;
+        Elem_Vars_Def.IN_li4_state = Elem_Vars_Def.defCase0_IN_li4_def;
 
-        Elem_Vars_Def.OUT_li0_state = Elem_Vars_Def.defCaseCase0_OUT_li0_def;
-        Elem_Vars_Def.OUT_li1_state = Elem_Vars_Def.defCaseCase0_OUT_li1_def;
-        Elem_Vars_Def.OUT_li2_state = Elem_Vars_Def.defCaseCase0_OUT_li2_def;
-        Elem_Vars_Def.OUT_li3_state = Elem_Vars_Def.defCaseCase0_OUT_li3_def;
-        Elem_Vars_Def.OUT_li4_state = Elem_Vars_Def.defCaseCase0_OUT_li4_def;
+        Elem_Vars_Def.OUT_li0_state = Elem_Vars_Def.defCase0_OUT_li0_def;
+        Elem_Vars_Def.OUT_li1_state = Elem_Vars_Def.defCase0_OUT_li1_def;
+        Elem_Vars_Def.OUT_li2_state = Elem_Vars_Def.defCase0_OUT_li2_def;
+        Elem_Vars_Def.OUT_li3_state = Elem_Vars_Def.defCase0_OUT_li3_def;
+        Elem_Vars_Def.OUT_li4_state = Elem_Vars_Def.defCase0_OUT_li4_def;
 
         new Handler().postDelayed(new Runnable() {
             @Override
@@ -40,17 +38,17 @@ public class Element_ResetState {
     public static void defCaseState01(Context ctx){
         defCaseState();
         Main_Rcv_Vp_StateReset.setListPos(1, ctx);
-        Elem_Vars_Def.IN_li0_state = Elem_Vars_Def.defCaseCase1_IN_li0_def;
-        Elem_Vars_Def.IN_li1_state = Elem_Vars_Def.defCaseCase1_IN_li1_def;
-        Elem_Vars_Def.IN_li2_state = Elem_Vars_Def.defCaseCase1_IN_li2_def;
-        Elem_Vars_Def.IN_li3_state = Elem_Vars_Def.defCaseCase1_IN_li3_def;
-        Elem_Vars_Def.IN_li4_state = Elem_Vars_Def.defCaseCase1_IN_li4_def;
+        Elem_Vars_Def.IN_li0_state = Elem_Vars_Def.defCase1_IN_li0_def;
+        Elem_Vars_Def.IN_li1_state = Elem_Vars_Def.defCase1_IN_li1_def;
+        Elem_Vars_Def.IN_li2_state = Elem_Vars_Def.defCase1_IN_li2_def;
+        Elem_Vars_Def.IN_li3_state = Elem_Vars_Def.defCase1_IN_li3_def;
+        Elem_Vars_Def.IN_li4_state = Elem_Vars_Def.defCase1_IN_li4_def;
 
-        Elem_Vars_Def.OUT_li0_state = Elem_Vars_Def.defCaseCase1_OUT_li0_def;
-        Elem_Vars_Def.OUT_li1_state = Elem_Vars_Def.defCaseCase1_OUT_li1_def;
-        Elem_Vars_Def.OUT_li2_state = Elem_Vars_Def.defCaseCase1_OUT_li2_def;
-        Elem_Vars_Def.OUT_li3_state = Elem_Vars_Def.defCaseCase1_OUT_li3_def;
-        Elem_Vars_Def.OUT_li4_state = Elem_Vars_Def.defCaseCase1_OUT_li4_def;
+        Elem_Vars_Def.OUT_li0_state = Elem_Vars_Def.defCase1_OUT_li0_def;
+        Elem_Vars_Def.OUT_li1_state = Elem_Vars_Def.defCase1_OUT_li1_def;
+        Elem_Vars_Def.OUT_li2_state = Elem_Vars_Def.defCase1_OUT_li2_def;
+        Elem_Vars_Def.OUT_li3_state = Elem_Vars_Def.defCase1_OUT_li3_def;
+        Elem_Vars_Def.OUT_li4_state = Elem_Vars_Def.defCase1_OUT_li4_def;
 
 
         new Handler().postDelayed(new Runnable() {
@@ -66,17 +64,17 @@ public class Element_ResetState {
     public static void defCaseState02(Context ctx){
         defCaseState();
         Main_Rcv_Vp_StateReset.setListPos(2, ctx);
-        Elem_Vars_Def.IN_li0_state = Elem_Vars_Def.defCaseCase2_IN_li0_def;
-        Elem_Vars_Def.IN_li1_state = Elem_Vars_Def.defCaseCase2_IN_li1_def;
-        Elem_Vars_Def.IN_li2_state = Elem_Vars_Def.defCaseCase2_IN_li2_def;
-        Elem_Vars_Def.IN_li3_state = Elem_Vars_Def.defCaseCase2_IN_li3_def;
-        Elem_Vars_Def.IN_li4_state = Elem_Vars_Def.defCaseCase2_IN_li4_def;
+        Elem_Vars_Def.IN_li0_state = Elem_Vars_Def.defCase2_IN_li0_def;
+        Elem_Vars_Def.IN_li1_state = Elem_Vars_Def.defCase2_IN_li1_def;
+        Elem_Vars_Def.IN_li2_state = Elem_Vars_Def.defCase2_IN_li2_def;
+        Elem_Vars_Def.IN_li3_state = Elem_Vars_Def.defCase2_IN_li3_def;
+        Elem_Vars_Def.IN_li4_state = Elem_Vars_Def.defCase2_IN_li4_def;
 
-        Elem_Vars_Def.OUT_li0_state = Elem_Vars_Def.defCaseCase2_OUT_li0_def;
-        Elem_Vars_Def.OUT_li1_state = Elem_Vars_Def.defCaseCase2_OUT_li1_def;
-        Elem_Vars_Def.OUT_li2_state = Elem_Vars_Def.defCaseCase2_OUT_li2_def;
-        Elem_Vars_Def.OUT_li3_state = Elem_Vars_Def.defCaseCase2_OUT_li3_def;
-        Elem_Vars_Def.OUT_li4_state = Elem_Vars_Def.defCaseCase2_OUT_li4_def;
+        Elem_Vars_Def.OUT_li0_state = Elem_Vars_Def.defCase2_OUT_li0_def;
+        Elem_Vars_Def.OUT_li1_state = Elem_Vars_Def.defCase2_OUT_li1_def;
+        Elem_Vars_Def.OUT_li2_state = Elem_Vars_Def.defCase2_OUT_li2_def;
+        Elem_Vars_Def.OUT_li3_state = Elem_Vars_Def.defCase2_OUT_li3_def;
+        Elem_Vars_Def.OUT_li4_state = Elem_Vars_Def.defCase2_OUT_li4_def;
 
         new Handler().postDelayed(new Runnable() {
             @Override

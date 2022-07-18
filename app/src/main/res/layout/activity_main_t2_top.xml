@@ -76,8 +76,15 @@
         <FrameLayout
             android:layout_width="50dp"
             android:layout_height="match_parent"
-            android:layout_gravity="center|right"
-            android:layout_marginRight="@dimen/main_padding">
+            android:layout_gravity="center|right">
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="20dp"
+                android:background="@drawable/icon_bell"
+                android:layout_gravity="center|right"
+                android:layout_marginRight="18.32dp"
+                />
         </FrameLayout>
 
     </FrameLayout>

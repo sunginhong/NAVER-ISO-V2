@@ -119,21 +119,40 @@ public class Main_Rcv_Vp_FragFirst extends Fragment {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
+                Utils_Anim.function_WidthAnim(elem_p1_item_lst_r0_c0, elem_p1_item_lst_r0_c0.getWidth(), 0, AnimRectObject.interpolator_easeOut);
+                Utils_Anim.function_WidthAnim(elem_p1_item_lst_r0_c1, elem_p1_item_lst_r0_c0.getWidth(), 0, AnimRectObject.interpolator_easeOut);
+
+                Utils_Anim.function_WidthAnim(elem_p1_item_lst_r1_c0, elem_p1_item_lst_r0_c0.getWidth(), 0, AnimRectObject.interpolator_easeOut);
+                Utils_Anim.function_WidthAnim(elem_p1_item_lst_r1_c1, elem_p1_item_lst_r0_c0.getWidth(), 0, AnimRectObject.interpolator_easeOut);
+                Utils_Anim.function_WidthAnim(elem_p1_item_lst_r1_c2, elem_p1_item_lst_r0_c0.getWidth(), 0, AnimRectObject.interpolator_easeOut);
+
+                Utils_Anim.function_WidthAnim(elem_p1_item_lst_r2_c0, elem_p1_item_lst_r0_c0.getWidth(), 0, AnimRectObject.interpolator_easeOut);
+                Utils_Anim.function_WidthAnim(elem_p1_item_lst_r2_c1, elem_p1_item_lst_r0_c0.getWidth(), 0, AnimRectObject.interpolator_easeOut);
+                Utils_Anim.function_WidthAnim(elem_p1_item_lst_r2_c2, elem_p1_item_lst_r0_c0.getWidth(), 0, AnimRectObject.interpolator_easeOut);
+
+                Utils_Anim.function_WidthAnim(elem_p1_item_lst_r3_c0, elem_p1_item_lst_r0_c0.getWidth(), 0, AnimRectObject.interpolator_easeOut);
+                Utils_Anim.function_WidthAnim(elem_p1_item_lst_r3_c1, elem_p1_item_lst_r0_c0.getWidth(), 0, AnimRectObject.interpolator_easeOut);
+                Utils_Anim.function_WidthAnim(elem_p1_item_lst_r3_c2, elem_p1_item_lst_r0_c0.getWidth(), 0, AnimRectObject.interpolator_easeOut);
+
+                Utils_Anim.function_WidthAnim(elem_p1_item_lst_r4_c0, elem_p1_item_lst_r0_c0.getWidth(), 0, AnimRectObject.interpolator_easeOut);
+                Utils_Anim.function_WidthAnim(elem_p1_item_lst_r4_c1, elem_p1_item_lst_r0_c0.getWidth(), 0, AnimRectObject.interpolator_easeOut);
+
                 elem_p1_item_lst_r0_c0.setTextColor(getResources().getColor(R.color.main_vp_text_selcolor, getResources().newTheme()));
                 Utils_Anim.function_containAnim(elem_p1_item_sel_0, elem_p1_item_lst_r0_c0.getX()+Utils_Calc.dpToPx(2), 0, AnimRectObject.interpolator_easeOut);
-                Utils_Anim.function_WidthAnim(elem_p1_item_sel_0, elem_p1_item_lst_r0_c0.getWidth(), 0, AnimRectObject.interpolator_easeOut);
                 elem_p1_item_lst_r1_c0.setTextColor(getResources().getColor(R.color.main_vp_text_selcolor, getResources().newTheme()));
                 Utils_Anim.function_containAnim(elem_p1_item_sel_1, elem_p1_item_lst_r1_c0.getX()+Utils_Calc.dpToPx(2), 0, AnimRectObject.interpolator_easeOut);
-                Utils_Anim.function_WidthAnim(elem_p1_item_sel_1, elem_p1_item_lst_r1_c0.getWidth(), 0, AnimRectObject.interpolator_easeOut);
                 elem_p1_item_lst_r2_c0.setTextColor(getResources().getColor(R.color.main_vp_text_selcolor, getResources().newTheme()));
                 Utils_Anim.function_containAnim(elem_p1_item_sel_2, elem_p1_item_lst_r1_c0.getX()+Utils_Calc.dpToPx(2), 0, AnimRectObject.interpolator_easeOut);
-                Utils_Anim.function_WidthAnim(elem_p1_item_sel_2, elem_p1_item_lst_r2_c0.getWidth(), 0, AnimRectObject.interpolator_easeOut);
                 elem_p1_item_lst_r3_c0.setTextColor(getResources().getColor(R.color.main_vp_text_selcolor, getResources().newTheme()));
                 Utils_Anim.function_containAnim(elem_p1_item_sel_3, elem_p1_item_lst_r3_c0.getX()+Utils_Calc.dpToPx(2), 0, AnimRectObject.interpolator_easeOut);
-                Utils_Anim.function_WidthAnim(elem_p1_item_sel_3, elem_p1_item_lst_r3_c0.getWidth(), 0, AnimRectObject.interpolator_easeOut);
                 elem_p1_item_lst_r4_c0.setTextColor(getResources().getColor(R.color.main_vp_text_selcolor, getResources().newTheme()));
                 Utils_Anim.function_containAnim(elem_p1_item_sel_4, elem_p1_item_lst_r4_c0.getX()+Utils_Calc.dpToPx(2), 0, AnimRectObject.interpolator_easeOut);
-                Utils_Anim.function_WidthAnim(elem_p1_item_sel_4, elem_p1_item_lst_r4_c0.getWidth(), 0, AnimRectObject.interpolator_easeOut);
+
+                Utils_Anim.function_WidthAnim(elem_p1_item_sel_0, elem_p1_item_lst_r0_c0.getWidth()-Main_Rcv_Vp_FragFirst_SelAnim.itemWidthCalc, 0, AnimRectObject.interpolator_easeOut);
+                Utils_Anim.function_WidthAnim(elem_p1_item_sel_1, elem_p1_item_lst_r0_c0.getWidth()-Main_Rcv_Vp_FragFirst_SelAnim.itemWidthCalc, 0, AnimRectObject.interpolator_easeOut);
+                Utils_Anim.function_WidthAnim(elem_p1_item_sel_2, elem_p1_item_lst_r0_c0.getWidth()-Main_Rcv_Vp_FragFirst_SelAnim.itemWidthCalc, 0, AnimRectObject.interpolator_easeOut);
+                Utils_Anim.function_WidthAnim(elem_p1_item_sel_3, elem_p1_item_lst_r0_c0.getWidth()-Main_Rcv_Vp_FragFirst_SelAnim.itemWidthCalc, 0, AnimRectObject.interpolator_easeOut);
+                Utils_Anim.function_WidthAnim(elem_p1_item_sel_4, elem_p1_item_lst_r0_c0.getWidth()-Main_Rcv_Vp_FragFirst_SelAnim.itemWidthCalc, 0, AnimRectObject.interpolator_easeOut);
             }
         }, 100);
         return view;

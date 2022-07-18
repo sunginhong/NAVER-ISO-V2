@@ -95,6 +95,12 @@
                                 android:textColor="@color/main_vp_text_norcolor"
                                 android:fontFamily="@font/poppins_medium"/>
 
+                            <ImageView
+                                android:layout_width="0.96dp"
+                                android:layout_height="14dp"
+                                android:background="@drawable/menu_pannel_line"
+                                android:layout_gravity="center"/>
+
                             <TextView
                                 android:id="@+id/elem_p1_item_lst_r0_c1"
                                 android:layout_width="wrap_content"
@@ -184,6 +190,12 @@
                                 android:textColor="@color/main_vp_text_norcolor"
                                 android:fontFamily="@font/poppins_medium"/>
 
+                            <ImageView
+                                android:layout_width="0.96dp"
+                                android:layout_height="14dp"
+                                android:background="@drawable/menu_pannel_line"
+                                android:layout_gravity="center"/>
+
                             <TextView
                                 android:id="@+id/elem_p1_item_lst_r1_c1"
                                 android:layout_width="wrap_content"
@@ -196,6 +208,12 @@
                                 android:textAppearance="@style/elem_menu_txt_lsit"
                                 android:textColor="@color/main_vp_text_norcolor"
                                 android:fontFamily="@font/poppins_medium"/>
+
+                            <ImageView
+                                android:layout_width="0.96dp"
+                                android:layout_height="14dp"
+                                android:background="@drawable/menu_pannel_line"
+                                android:layout_gravity="center"/>
 
                             <TextView
                                 android:id="@+id/elem_p1_item_lst_r1_c2"
@@ -281,6 +299,12 @@
                                 android:textColor="@color/main_vp_text_norcolor"
                                 android:fontFamily="@font/poppins_medium"/>
 
+                            <ImageView
+                                android:layout_width="0.96dp"
+                                android:layout_height="14dp"
+                                android:background="@drawable/menu_pannel_line"
+                                android:layout_gravity="center"/>
+
                             <TextView
                                 android:id="@+id/elem_p1_item_lst_r2_c1"
                                 android:layout_width="wrap_content"
@@ -293,6 +317,12 @@
                                 android:textAppearance="@style/elem_menu_txt_lsit"
                                 android:textColor="@color/main_vp_text_norcolor"
                                 android:fontFamily="@font/poppins_medium"/>
+
+                            <ImageView
+                                android:layout_width="0.96dp"
+                                android:layout_height="14dp"
+                                android:background="@drawable/menu_pannel_line"
+                                android:layout_gravity="center"/>
 
                             <TextView
                                 android:id="@+id/elem_p1_item_lst_r2_c2"
@@ -390,6 +420,12 @@
                                 android:textColor="@color/main_vp_text_norcolor"
                                 android:fontFamily="@font/poppins_medium"/>
 
+                            <ImageView
+                                android:layout_width="0.96dp"
+                                android:layout_height="14dp"
+                                android:background="@drawable/menu_pannel_line"
+                                android:layout_gravity="center"/>
+
                             <TextView
                                 android:id="@+id/elem_p1_item_lst_r3_c1"
                                 android:layout_width="wrap_content"
@@ -402,6 +438,12 @@
                                 android:textAppearance="@style/elem_menu_txt_lsit"
                                 android:textColor="@color/main_vp_text_norcolor"
                                 android:fontFamily="@font/poppins_medium"/>
+
+                            <ImageView
+                                android:layout_width="0.96dp"
+                                android:layout_height="14dp"
+                                android:background="@drawable/menu_pannel_line"
+                                android:layout_gravity="center"/>
 
                             <TextView
                                 android:id="@+id/elem_p1_item_lst_r3_c2"
@@ -494,6 +536,12 @@
                                 android:textAppearance="@style/elem_menu_txt_lsit"
                                 android:textColor="@color/main_vp_text_norcolor"
                                 android:fontFamily="@font/poppins_medium"/>
+
+                            <ImageView
+                                android:layout_width="0.96dp"
+                                android:layout_height="14dp"
+                                android:background="@drawable/menu_pannel_line"
+                                android:layout_gravity="center"/>
 
                             <TextView
                                 android:id="@+id/elem_p1_item_lst_r4_c1"

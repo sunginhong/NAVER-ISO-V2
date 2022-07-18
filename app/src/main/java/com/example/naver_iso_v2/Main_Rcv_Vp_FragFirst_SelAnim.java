@@ -9,14 +9,16 @@ import android.view.animation.Interpolator;
 
 public class Main_Rcv_Vp_FragFirst_SelAnim {
 
+    static int itemWidthCalc = Utils_Calc.dpToPx(4);
+
     @SuppressLint("ResourceType")
     static void set_r0(Context ctx, View v, int duration){
         if (v.getId() == 0){
             function_containAnim(Main_Rcv_Vp_FragFirst.elem_p1_item_sel_0, v.getX()+Utils_Calc.dpToPx(2), duration, AnimRectObject.interpolator_easeOut);
         } else {
-            function_containAnim(Main_Rcv_Vp_FragFirst.elem_p1_item_sel_0, v.getX()-Utils_Calc.dpToPx(2), duration, AnimRectObject.interpolator_easeOut);
+            function_containAnim(Main_Rcv_Vp_FragFirst.elem_p1_item_sel_0, v.getX()+Utils_Calc.dpToPx(2), duration, AnimRectObject.interpolator_easeOut);
         }
-        function_WidthAnim(Main_Rcv_Vp_FragFirst.elem_p1_item_sel_0, v.getWidth(), duration, AnimRectObject.interpolator_easeOut);
+//        function_WidthAnim(Main_Rcv_Vp_FragFirst.elem_p1_item_sel_0, v.getWidth()-itemWidthCalc, duration, AnimRectObject.interpolator_easeOut);
         if (v.getId() == 0){
             Elem_Vars_Def.IN_li0_state = 300;
             Main_Rcv_Vp_FragFirst.elem_p1_item_lst_r0_c0.setTextColor(ctx.getResources().getColor(R.color.main_vp_text_selcolor, ctx.getResources().newTheme()));
@@ -34,9 +36,9 @@ public class Main_Rcv_Vp_FragFirst_SelAnim {
         if (v.getId() == 0){
             function_containAnim(Main_Rcv_Vp_FragFirst.elem_p1_item_sel_1, v.getX()+Utils_Calc.dpToPx(2), 300, AnimRectObject.interpolator_easeOut);
         } else {
-            function_containAnim(Main_Rcv_Vp_FragFirst.elem_p1_item_sel_1, v.getX()-Utils_Calc.dpToPx(2), 300, AnimRectObject.interpolator_easeOut);
+            function_containAnim(Main_Rcv_Vp_FragFirst.elem_p1_item_sel_1, v.getX()+Utils_Calc.dpToPx(2), 300, AnimRectObject.interpolator_easeOut);
         }
-        function_WidthAnim(Main_Rcv_Vp_FragFirst.elem_p1_item_sel_1, v.getWidth(), 300, AnimRectObject.interpolator_easeOut);
+//        function_WidthAnim(Main_Rcv_Vp_FragFirst.elem_p1_item_sel_1, v.getWidth()-itemWidthCalc, 300, AnimRectObject.interpolator_easeOut);
         if (v.getId() == 0){
             Elem_Vars_Def.IN_li1_state = 0;
             Main_Rcv_Vp_FragFirst.elem_p1_item_lst_r1_c0.setTextColor(ctx.getResources().getColor(R.color.main_vp_text_selcolor, ctx.getResources().newTheme()));
@@ -62,9 +64,9 @@ public class Main_Rcv_Vp_FragFirst_SelAnim {
         if (v.getId() == 0){
             function_containAnim(Main_Rcv_Vp_FragFirst.elem_p1_item_sel_2, v.getX()+Utils_Calc.dpToPx(2), 300, AnimRectObject.interpolator_easeOut);
         } else {
-            function_containAnim(Main_Rcv_Vp_FragFirst.elem_p1_item_sel_2, v.getX()-Utils_Calc.dpToPx(2), 300, AnimRectObject.interpolator_easeOut);
+            function_containAnim(Main_Rcv_Vp_FragFirst.elem_p1_item_sel_2, v.getX()+Utils_Calc.dpToPx(2), 300, AnimRectObject.interpolator_easeOut);
         }
-        function_WidthAnim(Main_Rcv_Vp_FragFirst.elem_p1_item_sel_2, v.getWidth(), 300, AnimRectObject.interpolator_easeOut);
+//        function_WidthAnim(Main_Rcv_Vp_FragFirst.elem_p1_item_sel_2, v.getWidth()-itemWidthCalc, 300, AnimRectObject.interpolator_easeOut);
         if (v.getId() == 0){
             Elem_Vars_Def.IN_li2_state = 0;
             Main_Rcv_Vp_FragFirst.elem_p1_item_lst_r2_c0.setTextColor(ctx.getResources().getColor(R.color.main_vp_text_selcolor, ctx.getResources().newTheme()));
@@ -90,9 +92,9 @@ public class Main_Rcv_Vp_FragFirst_SelAnim {
         if (v.getId() == 0){
             function_containAnim(Main_Rcv_Vp_FragFirst.elem_p1_item_sel_3, v.getX()+Utils_Calc.dpToPx(2), 300, AnimRectObject.interpolator_easeOut);
         } else {
-            function_containAnim(Main_Rcv_Vp_FragFirst.elem_p1_item_sel_3, v.getX()-Utils_Calc.dpToPx(2), 300, AnimRectObject.interpolator_easeOut);
+            function_containAnim(Main_Rcv_Vp_FragFirst.elem_p1_item_sel_3, v.getX()+Utils_Calc.dpToPx(2), 300, AnimRectObject.interpolator_easeOut);
         }
-        function_WidthAnim(Main_Rcv_Vp_FragFirst.elem_p1_item_sel_3, v.getWidth(), 300, AnimRectObject.interpolator_easeOut);
+//        function_WidthAnim(Main_Rcv_Vp_FragFirst.elem_p1_item_sel_3, v.getWidth()-itemWidthCalc, 300, AnimRectObject.interpolator_easeOut);
         if (v.getId() == 0){
             Elem_Vars_Def.IN_li3_state = 0;
             Main_Rcv_Vp_FragFirst.elem_p1_item_lst_r3_c0.setTextColor(ctx.getResources().getColor(R.color.main_vp_text_selcolor, ctx.getResources().newTheme()));
@@ -118,9 +120,9 @@ public class Main_Rcv_Vp_FragFirst_SelAnim {
         if (v.getId() == 0){
             function_containAnim(Main_Rcv_Vp_FragFirst.elem_p1_item_sel_4, v.getX()+Utils_Calc.dpToPx(2), 300, AnimRectObject.interpolator_easeOut);
         } else {
-            function_containAnim(Main_Rcv_Vp_FragFirst.elem_p1_item_sel_4, v.getX()-Utils_Calc.dpToPx(2), 300, AnimRectObject.interpolator_easeOut);
+            function_containAnim(Main_Rcv_Vp_FragFirst.elem_p1_item_sel_4, v.getX()+Utils_Calc.dpToPx(2), 300, AnimRectObject.interpolator_easeOut);
         }
-        function_WidthAnim(Main_Rcv_Vp_FragFirst.elem_p1_item_sel_4, v.getWidth(), 300, AnimRectObject.interpolator_easeOut);
+//        function_WidthAnim(Main_Rcv_Vp_FragFirst.elem_p1_item_sel_4, v.getWidth()-itemWidthCalc, 300, AnimRectObject.interpolator_easeOut);
         if (v.getId() == 0){
             Elem_Vars_Def.IN_li4_state = AnimRectObject.interpolator_easeOut;
             Main_Rcv_Vp_FragFirst.elem_p1_item_lst_r4_c0.setTextColor(ctx.getResources().getColor(R.color.main_vp_text_selcolor, ctx.getResources().newTheme()));
